@@ -1,0 +1,242 @@
+/* ==========================================================================
+   ADRIAN SAINT - CORPORATE MENTALIST & AI SEO LEAD GENERATION PLATFORM
+   Main JavaScript Controller - Clean Image Card Edition
+   ========================================================================== */
+
+import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
+import { SERVICES_DATA } from './data/services.js?v=20260821_v3';
+import { TESTIMONIALS_DATA } from './data/testimonials.js?v=20260821_v3';
+import { GENERAL_FAQS } from './data/faqs.js?v=20260821_v3';
+import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
+import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
+import { generateSchema, updateDOMSchema } from './components/schemaGenerator.js?v=20260821_v3';
+
+document.addEventListener("DOMContentLoaded", () => {
+  initApp();
+});
+
+function initApp() {
+  setupBookingModal();
+  setupVideoModal();
+  setupInquiryForm();
+  setupLocationTabs();
+  setupRouter();
+  setupSearchFilter();
+  setupFaqAccordion();
+
+  // Initial global schema setup
+  const globalSchemas = generateSchema({ faqs: GENERAL_FAQS });
+  updateDOMSchema(globalSchemas);
+}
+
+function setupFaqAccordion() {
+  const faqContainer = document.getElementById('faq-container');
+  if (faqContainer && !faqContainer.dataset.listenerAttached) {
+    faqContainer.dataset.listenerAttached = "true";
+    faqContainer.addEventListener('click', (e) => {
+      const question = e.target.closest('.faq-question');
+      if (question) {
+        const item = question.closest('.faq-item');
+        if (item) {
+          item.classList.toggle('active');
+        }
+      }
+    });
+  }
+}
+
+function setupVideoModal() {
+  const videoModal = document.getElementById("video-modal");
+  const videoClose = document.getElementById("video-modal-close");
+
+  document.querySelectorAll(".open-video-modal").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (videoModal) videoModal.classList.add("active");
+    });
+  });
+
+  if (videoClose) {
+    videoClose.addEventListener("click", () => {
+      if (videoModal) videoModal.classList.remove("active");
+    });
+  }
+
+  if (videoModal) {
+    videoModal.addEventListener("click", (e) => {
+      if (e.target === videoModal) videoModal.classList.remove("active");
+    });
+  }
+}
+
+function setupInquiryForm() {
+  const formEl = document.getElementById("inquiry-form-main");
+  const successEl = document.getElementById("inquiry-success-message");
+
+  if (formEl) {
+    formEl.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const btn = formEl.querySelector("button[type='submit']");
+      btn.disabled = true;
+      btn.innerHTML = "<span>Submitting Request...</span>";
+
+      setTimeout(() => {
+        formEl.style.display = "none";
+        successEl.style.display = "block";
+        btn.disabled = false;
+        btn.innerHTML = "<span>Submit Availability Request</span>";
+      }, 1000);
+    });
+  }
+}
+
+function setupLocationTabs() {
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = btn.dataset.target;
+      
+      tabBtns.forEach(b => b.classList.remove("active"));
+      tabContents.forEach(c => c.classList.remove("active"));
+
+      btn.classList.add("active");
+      const targetEl = document.getElementById(target);
+      if (targetEl) targetEl.classList.add("active");
+    });
+  });
+}
+
+function setupSearchFilter() {
+  const searchInput = document.getElementById("city-search-input");
+  const citiesGrid = document.getElementById("cities-grid");
+
+  if (searchInput && citiesGrid) {
+    renderCitiesGrid(CITIES_DATA, citiesGrid);
+
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const filtered = CITIES_DATA.filter(c => 
+        c.name.toLowerCase().includes(query) || 
+        c.state.toLowerCase().includes(query) ||
+        c.metro.toLowerCase().includes(query)
+      );
+      renderCitiesGrid(filtered, citiesGrid);
+    });
+  }
+}
+
+function renderCitiesGrid(cities, container) {
+  if (cities.length === 0) {
+    container.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--text-muted);">
+        <p>No convention markets found. Adrian travels anywhere in North America upon request.</p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = cities.map(c => `
+    <div class="glass-card" onclick="window.location.hash='#city/${c.id}'" style="cursor: pointer;">
+      <h3 style="font-size: 1.15rem; color: #FFF; margin-bottom: 0.25rem;">${c.name}, ${c.state}</h3>
+      <p style="font-size: 0.85rem; color: var(--accent-gold); margin-bottom: 0.75rem;">${c.metro}</p>
+      <div style="font-size: 0.8rem; color: var(--text-silver);">
+        <span>🏛️ ${c.venues[0]}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setupRouter() {
+  window.addEventListener("hashchange", handleRoute);
+  handleRoute();
+}
+
+function handleRoute() {
+  const hash = window.location.hash;
+  if (hash.startsWith("#city/")) {
+    const cityId = hash.replace("#city/", "").trim();
+    const appRoot = document.getElementById("app-root");
+    renderCityPage(cityId, appRoot);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    renderHomepageContent();
+  }
+}
+
+const SERVICE_IMAGES = {
+  "corporate-stage-show": "images/adrian_hyatt.jpg",
+  "strolling-mind-reading": "images/adrian_strolling.jpg",
+  "trade-show-lead-gen": "images/adrian_action_2.jpg",
+  "executive-keynotes": "images/adrian_action_4.jpg"
+};
+
+function renderHomepageContent() {
+  const appRoot = document.getElementById("app-root");
+  
+  if (!appRoot.querySelector(".hero")) {
+    window.location.reload();
+    return;
+  }
+
+  // 1. Render 4 Performance Packages Cards without Overlay Badges (Clean Image)
+  const servicesGrid = document.getElementById("services-grid");
+  if (servicesGrid) {
+    servicesGrid.innerHTML = SERVICES_DATA.map(s => {
+      const cardImage = s.image || SERVICE_IMAGES[s.id] || "images/adrian_stage_1.jpg";
+      return `
+        <div class="service-card-interactive gold-glow-card">
+          <!-- Clean Service Header Image -->
+          <div class="service-card-image-wrap" style="position: relative; width: 100%; height: 220px; overflow: hidden; background: #11131c;">
+            <img src="${cardImage}" alt="${s.title}" class="service-card-image" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+          </div>
+
+          <div class="service-card-body">
+            <div>
+              <span class="service-badge">${s.duration}</span>
+              <h3 style="font-size: 1.45rem; margin-bottom: 0.6rem; color: #FFFFFF;">${s.title}</h3>
+              <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-silver); line-height: 1.5;">${s.shortDesc}</p>
+              
+              <ul class="service-features" style="margin-bottom: 1.75rem;">
+                ${s.features.map(f => `<li>${f}</li>`).join('')}
+              </ul>
+            </div>
+
+            <button class="btn btn-secondary open-booking-modal" style="width: 100%;">
+              <span>View Package Details →</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // 2. Render Masonry Testimonials Grid
+  const testimonialsGrid = document.getElementById("testimonials-grid");
+  if (testimonialsGrid) {
+    testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
+      <div class="masonry-card">
+        <div>
+          <div class="badge-hr-clean">
+            <span>🔒 100% Clean & HR-Safe</span>
+          </div>
+          <div style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 0.75rem;">
+            ${"★".repeat(t.rating)}
+          </div>
+          <p style="font-style: italic; font-size: 1.05rem; margin-bottom: 1.25rem; color: var(--text-silver); line-height: 1.5;">
+            "${t.quote}"
+          </p>
+        </div>
+
+        <div class="masonry-card-footer">
+          <div>
+            <div class="masonry-author-name">${t.author}</div>
+            <div class="masonry-author-company">${t.company}</div>
+          </div>
+          <div class="masonry-event-tag">${t.event}</div>
+        </div>
+      </div>
+    `).join('');
+  }
+}
