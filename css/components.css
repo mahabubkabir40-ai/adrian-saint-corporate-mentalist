@@ -58,13 +58,12 @@
   color: var(--accent-gold);
 }
 
-/* 55/45 Hero Section Ratio */
 .hero {
   position: relative;
   background-color: var(--bg-hero);
-  padding-top: 155px;
-  padding-bottom: 95px;
-  min-height: 92vh;
+  padding-top: 145px;
+  padding-bottom: 85px;
+  min-height: 94vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -76,17 +75,47 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(11,12,16,0.75) 0%, rgba(11,12,16,0.92) 80%, #0b0c10 100%),
-              url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600') center/cover no-repeat;
-  filter: brightness(0.65) contrast(1.1);
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #0B0C10 url('images/adrian_stage_1.jpg') center/cover no-repeat;
+}
+
+.hero-bg-video-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  transform: translate(-50%, -50%) scale(1.2);
+  pointer-events: none;
+  opacity: 0.35;
+  filter: saturate(1.15) contrast(1.15) brightness(0.65);
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 40%, rgba(11, 12, 16, 0.72) 0%, rgba(11, 12, 16, 0.94) 80%, #0B0C10 100%),
+              linear-gradient(180deg, rgba(11,12,16,0.85) 0%, rgba(11,12,16,0.65) 45%, rgba(11,12,16,0.98) 100%);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: stretch;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3rem;
+  align-items: center;
 }
 
 .hero-text-content {
@@ -96,9 +125,9 @@
 }
 
 .hero-headline {
-  font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  font-size: clamp(2.3rem, 4.8vw, 3.9rem);
   font-weight: 900;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.025em;
   line-height: 1.15;
   margin-bottom: 1rem;
   word-break: break-word;
@@ -106,9 +135,9 @@
 }
 
 .hero-subheadline {
-  font-size: 1.2rem;
-  margin-bottom: 2.25rem;
-  max-width: 660px;
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  max-width: 620px;
   color: var(--text-silver);
   line-height: 1.6;
 }
@@ -116,48 +145,169 @@
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.15rem;
   flex-wrap: wrap;
 }
 
-/* Play Modal Card Preview (Expanded & Balanced) */
-.hero-play-card {
-  position: relative;
-  border-radius: 24px;
-  overflow: hidden;
+/* ==========================================================================
+   Executive Fast-Track Hero Booking Form Card
+   ========================================================================== */
+.hero-booking-form-card {
+  background: rgba(22, 24, 38, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-gold-glow);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 45px rgba(212, 175, 55, 0.28);
-  cursor: pointer;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-  width: 100%;
-  height: 100%;
-  min-height: 480px;
+  border-radius: 20px;
+  padding: 2.25rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(212, 175, 55, 0.22);
+  transition: all var(--transition-smooth);
+}
+
+.hero-booking-form-card:hover {
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.92), 0 0 50px rgba(212, 175, 55, 0.32);
+}
+
+.hero-form-header {
+  margin-bottom: 1.35rem;
+}
+
+.hero-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #10B981;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.65rem;
+}
+
+.hero-form-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+}
+
+.hero-form-subtitle {
+  color: var(--text-silver);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.hero-form-body {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.hero-play-card:hover {
-  transform: translateY(-4px) scale(1.015);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.95), 0 0 55px rgba(212, 175, 55, 0.4);
+.hero-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
 }
 
-.hero-play-inner {
-  position: relative;
+.hero-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero-field-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-silver);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-field-input {
   width: 100%;
-  height: 100%;
-  min-height: 480px;
-  background: #16161A;
+  background: rgba(11, 12, 16, 0.92);
+  border: 1px solid var(--border-glass);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.hero-field-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background: rgba(15, 17, 26, 0.98);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
+}
+
+.hero-field-select {
+  cursor: pointer;
+}
+
+.hero-field-select option {
+  background: #161826;
+  color: #FFFFFF;
+}
+
+.hero-submit-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 0.95rem;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-top: 0.4rem;
+}
+
+.hero-form-trust {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center top;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.play-button-gold {
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
-  background: var(--accent-gold);
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hero-trust-item span {
+  color: var(--accent-gold);
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-form-row {
+    grid-template-columns: 1fr;
+  }
+  .hero-form-trust {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
   color: #0F0F11;
   display: flex;
   align-items: center;
