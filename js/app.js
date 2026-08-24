@@ -43,6 +43,7 @@ function setupHeroBackgroundVideo() {
           autoplay: 1,
           mute: 1,
           loop: 1,
+          start: 70,
           playlist: "jnwJ1-k-dU8",
           controls: 0,
           showinfo: 0,
@@ -56,10 +57,12 @@ function setupHeroBackgroundVideo() {
         events: {
           onReady: (event) => {
             event.target.mute();
+            event.target.seekTo(70, true);
             event.target.playVideo();
           },
           onStateChange: (event) => {
-            if (event.data === 0) { // video ended
+            if (event.data === 0) { // video ended -> loop back to 1:10
+              event.target.seekTo(70, true);
               event.target.playVideo();
             }
           }
