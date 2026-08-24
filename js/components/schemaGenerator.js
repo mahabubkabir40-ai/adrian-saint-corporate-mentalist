@@ -16,7 +16,7 @@ export function generateSchema({ cityData, faqs }) {
     "description": "Adrian Saint is an elite corporate mentalist and mind reader providing clean, HR-safe psychological entertainment for corporate galas, executive retreats, and national conventions.",
     "url": "https://adriansaint.com",
     "email": "adrian@saintmentalist.com",
-    "telephone": "+1-949-484-5096",
+    "telephone": "+1-833-570-5966",
     "sameAs": [
       "https://www.linkedin.com/in/adriansaintmentalist/",
       "https://www.instagram.com/ocmentalist/",
@@ -57,7 +57,7 @@ export function generateSchema({ cityData, faqs }) {
         }
       },
       "priceRange": "$$$$",
-      "telephone": "+1-949-484-5096",
+      "telephone": "+1-833-570-5966",
       "email": "adrian@saintmentalist.com",
       "url": `https://adriansaint.com/#city/${cityData.id}`,
       "sameAs": [
