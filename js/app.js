@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function initApp() {
+  setupHeroBackgroundVideo();
   setupBookingModal();
   setupVideoModal();
   setupHeroForm();
@@ -28,6 +29,60 @@ function initApp() {
   // Initial global schema setup
   const globalSchemas = generateSchema({ faqs: GENERAL_FAQS });
   updateDOMSchema(globalSchemas);
+}
+
+function setupHeroBackgroundVideo() {
+  const container = document.getElementById("hero-yt-player");
+  if (!container) return;
+
+  const initPlayer = () => {
+    try {
+      new window.YT.Player("hero-yt-player", {
+        videoId: "jnwJ1-k-dU8",
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          loop: 1,
+          playlist: "jnwJ1-k-dU8",
+          controls: 0,
+          showinfo: 0,
+          modestbranding: 1,
+          rel: 0,
+          playsinline: 1,
+          enablejsapi: 1,
+          disablekb: 1,
+          fs: 0
+        },
+        events: {
+          onReady: (event) => {
+            event.target.mute();
+            event.target.playVideo();
+          },
+          onStateChange: (event) => {
+            if (event.data === 0) { // video ended
+              event.target.playVideo();
+            }
+          }
+        }
+      });
+    } catch (err) {
+      console.warn("YouTube API init fallback", err);
+    }
+  };
+
+  if (window.YT && window.YT.Player) {
+    initPlayer();
+  } else {
+    // Load YouTube Iframe API
+    if (!document.getElementById("yt-iframe-api-script")) {
+      const tag = document.createElement("script");
+      tag.id = "yt-iframe-api-script";
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+    window.onYouTubeIframeAPIReady = initPlayer;
+  }
 }
 
 function setupHeroForm() {
