@@ -37,13 +37,14 @@ function setupHeroBackgroundVideo() {
 
   const initPlayer = () => {
     try {
-      new window.YT.Player("hero-yt-player", {
+      const player = new window.YT.Player("hero-yt-player", {
         videoId: "jnwJ1-k-dU8",
         playerVars: {
           autoplay: 1,
           mute: 1,
           loop: 1,
-          start: 70,
+          start: 67,
+          end: 93,
           playlist: "jnwJ1-k-dU8",
           controls: 0,
           showinfo: 0,
@@ -57,12 +58,24 @@ function setupHeroBackgroundVideo() {
         events: {
           onReady: (event) => {
             event.target.mute();
-            event.target.seekTo(70, true);
+            event.target.seekTo(67, true);
             event.target.playVideo();
+
+            // Precise loop watcher: checks every 200ms and loops when reaching 1:33 (93s)
+            setInterval(() => {
+              if (player && typeof player.getCurrentTime === 'function' && typeof player.getPlayerState === 'function') {
+                if (player.getPlayerState() === 1) { // Currently playing
+                  const current = player.getCurrentTime();
+                  if (current >= 93 || current < 66) {
+                    player.seekTo(67, true);
+                  }
+                }
+              }
+            }, 200);
           },
           onStateChange: (event) => {
-            if (event.data === 0) { // video ended -> loop back to 1:10
-              event.target.seekTo(70, true);
+            if (event.data === 0) { // Video ended -> loop back to 1:07 (67s)
+              event.target.seekTo(67, true);
               event.target.playVideo();
             }
           }
