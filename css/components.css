@@ -159,53 +159,40 @@
    Executive Fast-Track Hero Booking Form Card
    ========================================================================== */
 .hero-booking-form-card {
-  background: rgba(22, 24, 38, 0.88);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--border-gold-glow);
+  background: rgba(11, 12, 16, 0.42);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: 20px;
   padding: 2.25rem;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(212, 175, 55, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.18);
   transition: all var(--transition-smooth);
 }
 
 .hero-booking-form-card:hover {
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.92), 0 0 50px rgba(212, 175, 55, 0.32);
+  background: rgba(11, 12, 16, 0.52);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 45px rgba(212, 175, 55, 0.28);
 }
 
 .hero-form-header {
-  margin-bottom: 1.35rem;
-}
-
-.hero-form-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(16, 185, 129, 0.14);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: #10B981;
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 0.3rem 0.75rem;
-  border-radius: 9999px;
-  margin-bottom: 0.65rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-form-title {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 900;
   color: #FFFFFF;
   letter-spacing: -0.015em;
   margin-bottom: 0.35rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
 .hero-form-subtitle {
-  color: var(--text-silver);
-  font-size: 0.85rem;
+  color: #E2E8F0;
+  font-size: 0.86rem;
   line-height: 1.4;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 .hero-form-body {
@@ -229,15 +216,18 @@
 .hero-field-label {
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--text-silver);
+  color: #E2E8F0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-field-input {
   width: 100%;
-  background: rgba(11, 12, 16, 0.92);
-  border: 1px solid var(--border-glass);
+  background: rgba(11, 12, 16, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 0.75rem 0.9rem;
   color: #FFFFFF;
@@ -250,8 +240,8 @@
 .hero-field-input:focus {
   outline: none;
   border-color: var(--accent-gold);
-  background: rgba(15, 17, 26, 0.98);
-  box-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
+  background: rgba(15, 17, 26, 0.85);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.35);
 }
 
 .hero-field-select {
