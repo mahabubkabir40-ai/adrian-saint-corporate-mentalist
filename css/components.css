@@ -294,24 +294,26 @@
 .hero-form-trust {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
+  justify-content: space-around;
+  gap: 0.8rem;
   margin-top: 0.85rem;
   padding-top: 0.85rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
 }
 
 .hero-trust-item {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.74rem;
+  gap: 0.45rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: #F4F4F5;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 .hero-trust-item span {
-  color: var(--accent-gold);
+  color: var(--accent-red);
   font-weight: 800;
 }
 
