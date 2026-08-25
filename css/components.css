@@ -408,12 +408,18 @@
   white-space: nowrap;
 }
 
+.ticker-item svg {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .ticker-item:hover {
   background: rgba(239, 68, 68, 0.12);
-  border-color: var(--accent-gold);
-  color: var(--accent-gold);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.2);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
 }
 
 /* Interactive Services Grid with Service-Specific Images */
