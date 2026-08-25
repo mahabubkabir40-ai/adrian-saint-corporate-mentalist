@@ -317,25 +317,24 @@ function renderHomepageContent() {
   const testimonialsGrid = document.getElementById("testimonials-grid");
   if (testimonialsGrid) {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
-      <div class="masonry-card">
+      <div class="masonry-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <div class="badge-hr-clean">
-            <span>🔒 100% Clean & HR-Safe</span>
+          <div style="color: #EF4444; font-size: 1.15rem; margin-bottom: 1rem; letter-spacing: 3px;">
+            ${"★".repeat(t.rating || 5)}
           </div>
-          <div style="color: var(--accent-gold); font-size: 1.1rem; margin-bottom: 0.75rem;">
-            ${"★".repeat(t.rating)}
-          </div>
-          <p style="font-style: italic; font-size: 1.05rem; margin-bottom: 1.25rem; color: var(--text-silver); line-height: 1.5;">
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: #E4E4E7; line-height: 1.6; font-weight: 400;">
             "${t.quote}"
           </p>
         </div>
 
-        <div class="masonry-card-footer">
-          <div>
-            <div class="masonry-author-name">${t.author}</div>
-            <div class="masonry-author-company">${t.company}</div>
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem; margin-top: 0.5rem;">
+          <div style="font-weight: 800; font-size: 1rem; color: #FFFFFF; margin-bottom: 0.2rem;">
+            ${t.author}
           </div>
-          <div class="masonry-event-tag">${t.event}</div>
+          ${t.role ? `<div style="color: #EF4444; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">${t.role}</div>` : ''}
+          <div style="color: #A1A1AA; font-size: 0.82rem;">
+            ${t.company}
+          </div>
         </div>
       </div>
     `).join('');
