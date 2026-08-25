@@ -33,6 +33,20 @@
   color: #FFFFFF;
   letter-spacing: 0.06em;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 46px;
+  width: auto;
+  max-height: 50px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.nav-logo:hover .nav-logo-img {
+  transform: scale(1.03);
 }
 
 .nav-logo span {
