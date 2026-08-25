@@ -408,10 +408,19 @@
   white-space: nowrap;
 }
 
-.ticker-item svg {
+.ticker-item svg,
+.ticker-logo-img {
   flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
+  height: 24px;
+  max-width: 90px;
+  width: auto;
+  object-fit: contain;
+  background: #FFFFFF;
+  padding: 3px 7px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .ticker-item:hover {
