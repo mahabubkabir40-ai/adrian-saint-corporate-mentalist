@@ -231,19 +231,23 @@ function setupSearchFilter() {
 function renderCitiesGrid(cities, container) {
   if (cities.length === 0) {
     container.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--text-muted);">
-        <p>No convention markets found. Adrian travels anywhere in North America upon request.</p>
+      <div style="grid-column: 1 / -1; text-align: center; padding: 2.5rem; color: var(--text-muted);">
+        <p style="font-size: 1rem; color: #E4E4E7; margin-bottom: 0.5rem;">No direct matching city found.</p>
+        <p style="font-size: 0.88rem; color: #A1A1AA;">Adrian Saint travels anywhere in North America upon request for private corporate events.</p>
       </div>
     `;
     return;
   }
 
   container.innerHTML = cities.map(c => `
-    <div class="glass-card" onclick="window.location.hash='#city/${c.id}'" style="cursor: pointer;">
-      <h3 style="font-size: 1.15rem; color: #FFF; margin-bottom: 0.25rem;">${c.name}, ${c.state}</h3>
-      <p style="font-size: 0.85rem; color: var(--accent-gold); margin-bottom: 0.75rem;">${c.metro}</p>
-      <div style="font-size: 0.8rem; color: var(--text-silver);">
-        <span>🏛️ ${c.venues[0]}</span>
+    <div class="glass-card gold-glow-card" onclick="window.location.hash='#city/${c.id}'" style="cursor: pointer; padding: 1.5rem; border-radius: 14px; transition: transform 0.25s ease, border-color 0.25s ease;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.35rem;">
+        <h3 style="font-size: 1.15rem; color: #FFFFFF; font-weight: 700;">${c.name}, ${c.state}</h3>
+        <span style="font-size: 0.72rem; color: #EF4444; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Fly-In Ready</span>
+      </div>
+      <p style="font-size: 0.85rem; color: #EF4444; font-weight: 600; margin-bottom: 0.65rem;">${c.metro}</p>
+      <div style="font-size: 0.82rem; color: #A1A1AA;">
+        <span>🏛️ ${c.venues ? c.venues[0] : 'Convention Hub'}</span>
       </div>
     </div>
   `).join('');
