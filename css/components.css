@@ -392,43 +392,43 @@
 .ticker-item {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  justify-content: center;
+  gap: 0.75rem;
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text-silver);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.65rem 1.4rem;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.55rem 1.25rem;
   border-radius: 9999px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   transition: all var(--transition-fast);
   cursor: pointer;
   white-space: nowrap;
 }
 
-.ticker-item svg,
 .ticker-logo-img {
   flex-shrink: 0;
   display: inline-block;
   vertical-align: middle;
-  height: 24px;
-  max-width: 90px;
+  height: 28px;
+  max-width: 110px;
   width: auto;
   object-fit: contain;
   background: #FFFFFF;
-  padding: 3px 7px;
+  padding: 4px 8px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .ticker-item:hover {
-  background: rgba(239, 68, 68, 0.12);
-  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.14);
+  border-color: rgba(239, 68, 68, 0.5);
   color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.3);
 }
 
 /* Interactive Services Grid with Service-Specific Images */
