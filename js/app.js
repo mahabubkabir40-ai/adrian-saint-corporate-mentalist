@@ -332,9 +332,7 @@ function renderHomepageContent() {
             ${t.author}
           </div>
           ${t.role ? `<div style="color: #EF4444; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">${t.role}</div>` : ''}
-          <div style="color: #A1A1AA; font-size: 0.82rem;">
-            ${t.company}
-          </div>
+          ${t.company && t.company !== t.author ? `<div style="color: #A1A1AA; font-size: 0.82rem;">${t.company}</div>` : ''}
         </div>
       </div>
     `).join('');
