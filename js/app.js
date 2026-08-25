@@ -213,18 +213,20 @@ function setupSearchFilter() {
   const searchInput = document.getElementById("city-search-input");
   const citiesGrid = document.getElementById("cities-grid");
 
-  if (searchInput && citiesGrid) {
+  if (citiesGrid) {
     renderCitiesGrid(CITIES_DATA, citiesGrid);
 
-    searchInput.addEventListener("input", (e) => {
-      const query = e.target.value.toLowerCase().trim();
-      const filtered = CITIES_DATA.filter(c => 
-        c.name.toLowerCase().includes(query) || 
-        c.state.toLowerCase().includes(query) ||
-        c.metro.toLowerCase().includes(query)
-      );
-      renderCitiesGrid(filtered, citiesGrid);
-    });
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const filtered = CITIES_DATA.filter(c => 
+          c.name.toLowerCase().includes(query) || 
+          c.state.toLowerCase().includes(query) ||
+          c.metro.toLowerCase().includes(query)
+        );
+        renderCitiesGrid(filtered, citiesGrid);
+      });
+    }
   }
 }
 
