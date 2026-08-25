@@ -45,7 +45,7 @@ export const SERVICES_DATA = [
     icon: "🎯",
     duration: "Expo Floor Hours",
     capacity: "Convention Booth Footprint",
-    image: "images/adrian_action_2.jpg",
+    image: "images/Image5.jpg",
     features: [
       "Draws Massive Foot Traffic to Your Trade Show Booth",
       "Customized Product Pitch & Message Integration",
@@ -62,7 +62,7 @@ export const SERVICES_DATA = [
     icon: "🧠",
     duration: "45 - 90 Minutes",
     capacity: "Corporate Retreats & Summits",
-    image: "images/adrian_action_4.jpg",
+    image: "images/Image7.jpg",
     features: [
       "Blends Psychological Influence & Mind Reading",
       "Actionable Insights on Intuition & Decision Making",
