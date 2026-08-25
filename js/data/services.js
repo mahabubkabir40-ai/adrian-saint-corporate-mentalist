@@ -28,7 +28,7 @@ export const SERVICES_DATA = [
     icon: "🍸",
     duration: "1 - 3 Hours",
     capacity: "Cocktail Hours & Receptions",
-    image: "images/adrian_headshot_2.png",
+    image: "images/adrian_strolling_headshot.jpg",
     features: [
       "Intimate Up-Close Mentalism Right in Guests' Hands",
       "Creates Immediate Icebreakers & High-Energy Buzz",

@@ -268,7 +268,7 @@ function handleRoute() {
 
 const SERVICE_IMAGES = {
   "corporate-stage-show": "images/adrian_hyatt.jpg",
-  "strolling-mind-reading": "images/adrian_headshot_2.png",
+  "strolling-mind-reading": "images/adrian_strolling_headshot.jpg",
   "trade-show-lead-gen": "images/adrian_action_2.jpg",
   "executive-keynotes": "images/adrian_action_4.jpg"
 };
