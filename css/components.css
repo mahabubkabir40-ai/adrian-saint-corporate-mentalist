@@ -58,7 +58,7 @@
 .nav-logo:hover .nav-logo-img,
 .nav-logo:hover .footer-logo-img {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.35);
 }
 
 .nav-logo span {
@@ -188,16 +188,16 @@
   background: rgba(11, 12, 16, 0.42);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(212, 175, 55, 0.4);
+  border: 1px solid rgba(239, 68, 68, 0.4);
   border-radius: 20px;
   padding: 2.25rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(239, 68, 68, 0.18);
   transition: all var(--transition-smooth);
 }
 
 .hero-booking-form-card:hover {
   background: rgba(11, 12, 16, 0.52);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 45px rgba(212, 175, 55, 0.28);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 45px rgba(239, 68, 68, 0.28);
 }
 
 .hero-form-header {
@@ -267,7 +267,7 @@
   outline: none;
   border-color: var(--accent-gold);
   background: rgba(15, 17, 26, 0.85);
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.35);
 }
 
 .hero-field-select {
@@ -334,7 +334,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 40px rgba(212, 175, 55, 0.85);
+  box-shadow: 0 0 40px rgba(239, 68, 68, 0.85);
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
@@ -405,11 +405,11 @@
 }
 
 .ticker-item:hover {
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(239, 68, 68, 0.12);
   border-color: var(--accent-gold);
   color: var(--accent-gold);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.2);
 }
 
 /* Interactive Services Grid with Service-Specific Images */
@@ -429,7 +429,7 @@
 .service-card-interactive:hover {
   transform: translateY(-8px);
   border-color: var(--border-gold-glow);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85), 0 0 35px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85), 0 0 35px rgba(239, 68, 68, 0.25);
 }
 
 .service-card-image-wrap {
@@ -513,9 +513,9 @@
   position: relative;
   padding: 12px;
   border-radius: 24px;
-  background: rgba(212, 175, 55, 0.06);
+  background: rgba(239, 68, 68, 0.06);
   border: 1px solid var(--border-gold-glow);
-  box-shadow: 0 0 35px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.15);
 }
 
 .about-portrait-card {
@@ -602,7 +602,7 @@
 
 .stat-card:hover {
   border-color: var(--border-gold-glow);
-  background: rgba(212, 175, 55, 0.05);
+  background: rgba(239, 68, 68, 0.05);
 }
 
 .stat-number {
@@ -649,7 +649,7 @@
 
 .masonry-card:hover {
   border-color: var(--border-gold-glow);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(239, 68, 68, 0.2);
 }
 
 .badge-hr-clean {
@@ -692,7 +692,7 @@
 
 .masonry-event-tag {
   font-size: 0.75rem;
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(239, 68, 68, 0.12);
   color: var(--accent-gold);
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
@@ -719,7 +719,7 @@
 
 .faq-item.active {
   border-color: var(--border-gold-glow);
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.15);
 }
 
 .faq-question {
@@ -744,8 +744,8 @@
 
 .faq-category-badge {
   display: inline-block;
-  border: 1px solid rgba(212, 175, 55, 0.6);
-  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.6);
+  background: rgba(239, 68, 68, 0.08);
   color: var(--accent-gold);
   font-size: 0.75rem;
   font-weight: 700;
@@ -822,10 +822,10 @@
 }
 
 .tab-btn.active {
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(239, 68, 68, 0.15);
   border-color: var(--accent-gold);
   color: var(--accent-gold);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
 }
 
 .tab-content {
@@ -842,7 +842,7 @@
   border: 1px solid var(--border-gold-glow);
   border-radius: 20px;
   padding: 3rem;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 40px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 40px rgba(239, 68, 68, 0.2);
   max-width: 850px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -876,7 +876,7 @@
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   outline: none;
   border-color: var(--accent-gold);
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
 }
 
 /* Minimalist Footer & Social Graph Links */
@@ -940,7 +940,7 @@
 }
 
 .social-pill-btn:hover {
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(239, 68, 68, 0.15);
   border-color: var(--accent-gold);
   color: var(--accent-gold);
   transform: translateY(-2px);
@@ -990,7 +990,7 @@
   border-radius: 20px;
   padding: 2.5rem;
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 45px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95), 0 0 45px rgba(239, 68, 68, 0.35);
   max-height: 90vh;
   overflow-y: auto;
   box-sizing: border-box;
@@ -1244,11 +1244,11 @@
 }
 
 .footer-social-circle:hover {
-  background: rgba(212, 175, 55, 0.15) !important;
+  background: rgba(239, 68, 68, 0.15) !important;
   border-color: var(--accent-gold) !important;
   color: var(--accent-gold) !important;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.25);
 }
 
 .footer-social-circle svg {
@@ -1288,7 +1288,7 @@
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(239, 68, 68, 0.1);
   border: 1px solid var(--border-gold-glow);
   display: flex;
   align-items: center;
@@ -1303,7 +1303,7 @@
   gap: 0.5rem;
   padding: 0.35rem 0.85rem;
   border-radius: 9999px;
-  background: rgba(212, 175, 55, 0.08);
+  background: rgba(239, 68, 68, 0.08);
   border: 1px solid var(--border-gold-glow);
   font-size: 0.8rem;
   font-weight: 700;

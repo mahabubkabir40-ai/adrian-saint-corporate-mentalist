@@ -4,35 +4,43 @@
    ========================================================================== */
 
 :root {
-  /* Alternating Section Background Tones */
-  --bg-dark: #0F0F11;
-  --bg-hero: #0b0c10;
-  --bg-ticker: #11131c;
-  --bg-packages: #151724;
-  --bg-about: #0d0e14;
-  --bg-reviews: #141724;
-  --bg-locations: #0f111a;
-  --bg-form: #161826;
-  --bg-footer: #08090d;
+  /* Alternating Section Background Tones - Jet Black & Charcoal Luxury */
+  --bg-dark: #09090B;
+  --bg-hero: #09090B;
+  --bg-ticker: #0E0F14;
+  --bg-packages: #13141C;
+  --bg-about: #0B0C10;
+  --bg-reviews: #12131A;
+  --bg-locations: #0C0D12;
+  --bg-form: #14151E;
+  --bg-footer: #060608;
 
-  --bg-card: rgba(22, 22, 26, 0.75);
-  --bg-card-hover: rgba(30, 30, 36, 0.9);
+  --bg-card: rgba(18, 19, 26, 0.75);
+  --bg-card-hover: rgba(26, 27, 36, 0.9);
   --bg-glass: rgba(255, 255, 255, 0.03);
   
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-gold-glow: rgba(212, 175, 55, 0.35);
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --border-gold-glow: rgba(239, 68, 68, 0.4);
+  --border-red-glow: rgba(239, 68, 68, 0.45);
 
-  /* Primary Gold & Purple Accents */
-  --accent-gold: #D4AF37;
-  --accent-gold-bright: #F59E0B;
-  --accent-gold-glow: rgba(212, 175, 55, 0.4);
-  --accent-purple: #7C3AED;
+  /* Primary Brand Red Accents (Matching corporatementalistlasvegas.com) */
+  --accent-red: #EF4444;
+  --accent-red-bright: #F87171;
+  --accent-red-dark: #DC2626;
+  --accent-red-deep: #991B1B;
+  --accent-red-glow: rgba(239, 68, 68, 0.45);
+  
+  /* Mapped aliases to ensure all components inherit the red branding */
+  --accent-gold: #EF4444;
+  --accent-gold-bright: #F87171;
+  --accent-gold-glow: rgba(239, 68, 68, 0.45);
+  --accent-purple: #DC2626;
 
-  /* Typography Colors */
+  /* Typography Colors - Crisp White & Silver */
   --text-main: #FFFFFF;
-  --text-silver: #E5E7EB;
-  --text-muted: #9CA3AF;
-  --text-dim: #6B7280;
+  --text-silver: #F4F4F5;
+  --text-muted: #A1A1AA;
+  --text-dim: #71717A;
 
   /* Fonts - Modern 2026 Executive Keynote Typography */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -130,15 +138,15 @@ a:hover {
   border-bottom: 1px solid var(--border-glass);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #FFFFFF 15%, #F59E0B 55%, var(--accent-gold) 100%);
+.text-gradient-gold, .text-gradient-red {
+  background: linear-gradient(135deg, #FFFFFF 15%, #F87171 50%, #DC2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 12px rgba(212, 175, 55, 0.25));
+  filter: drop-shadow(0 2px 14px rgba(220, 38, 38, 0.4));
 }
 
 .text-gradient-silver {
-  background: linear-gradient(135deg, #FFFFFF 30%, #E5E7EB 70%, #9CA3AF 100%);
+  background: linear-gradient(135deg, #FFFFFF 30%, #E4E4E7 70%, #A1A1AA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -158,11 +166,11 @@ a:hover {
   gap: 0.5rem;
   padding: 0.4rem 1.1rem;
   border-radius: 9999px;
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid var(--border-gold-glow);
-  color: var(--accent-gold);
+  background: rgba(220, 38, 38, 0.12);
+  border: 1px solid var(--border-red-glow);
+  color: var(--accent-red-bright);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
@@ -190,32 +198,33 @@ a:hover {
   box-sizing: border-box;
 }
 
-.btn-gold {
-  background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
-  color: #0F0F11;
+.btn-gold, .btn-primary {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 50%, #991B1B 100%);
+  color: #FFFFFF !important;
   font-weight: 800;
-  box-shadow: 0 4px 25px rgba(212, 175, 55, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 25px rgba(220, 38, 38, 0.5);
 }
 
-.btn-gold:hover {
+.btn-gold:hover, .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 35px rgba(212, 175, 55, 0.65);
-  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 100%);
+  box-shadow: 0 10px 35px rgba(220, 38, 38, 0.75);
+  background: linear-gradient(135deg, #F87171 0%, #EF4444 50%, #B91C1C 100%);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-silver);
-  border: 1px solid var(--border-glass);
+  background: rgba(24, 24, 27, 0.6);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(12px);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: var(--border-gold-glow);
-  color: var(--accent-gold);
+  background: rgba(39, 39, 42, 0.85);
+  border-color: var(--border-red-glow);
+  color: #FFFFFF;
   transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 22px rgba(220, 38, 38, 0.35);
 }
 
 /* Glass Cards */
@@ -231,8 +240,8 @@ a:hover {
 }
 
 .glass-card:hover, .gold-glow-card:hover {
-  border-color: var(--border-gold-glow);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.2);
+  border-color: var(--border-red-glow);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 30px rgba(220, 38, 38, 0.25);
 }
 
 /* Grid System */
