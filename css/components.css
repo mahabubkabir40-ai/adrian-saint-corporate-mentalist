@@ -70,20 +70,26 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2.6rem;
   list-style: none;
 }
 
 .nav-links a {
-  color: var(--text-muted);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color var(--transition-fast);
+  color: #F4F4F5;
+  font-weight: 700;
+  font-size: 1.22rem;
+  letter-spacing: 0.03em;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-gold);
+  color: #FFFFFF;
+  background: rgba(239, 68, 68, 0.15);
+  text-shadow: 0 0 16px rgba(239, 68, 68, 0.7);
 }
 
 .hero {
