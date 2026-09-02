@@ -71,7 +71,7 @@ function openBookingModalDynamic(cityName = "") {
 
             <div class="form-group">
               <label class="form-label">Event Type & Details *</label>
-              <textarea class="form-textarea" rows="3" required placeholder="Please describe your event format (Stage Show, Strolling, Trade Show, Keynote), guest count, or schedule..."></textarea>
+              <textarea class="form-textarea" rows="3" required placeholder="Please describe your event format (Stage Show, Strolling, Trade Show, Custom Hybrid), guest count, or schedule..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">

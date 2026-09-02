@@ -54,22 +54,5 @@ export const SERVICES_DATA = [
       "ROI Guarantee for Major Industry Conventions"
     ],
     fullDetails: "Custom booth performances that draw massive foot traffic, engage key prospects, and deliver seamless product pitch integrations."
-  },
-  {
-    id: "executive-keynotes",
-    title: "Executive Keynotes",
-    shortDesc: "Inspirational keynotes blending psychological influence, mind reading, and audience interaction for corporate retreats.",
-    icon: "🧠",
-    duration: "45 - 90 Minutes",
-    capacity: "Corporate Retreats & Summits",
-    image: "images/Image7.jpg",
-    features: [
-      "Blends Psychological Influence & Mind Reading",
-      "Actionable Insights on Intuition & Decision Making",
-      "Audience Interaction & Leadership Takeaways",
-      "Custom Corporate Theme Alignment",
-      "Elevates Executive Retreats & Annual Kickoffs"
-    ],
-    fullDetails: "Inspirational keynotes blending psychological influence, mind reading, and audience interaction for corporate retreats."
   }
 ];
