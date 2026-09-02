@@ -311,7 +311,7 @@ function renderHomepageContent() {
             </div>
 
             <button class="btn btn-secondary open-booking-modal" style="width: 100%;">
-              <span>View Package Details →</span>
+              <span>Learn More →</span>
             </button>
           </div>
         </div>
