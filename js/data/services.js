@@ -11,7 +11,7 @@ export const SERVICES_DATA = [
     icon: "✨",
     duration: "30 - 75 Minutes",
     capacity: "50 - 2,500+ Attendees",
-    image: "images/adrian_hyatt.jpg",
+    image: "images/Image7.jpg",
     features: [
       "100% Clean & HR-Safe Corporate Entertainment",
       "Telepathy, Mind Reading & Audience Participation",
