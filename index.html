@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Cache-Busted) -->
-  <link rel="stylesheet" href="css/main.css?v=20260908_v52">
-  <link rel="stylesheet" href="css/components.css?v=20260908_v52">
+  <link rel="stylesheet" href="css/main.css?v=20260908_v53">
+  <link rel="stylesheet" href="css/components.css?v=20260908_v53">
 
   <!-- Schema.org JSON-LD -->
   <script id="geo-jsonld-script" type="application/ld+json">
@@ -421,9 +421,9 @@
           <p>Read genuine feedback and press reviews from national corporate summits, leadership galas, and live stage performances.</p>
         </div>
 
-        <!-- Video Testimonials Showcase (FIRST) -->
-        <div class="video-testimonials-section" style="margin-bottom: 3.5rem;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+        <!-- Video Testimonials 5-Column Grid (3 rows of 5 videos = 15 videos) -->
+        <div class="video-testimonials-section">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); color: #EF4444; font-size: 0.85rem; padding-left: 2px;">▶</span>
               <div>
@@ -432,19 +432,240 @@
               </div>
             </div>
             
-            <!-- Carousel Controls -->
-            <div class="video-carousel-nav" style="display: flex; align-items: center; gap: 0.6rem;">
-              <span style="background: rgba(212, 175, 55, 0.12); border: 1px solid rgba(212, 175, 55, 0.35); color: var(--accent-gold); font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.8rem; border-radius: 9999px; margin-right: 0.5rem;">15 Videos</span>
-              <button id="video-carousel-prev" class="btn-carousel" aria-label="Previous video testimonials" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-glass); color: #FFF; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease;">‹</button>
-              <button id="video-carousel-next" class="btn-carousel" aria-label="Next video testimonials" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-glass); color: #FFF; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease;">›</button>
-            </div>
+            <span style="background: rgba(212, 175, 55, 0.12); border: 1px solid rgba(212, 175, 55, 0.35); color: var(--accent-gold); font-size: 0.78rem; font-weight: 700; padding: 0.35rem 0.9rem; border-radius: 9999px;">
+              15 Live Video Testimonials
+            </span>
           </div>
 
-          <!-- Video Testimonials Track / Carousel -->
-          <div class="video-carousel-container" id="video-carousel-container">
-            <div class="video-carousel-track" id="video-testimonials-track">
-              <!-- Rendered dynamically via js/app.js -->
+          <div class="video-testimonials-grid" id="video-testimonials-grid">
+            <!-- Row 1: 1 to 5 -->
+            <!-- 1. Sahara -->
+            <div class="video-card-item" data-videoid="Qe8bBgX43GQ" data-videotitle="Client Testimonial - Sahara" role="button" tabindex="0" aria-label="Play testimonial video from Sahara">
+              <img src="https://i.ytimg.com/vi/Qe8bBgX43GQ/hqdefault.jpg" alt="Client Testimonial - Sahara" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Sahara</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Sahara Las Vegas</p>
+              </div>
             </div>
+
+            <!-- 2. Citizens Private Bank -->
+            <div class="video-card-item" data-videoid="Ax9QWSUYmQo" data-videotitle="Client Testimonial - Citizens Private Bank" role="button" tabindex="0" aria-label="Play testimonial video from Citizens Private Bank">
+              <img src="https://i.ytimg.com/vi/Ax9QWSUYmQo/hqdefault.jpg" alt="Client Testimonial - Citizens Private Bank" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Citizens Private Bank</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Citizens Private Bank</p>
+              </div>
+            </div>
+
+            <!-- 3. California Funeral -->
+            <div class="video-card-item" data-videoid="g7dctVwG7ww" data-videotitle="California Funeral Directors Association" role="button" tabindex="0" aria-label="Play testimonial video from California Funeral Directors Association">
+              <img src="https://i.ytimg.com/vi/g7dctVwG7ww/hqdefault.jpg" alt="California Funeral Directors Association" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">California Funeral</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Funeral Directors Assn</p>
+              </div>
+            </div>
+
+            <!-- 4. Hillcrest -->
+            <div class="video-card-item" data-videoid="JrE1YcghtKQ" data-videotitle="Hillcrest Real Estate Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Hillcrest">
+              <img src="https://i.ytimg.com/vi/JrE1YcghtKQ/hqdefault.jpg" alt="Hillcrest Real Estate Testimonial" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Hillcrest</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Hillcrest Real Estate</p>
+              </div>
+            </div>
+
+            <!-- 5. Rand Tech -->
+            <div class="video-card-item" data-videoid="e12ExwQBJh4" data-videotitle="Rand Technology Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Rand Tech">
+              <img src="https://i.ytimg.com/vi/e12ExwQBJh4/hqdefault.jpg" alt="Rand Technology Testimonial" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Rand Tech</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Rand Technology</p>
+              </div>
+            </div>
+
+            <!-- Row 2: 6 to 10 -->
+            <!-- 6. PreludeDx -->
+            <div class="video-card-item" data-videoid="Klx6Cq4opaY" data-videotitle="Client Testimonial - PreludeDx" role="button" tabindex="0" aria-label="Play testimonial video from PreludeDx">
+              <img src="https://i.ytimg.com/vi/Klx6Cq4opaY/hqdefault.jpg" alt="Client Testimonial - PreludeDx" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">PreludeDx</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">PreludeDx Healthcare</p>
+              </div>
+            </div>
+
+            <!-- 7. Jaime Rojas -->
+            <div class="video-card-item" data-videoid="03OfNijGzKw" data-videotitle="Client Testimonial - Jaime Rojas" role="button" tabindex="0" aria-label="Play testimonial video from Jaime Rojas">
+              <img src="https://i.ytimg.com/vi/03OfNijGzKw/hqdefault.jpg" alt="Client Testimonial - Jaime Rojas" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Jaime Rojas</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Rojas Communications</p>
+              </div>
+            </div>
+
+            <!-- 8. Crowell LLP -->
+            <div class="video-card-item" data-videoid="G6J7JRivTcM" data-videotitle="Testimonial - Crowell LLP" role="button" tabindex="0" aria-label="Play testimonial video from Crowell LLP">
+              <img src="https://i.ytimg.com/vi/G6J7JRivTcM/hqdefault.jpg" alt="Testimonial - Crowell LLP" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Crowell LLP</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Crowell & Moring LLP</p>
+              </div>
+            </div>
+
+            <!-- 9. Athletes First -->
+            <div class="video-card-item" data-videoid="b6z3GzzoJ2w" data-videotitle="Athletes First Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Athletes First">
+              <img src="https://i.ytimg.com/vi/b6z3GzzoJ2w/hqdefault.jpg" alt="Athletes First Testimonial" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Athletes First</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Athletes First</p>
+              </div>
+            </div>
+
+            <!-- 10. The Lakes Club -->
+            <div class="video-card-item" data-videoid="Ap1XDdP3I4s" data-videotitle="Testimonial - The Lakes Country Club" role="button" tabindex="0" aria-label="Play testimonial video from The Lakes Country Club">
+              <img src="https://i.ytimg.com/vi/Ap1XDdP3I4s/hqdefault.jpg" alt="Testimonial - The Lakes Country Club" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">The Lakes Club</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">The Lakes Country Club</p>
+              </div>
+            </div>
+
+            <!-- Row 3: 11 to 15 -->
+            <!-- 11. SitelogiQ -->
+            <div class="video-card-item" data-videoid="X0lL0icdztY" data-videotitle="Client Testimonial - SitelogiQ" role="button" tabindex="0" aria-label="Play testimonial video from SitelogiQ">
+              <img src="https://i.ytimg.com/vi/X0lL0icdztY/hqdefault.jpg" alt="Client Testimonial - SitelogiQ" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">SitelogiQ</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">SitelogiQ Facilities</p>
+              </div>
+            </div>
+
+            <!-- 12. Caesars Place -->
+            <div class="video-card-item" data-videoid="qiqZW2cuLc4" data-videotitle="Testimonial - Caesars Palace Las Vegas" role="button" tabindex="0" aria-label="Play testimonial video from Caesars Place">
+              <img src="https://i.ytimg.com/vi/qiqZW2cuLc4/hqdefault.jpg" alt="Testimonial - Caesars Palace Las Vegas" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Caesars Place</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Caesars Palace Las Vegas</p>
+              </div>
+            </div>
+
+            <!-- 13. NeoGenomics (Executive 1) -->
+            <div class="video-card-item" data-videoid="VBpIohKMX8I" data-videotitle="Client Testimonial - NeoGenomics" role="button" tabindex="0" aria-label="Play testimonial video from NeoGenomics">
+              <img src="https://i.ytimg.com/vi/VBpIohKMX8I/hqdefault.jpg" alt="Client Testimonial - NeoGenomics" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">NeoGenomics</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Executive Leadership 1</p>
+              </div>
+            </div>
+
+            <!-- 14. NeoGenomics (Executive 2) -->
+            <div class="video-card-item" data-videoid="StD_MwtFgL0" data-videotitle="Client Testimonial - NeoGenomics" role="button" tabindex="0" aria-label="Play testimonial video from NeoGenomics">
+              <img src="https://i.ytimg.com/vi/StD_MwtFgL0/hqdefault.jpg" alt="Client Testimonial - NeoGenomics" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">NeoGenomics</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">Executive Leadership 2</p>
+              </div>
+            </div>
+
+            <!-- 15. Yacht Club -->
+            <div class="video-card-item" data-videoid="RlP9FjVgyu0" data-videotitle="Los Angeles Yacht Club Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Yacht Club">
+              <img src="https://i.ytimg.com/vi/RlP9FjVgyu0/hqdefault.jpg" alt="Los Angeles Yacht Club Testimonial" class="video-card-thumb" loading="lazy">
+              <div class="video-card-gradient"></div>
+              <div style="position: relative; z-index: 2; padding: 0.75rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; border-radius: 9999px;">🎬 SHORTS</span>
+                <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.65rem; font-weight: 800; padding: 0.2rem 0.45rem; border-radius: 9999px;">VERIFIED</span>
+              </div>
+              <div class="video-card-play-btn" aria-hidden="true">▶</div>
+              <div style="position: relative; z-index: 2; padding: 0.85rem;">
+                <h4 style="color: #FFFFFF; font-size: 0.98rem; font-weight: 800; margin: 0 0 0.2rem 0; line-height: 1.2; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">Yacht Club</h4>
+                <p style="color: var(--accent-gold); font-size: 0.72rem; font-weight: 700; margin: 0; text-transform: uppercase; letter-spacing: 0.03em;">LA Yacht Club</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -821,6 +1042,6 @@
   </div>
 
   <!-- JavaScript Modules (Cache-Busted) -->
-  <script type="module" src="js/app.js?v=20260908_v52"></script>
+  <script type="module" src="js/app.js?v=20260908_v53"></script>
 </body>
 </html>

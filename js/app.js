@@ -18,6 +18,7 @@ function initApp() {
   setupHeroBackgroundVideo();
   setupBookingModal();
   setupVideoModal();
+  setupVideoModalPlayer();
   setupHeroForm();
   setupInquiryForm();
   setupLocationTabs();
@@ -279,91 +280,12 @@ const SERVICE_IMAGES = {
 };
 
 function renderHomepageContent() {
-  const appRoot = document.getElementById("app-root");
-  
-  if (!appRoot.querySelector(".hero")) {
-    window.location.reload();
-    return;
-  }
+  const appRoot = document.getElementById("app-root") || document.querySelector("main") || document.body;
+  if (!appRoot) return;
 
-  // 1. Render 4 Performance Packages Cards without Overlay Badges (Clean Image)
-  const servicesGrid = document.getElementById("services-grid");
-  if (servicesGrid) {
-    servicesGrid.innerHTML = SERVICES_DATA.map(s => {
-      const cardImage = s.image || SERVICE_IMAGES[s.id] || "images/adrian_stage_1.jpg";
-      return `
-        <div class="service-card-interactive gold-glow-card">
-          <!-- Clean Service Header Image -->
-          <div class="service-card-image-wrap" style="position: relative; width: 100%; height: 220px; overflow: hidden; background: #11131c;">
-            <img src="${cardImage}" alt="${s.title}" class="service-card-image" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
-          </div>
-
-          <div class="service-card-body">
-            <div>
-              <span class="service-badge">${s.duration}</span>
-              <h3 style="font-size: 1.45rem; margin-bottom: 0.6rem; color: #FFFFFF;">${s.title}</h3>
-              <p style="margin-bottom: 1.25rem; font-size: 0.95rem; color: var(--text-silver); line-height: 1.5;">${s.shortDesc}</p>
-              
-              <ul class="service-features" style="margin-bottom: 1.75rem;">
-                ${s.features.map(f => `<li>${f}</li>`).join('')}
-              </ul>
-            </div>
-
-            <button class="btn btn-secondary open-booking-modal" style="width: 100%;">
-              <span>Learn More →</span>
-            </button>
-          </div>
-        </div>
-      `;
-    }).join('');
-  }
-
-  // 2. Render Video Testimonials Carousel Track (FIRST in Reviews)
-  const videoTrack = document.getElementById("video-testimonials-track");
-  if (videoTrack && Array.isArray(VIDEO_TESTIMONIALS_DATA)) {
-    videoTrack.innerHTML = VIDEO_TESTIMONIALS_DATA.map(v => `
-      <div class="video-card-item" data-videoid="${v.id}" data-videotitle="${v.title}" role="button" tabindex="0" aria-label="Play testimonial video from ${v.name}">
-        <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" class="video-card-thumb" loading="lazy">
-        <div class="video-card-gradient"></div>
-        
-        <!-- Top Badge -->
-        <div style="position: relative; z-index: 2; padding: 0.9rem; display: flex; justify-content: space-between; align-items: flex-start;">
-          <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.25rem 0.55rem; border-radius: 9999px;">
-            🎬 SHORTS
-          </span>
-          <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.68rem; font-weight: 800; padding: 0.25rem 0.5rem; border-radius: 9999px;">
-            VERIFIED
-          </span>
-        </div>
-
-        <!-- Center Play Icon -->
-        <div class="video-card-play-btn" aria-hidden="true">
-          ▶
-        </div>
-
-        <!-- Bottom Caption -->
-        <div style="position: relative; z-index: 2; padding: 1.25rem 1rem;">
-          <h4 style="color: #FFFFFF; font-size: 1.08rem; font-weight: 800; margin: 0 0 0.3rem 0; line-height: 1.25; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);">
-            ${v.name}
-          </h4>
-          <p style="color: var(--accent-gold); font-size: 0.76rem; font-weight: 700; margin: 0 0 0.35rem 0; text-transform: uppercase; letter-spacing: 0.04em;">
-            ${v.subtitle || 'Client Review'}
-          </p>
-          <div style="display: flex; align-items: center; gap: 0.4rem; color: var(--text-silver); font-size: 0.75rem;">
-            <span>Tap to watch reaction</span>
-            <span style="color: #EF4444;">→</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
-
-    setupVideoModalPlayer();
-    setupVideoCarouselControls();
-  }
-
-  // 3. Render Masonry Testimonials Grid
+  // Render Masonry Testimonials Grid if empty
   const testimonialsGrid = document.getElementById("testimonials-grid");
-  if (testimonialsGrid) {
+  if (testimonialsGrid && testimonialsGrid.children.length === 0) {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
       <div class="masonry-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
@@ -385,26 +307,8 @@ function renderHomepageContent() {
       </div>
     `).join('');
   }
-}
 
-function setupVideoCarouselControls() {
-  const prevBtn = document.getElementById("video-carousel-prev");
-  const nextBtn = document.getElementById("video-carousel-next");
-  const container = document.getElementById("video-carousel-container");
-
-  if (!container) return;
-
-  if (prevBtn) {
-    prevBtn.addEventListener("click", () => {
-      container.scrollBy({ left: -320, behavior: "smooth" });
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-      container.scrollBy({ left: 320, behavior: "smooth" });
-    });
-  }
+  setupVideoModalPlayer();
 }
 
 function setupVideoModalPlayer() {
