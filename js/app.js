@@ -4,7 +4,7 @@
    ========================================================================== */
 
 import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
-import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260908_v51';
+import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260908_v58';
 import { GENERAL_FAQS } from './data/faqs.js?v=20260821_v3';
 import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
 import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
@@ -289,20 +289,20 @@ function renderHomepageContent() {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
       <div class="masonry-card" style="display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <div style="color: #EF4444; font-size: 1.15rem; margin-bottom: 1rem; letter-spacing: 3px;">
+          <div style="color: #EF4444; font-size: 1.15rem; margin-bottom: 1.25rem; letter-spacing: 4px;">
             ${"★".repeat(t.rating || 5)}
           </div>
-          <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: #E4E4E7; line-height: 1.6; font-weight: 400;">
+          <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: #E4E4E7; line-height: 1.65; font-weight: 400;">
             "${t.quote}"
           </p>
         </div>
 
-        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1rem; margin-top: 0.5rem;">
-          <div style="font-weight: 800; font-size: 1rem; color: #FFFFFF; margin-bottom: 0.2rem;">
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.15rem; margin-top: auto;">
+          <div style="font-weight: 800; font-size: 1.05rem; color: #FFFFFF; margin-bottom: 0.25rem; line-height: 1.25;">
             ${t.author}
           </div>
-          ${t.role ? `<div style="color: #EF4444; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">${t.role}</div>` : ''}
-          ${t.company && t.company !== t.author ? `<div style="color: #A1A1AA; font-size: 0.82rem;">${t.company}</div>` : ''}
+          ${t.role ? `<div style="color: #EF4444; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.2rem;">${t.role}</div>` : ''}
+          ${t.company && t.company !== t.author ? `<div style="color: #94A3B8; font-size: 0.82rem; font-weight: 500;">${t.company}</div>` : ''}
         </div>
       </div>
     `).join('');

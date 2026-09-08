@@ -739,14 +739,14 @@
 .masonry-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 .masonry-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-glass);
-  border-radius: 16px;
-  padding: 2rem;
+  background: #11141c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2.25rem 2rem 1.85rem 2rem;
   position: relative;
   transition: all var(--transition-smooth);
   box-sizing: border-box;
@@ -756,8 +756,9 @@
 }
 
 .masonry-card:hover {
-  border-color: var(--border-gold-glow);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.5);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7), 0 0 25px rgba(239, 68, 68, 0.18);
+  transform: translateY(-3px);
 }
 
 .badge-hr-clean {
