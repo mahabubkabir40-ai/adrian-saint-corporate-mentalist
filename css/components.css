@@ -363,7 +363,7 @@
 /* Auto-Scrolling Client Logo Ticker */
 .logo-ticker-section {
   background-color: var(--bg-ticker);
-  padding: 2.75rem 0;
+  padding: 3.25rem 0;
   border-top: 1px solid var(--border-glass);
   border-bottom: 1px solid var(--border-glass);
   overflow: hidden;
@@ -371,11 +371,11 @@
 
 .ticker-title {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--text-silver);
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
   font-weight: 600;
 }
 
@@ -387,8 +387,8 @@
 
 .ticker-move {
   display: inline-flex;
-  gap: 1.5rem;
-  animation: logoTicker 35s linear infinite;
+  gap: 1.85rem;
+  animation: logoTicker 38s linear infinite;
   align-items: center;
 }
 
@@ -407,25 +407,25 @@
   justify-content: center;
   background: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 6px 14px;
-  height: 56px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 10px 22px;
+  height: 76px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   cursor: pointer;
   flex-shrink: 0;
 }
 
 .ticker-card-item:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.35);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.35);
   border-color: rgba(239, 68, 68, 0.6);
 }
 
 .ticker-grid-img {
-  height: 42px;
+  height: 54px;
   width: auto;
-  max-width: 140px;
+  max-width: 175px;
   object-fit: contain;
   display: block;
 }
@@ -1217,11 +1217,22 @@
   }
 
   .logo-ticker-section {
-    padding: 1.75rem 0;
+    padding: 2rem 0;
   }
 
   .ticker-move {
-    gap: 2.2rem;
+    gap: 1.25rem;
+  }
+
+  .ticker-card-item {
+    height: 60px;
+    padding: 7px 16px;
+    border-radius: 12px;
+  }
+
+  .ticker-grid-img {
+    height: 44px;
+    max-width: 140px;
   }
 
   .ticker-item {
