@@ -336,10 +336,10 @@ export const VIDEO_TESTIMONIALS_DATA = [
     subtitle: "SitelogiQ Energy & Facilities"
   },
   {
-    id: "qiqZW2cuLc4",
-    name: "Caesars Place",
-    title: "Caesars Place Las Vegas Centerspace Homes",
-    subtitle: "Caesars Palace Las Vegas"
+    id: "mThrwuKQpIg",
+    name: "HK Lane",
+    title: "Client Testimonial - HK Lane Real Estate",
+    subtitle: "HK Lane Real Estate"
   },
   {
     id: "VBpIohKMX8I",
