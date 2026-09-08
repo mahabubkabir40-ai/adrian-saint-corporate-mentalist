@@ -4,8 +4,8 @@
    ========================================================================== */
 
 import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
-import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260908_v62';
-import { GENERAL_FAQS } from './data/faqs.js?v=20260821_v3';
+import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260908_v63';
+import { GENERAL_FAQS } from './data/faqs.js?v=20260908_v63';
 import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
 import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
 import { generateSchema, updateDOMSchema } from './components/schemaGenerator.js?v=20260821_v3';

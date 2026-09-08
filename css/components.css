@@ -897,7 +897,7 @@
 }
 
 .faq-item.active .faq-answer {
-  max-height: 500px !important;
+  max-height: 800px !important;
   opacity: 1 !important;
   padding: 0 1.6rem 1.5rem 1.6rem !important;
 }
