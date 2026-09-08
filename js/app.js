@@ -4,8 +4,7 @@
    ========================================================================== */
 
 import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
-import { SERVICES_DATA } from './data/services.js?v=20260821_v3';
-import { TESTIMONIALS_DATA } from './data/testimonials.js?v=20260821_v3';
+import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260908_v51';
 import { GENERAL_FAQS } from './data/faqs.js?v=20260821_v3';
 import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
 import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
@@ -319,7 +318,50 @@ function renderHomepageContent() {
     }).join('');
   }
 
-  // 2. Render Masonry Testimonials Grid
+  // 2. Render Video Testimonials Carousel Track (FIRST in Reviews)
+  const videoTrack = document.getElementById("video-testimonials-track");
+  if (videoTrack && Array.isArray(VIDEO_TESTIMONIALS_DATA)) {
+    videoTrack.innerHTML = VIDEO_TESTIMONIALS_DATA.map(v => `
+      <div class="video-card-item" data-videoid="${v.id}" data-videotitle="${v.title}" role="button" tabindex="0" aria-label="Play testimonial video from ${v.name}">
+        <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" class="video-card-thumb" loading="lazy">
+        <div class="video-card-gradient"></div>
+        
+        <!-- Top Badge -->
+        <div style="position: relative; z-index: 2; padding: 0.9rem; display: flex; justify-content: space-between; align-items: flex-start;">
+          <span style="background: rgba(0, 0, 0, 0.75); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); color: #FFF; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.25rem 0.55rem; border-radius: 9999px;">
+            🎬 SHORTS
+          </span>
+          <span style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #EF4444; font-size: 0.68rem; font-weight: 800; padding: 0.25rem 0.5rem; border-radius: 9999px;">
+            VERIFIED
+          </span>
+        </div>
+
+        <!-- Center Play Icon -->
+        <div class="video-card-play-btn" aria-hidden="true">
+          ▶
+        </div>
+
+        <!-- Bottom Caption -->
+        <div style="position: relative; z-index: 2; padding: 1.25rem 1rem;">
+          <h4 style="color: #FFFFFF; font-size: 1.08rem; font-weight: 800; margin: 0 0 0.3rem 0; line-height: 1.25; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);">
+            ${v.name}
+          </h4>
+          <p style="color: var(--accent-gold); font-size: 0.76rem; font-weight: 700; margin: 0 0 0.35rem 0; text-transform: uppercase; letter-spacing: 0.04em;">
+            ${v.subtitle || 'Client Review'}
+          </p>
+          <div style="display: flex; align-items: center; gap: 0.4rem; color: var(--text-silver); font-size: 0.75rem;">
+            <span>Tap to watch reaction</span>
+            <span style="color: #EF4444;">→</span>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    setupVideoModalPlayer();
+    setupVideoCarouselControls();
+  }
+
+  // 3. Render Masonry Testimonials Grid
   const testimonialsGrid = document.getElementById("testimonials-grid");
   if (testimonialsGrid) {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
@@ -343,4 +385,83 @@ function renderHomepageContent() {
       </div>
     `).join('');
   }
+}
+
+function setupVideoCarouselControls() {
+  const prevBtn = document.getElementById("video-carousel-prev");
+  const nextBtn = document.getElementById("video-carousel-next");
+  const container = document.getElementById("video-carousel-container");
+
+  if (!container) return;
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      container.scrollBy({ left: -320, behavior: "smooth" });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      container.scrollBy({ left: 320, behavior: "smooth" });
+    });
+  }
+}
+
+function setupVideoModalPlayer() {
+  const modal = document.getElementById("video-testimonial-modal");
+  const closeBtn = document.getElementById("close-video-modal");
+  const iframeContainer = document.getElementById("video-modal-iframe-container");
+  const videoCards = document.querySelectorAll(".video-card-item");
+
+  if (!modal || !iframeContainer) return;
+
+  const closeModal = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+    iframeContainer.innerHTML = "";
+  };
+
+  videoCards.forEach(card => {
+    const handleOpen = () => {
+      const videoId = card.dataset.videoid;
+      const title = card.dataset.videotitle || "Client Testimonial";
+      if (!videoId) return;
+
+      iframeContainer.innerHTML = `
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+          title="${title}" 
+          style="width: 100%; height: 100%; border: none;" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    };
+
+    card.addEventListener("click", handleOpen);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleOpen();
+      }
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeModal);
+  }
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.style.display === "flex") {
+      closeModal();
+    }
+  });
 }

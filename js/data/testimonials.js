@@ -99,3 +99,97 @@ export const CLIENT_LOGOS = [
   { name: "Boeing", symbol: "✈️" },
   { name: "Fortune 500", symbol: "🏛️" }
 ];
+
+export const VIDEO_TESTIMONIALS_DATA = [
+  {
+    id: "Qe8bBgX43GQ",
+    name: "Sahara",
+    title: "Client Testimonial - Sahara",
+    subtitle: "Sahara Las Vegas"
+  },
+  {
+    id: "Ax9QWSUYmQo",
+    name: "Citizens Private Bank",
+    title: "Client Testimonial - Citizens Private Bank",
+    subtitle: "Citizens Private Bank"
+  },
+  {
+    id: "g7dctVwG7ww",
+    name: "California Funeral",
+    title: "California Funeral Directors Association",
+    subtitle: "California Funeral Directors Assn"
+  },
+  {
+    id: "JrE1YcghtKQ",
+    name: "Hillcrest",
+    title: "Hillcrest Real Estate Testimonial",
+    subtitle: "Hillcrest Real Estate"
+  },
+  {
+    id: "e12ExwQBJh4",
+    name: "Rand Tech",
+    title: "Rand Technology Testimonial",
+    subtitle: "Rand Technology"
+  },
+  {
+    id: "Klx6Cq4opaY",
+    name: "PreludeDx",
+    title: "Client Testimonial - PreludeDx",
+    subtitle: "PreludeDx Healthcare"
+  },
+  {
+    id: "03OfNijGzKw",
+    name: "Jaime Rojas",
+    title: "Jaime Rojas, Rojas Communication Group",
+    subtitle: "Rojas Communications Group"
+  },
+  {
+    id: "G6J7JRivTcM",
+    name: "Crowell LLP",
+    title: "Testimonial - Crowell LLP",
+    subtitle: "Crowell & Moring LLP"
+  },
+  {
+    id: "b6z3GzzoJ2w",
+    name: "Athletes First",
+    title: "Athletes First Testimonial",
+    subtitle: "Athletes First"
+  },
+  {
+    id: "Ap1XDdP3I4s",
+    name: "The Lakes Club",
+    title: "Testimonial - The Lakes Country Club",
+    subtitle: "The Lakes Country Club"
+  },
+  {
+    id: "X0lL0icdztY",
+    name: "SitelogiQ",
+    title: "Client Testimonial - SitelogiQ",
+    subtitle: "SitelogiQ Energy & Facilities"
+  },
+  {
+    id: "qiqZW2cuLc4",
+    name: "Caesars Place",
+    title: "Caesars Place Las Vegas Centerspace Homes",
+    subtitle: "Caesars Palace Las Vegas"
+  },
+  {
+    id: "VBpIohKMX8I",
+    name: "NeoGenomics",
+    title: "Client Testimonial - NeoGenomics",
+    subtitle: "NeoGenomics Laboratories"
+  },
+  {
+    id: "StD_MwtFgL0",
+    name: "NeoGenomics",
+    title: "Client Testimonial - NeoGenomics",
+    subtitle: "NeoGenomics Laboratories"
+  },
+  {
+    id: "RlP9FjVgyu0",
+    name: "Yacht Club",
+    title: "Los Angeles Yacht Club Testimonial",
+    subtitle: "Los Angeles Yacht Club"
+  }
+];
+
