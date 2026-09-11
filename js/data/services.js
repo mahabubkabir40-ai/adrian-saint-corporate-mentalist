@@ -40,7 +40,7 @@ export const SERVICES_DATA = [
   },
   {
     id: "trade-show-lead-gen",
-    title: "Trade Show Lead Gen",
+    title: "Team Building",
     shortDesc: "Custom booth performances that draw massive foot traffic, engage key prospects, and deliver seamless product pitch integrations.",
     icon: "🎯",
     duration: "Expo Floor Hours",
