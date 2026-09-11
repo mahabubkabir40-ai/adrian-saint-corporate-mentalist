@@ -39,20 +39,20 @@ export const SERVICES_DATA = [
     fullDetails: "Intimate, close-up mentalism performed during cocktail receptions and networking hours as Adrian moves between guest groups."
   },
   {
-    id: "trade-show-lead-gen",
+    id: "team-building",
     title: "Team Building",
-    shortDesc: "Custom booth performances that draw massive foot traffic, engage key prospects, and deliver seamless product pitch integrations.",
-    icon: "🎯",
-    duration: "Expo Floor Hours",
-    capacity: "Convention Booth Footprint",
+    shortDesc: "Interactive psychological experiences designed to unite executive teams, foster deep communication, and create unforgettable shared breakthroughs.",
+    icon: "🤝",
+    duration: "45 - 90 Minutes",
+    capacity: "Executive Teams & Corporate Groups",
     image: "images/team_building.jpg",
     features: [
-      "Draws Massive Foot Traffic to Your Trade Show Booth",
-      "Customized Product Pitch & Message Integration",
-      "Seamless Lead Qualification Hand-off to Sales Team",
-      "Increases Badge Scans & High-Value Inquiries",
-      "ROI Guarantee for Major Industry Conventions"
+      "Interactive Group Mentalism & Mind-Sync Exercises",
+      "Breaks Down Corporate Silos & Sparks Authentic Connection",
+      "Tailored for Executive Retreats & Leadership Summits",
+      "100% Inclusive, HR-Safe & Dignified Participation",
+      "Shared Psychological Breakthroughs That Bond Teams"
     ],
-    fullDetails: "Custom booth performances that draw massive foot traffic, engage key prospects, and deliver seamless product pitch integrations."
+    fullDetails: "Interactive psychological experiences designed to unite executive teams, foster deep communication, and create unforgettable shared breakthroughs."
   }
 ];
