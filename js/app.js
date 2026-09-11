@@ -287,18 +287,10 @@ function renderHomepageContent() {
   const testimonialsGrid = document.getElementById("testimonials-grid");
   if (testimonialsGrid && testimonialsGrid.children.length === 0) {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => {
-      const isPress = (t.role && t.role.toLowerCase().includes("press")) || (t.author && (t.author.includes("Bee") || t.author.includes("Register")));
-      const badgeText = isPress ? "📰 PRESS REVIEW" : "✓ VERIFIED CLIENT";
-      const badgeClass = isPress ? "review-verified-tag press" : "review-verified-tag";
-
       return `
         <div class="review-carousel-card">
-          <div class="review-card-watermark" aria-hidden="true">“</div>
           <div class="review-card-body">
-            <div class="review-card-top">
-              <div class="review-stars">★★★★★</div>
-              <span class="${badgeClass}">${badgeText}</span>
-            </div>
+            <div class="review-stars">★★★★★</div>
             <p class="review-quote-text">
               "${t.quote}"
             </p>
