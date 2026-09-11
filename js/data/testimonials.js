@@ -313,9 +313,9 @@ export const VIDEO_TESTIMONIALS_DATA = [
   },
   {
     id: "XcEfMl2LOpM",
-    name: "Centerspace",
-    title: "Client Testimonial - Centerspace Homes",
-    subtitle: "Caesars Palace Las Vegas"
+    name: "Caesars Palace",
+    title: "Client Testimonial - Caesars Palace",
+    subtitle: "Caesars Palace"
   },
   {
     id: "G6J7JRivTcM",
