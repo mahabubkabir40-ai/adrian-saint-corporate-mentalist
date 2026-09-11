@@ -283,33 +283,39 @@ function renderHomepageContent() {
   const appRoot = document.getElementById("app-root") || document.querySelector("main") || document.body;
   if (!appRoot) return;
 
-  // Render Masonry Testimonials Grid if empty
+  // Render Written Reviews Carousel Cards if empty
   const testimonialsGrid = document.getElementById("testimonials-grid");
   if (testimonialsGrid && testimonialsGrid.children.length === 0) {
-    testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => `
-      <div class="masonry-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-          <div style="color: #EF4444; font-size: 1.15rem; margin-bottom: 1.25rem; letter-spacing: 4px;">
-            ${"★".repeat(t.rating || 5)}
-          </div>
-          <p style="font-size: 0.95rem; margin-bottom: 1.5rem; color: #E4E4E7; line-height: 1.65; font-weight: 400;">
-            "${t.quote}"
-          </p>
-        </div>
+    testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => {
+      const isPress = (t.role && t.role.toLowerCase().includes("press")) || (t.author && (t.author.includes("Bee") || t.author.includes("Register")));
+      const badgeText = isPress ? "📰 PRESS REVIEW" : "✓ VERIFIED CLIENT";
+      const badgeClass = isPress ? "review-verified-tag press" : "review-verified-tag";
 
-        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.15rem; margin-top: auto;">
-          <div style="font-weight: 800; font-size: 1.05rem; color: #FFFFFF; margin-bottom: 0.25rem; line-height: 1.25;">
-            ${t.author}
+      return `
+        <div class="review-carousel-card">
+          <div class="review-card-watermark" aria-hidden="true">“</div>
+          <div class="review-card-body">
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <span class="${badgeClass}">${badgeText}</span>
+            </div>
+            <p class="review-quote-text">
+              "${t.quote}"
+            </p>
           </div>
-          ${t.role ? `<div style="color: #EF4444; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.2rem;">${t.role}</div>` : ''}
-          ${t.company && t.company !== t.author ? `<div style="color: #94A3B8; font-size: 0.82rem; font-weight: 500;">${t.company}</div>` : ''}
+          <div class="review-card-footer">
+            <div class="review-author-name">${t.author}</div>
+            ${t.role ? `<div class="review-author-role">${t.role}</div>` : ''}
+            ${t.company && t.company !== t.author ? `<div class="review-author-company">${t.company}</div>` : ''}
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   setupVideoModalPlayer();
   setupVideoCarousel();
+  setupWrittenReviewsCarousel();
 }
 
 function setupVideoModalPlayer() {
@@ -553,3 +559,167 @@ function setupVideoCarousel() {
     updateActiveState();
   }, { passive: true });
 }
+
+function setupWrittenReviewsCarousel() {
+  const wrapper = document.getElementById("reviews-carousel-wrapper");
+  const track = document.getElementById("testimonials-grid");
+  const prevBtn = document.getElementById("reviews-carousel-prev");
+  const nextBtn = document.getElementById("reviews-carousel-next");
+  const dotsContainer = document.getElementById("reviews-carousel-dots");
+
+  if (!track) return;
+  const cards = track.querySelectorAll(".review-carousel-card");
+  if (cards.length === 0) return;
+
+  const renderDots = () => {
+    if (!dotsContainer || cards.length === 0) return;
+    dotsContainer.innerHTML = "";
+    const cardWidth = cards[0].offsetWidth + 24;
+    const visibleCount = Math.max(1, Math.round(track.clientWidth / cardWidth));
+    const pageCount = Math.max(1, Math.ceil(cards.length / visibleCount));
+
+    for (let i = 0; i < pageCount; i++) {
+      const dot = document.createElement("button");
+      dot.className = "reviews-carousel-dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("aria-label", `Go to reviews page ${i + 1}`);
+      dot.addEventListener("click", () => {
+        const scrollTarget = i * (cardWidth * visibleCount);
+        track.scrollTo({ left: scrollTarget, behavior: "smooth" });
+      });
+      dotsContainer.appendChild(dot);
+    }
+  };
+
+  const updateActiveState = () => {
+    if (cards.length === 0) return;
+    const cardWidth = cards[0].offsetWidth + 24;
+    const visibleCount = Math.max(1, Math.round(track.clientWidth / cardWidth));
+    const scrollPos = track.scrollLeft;
+    const maxScroll = track.scrollWidth - track.clientWidth;
+
+    let activeIndex = Math.round(scrollPos / (cardWidth * visibleCount));
+    const dots = dotsContainer ? dotsContainer.querySelectorAll(".reviews-carousel-dot") : [];
+    if (scrollPos >= maxScroll - 15) {
+      activeIndex = dots.length - 1;
+    }
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("active", idx === activeIndex);
+    });
+
+    if (prevBtn) {
+      prevBtn.setAttribute("aria-disabled", scrollPos <= 10 ? "true" : "false");
+    }
+    if (nextBtn) {
+      nextBtn.setAttribute("aria-disabled", scrollPos >= maxScroll - 10 ? "true" : "false");
+    }
+  };
+
+  track.addEventListener("scroll", () => {
+    requestAnimationFrame(updateActiveState);
+  }, { passive: true });
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 20) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft <= 20) {
+        track.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      }
+    });
+  }
+
+  // Keyboard navigation
+  track.setAttribute("tabindex", "0");
+  track.setAttribute("aria-label", "Written Testimonials Carousel");
+  track.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") {
+      e.preventDefault();
+      track.scrollBy({ left: track.clientWidth * 0.85, behavior: "smooth" });
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      track.scrollBy({ left: -track.clientWidth * 0.85, behavior: "smooth" });
+    }
+  });
+
+  // Drag to scroll
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+
+  track.addEventListener("mousedown", (e) => {
+    isDown = true;
+    startX = e.pageX - track.offsetLeft;
+    scrollLeftStart = track.scrollLeft;
+    track.style.scrollBehavior = "auto";
+    track.style.scrollSnapType = "none";
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.3;
+    track.scrollLeft = scrollLeftStart - walk;
+  });
+
+  window.addEventListener("mouseup", () => {
+    if (!isDown) return;
+    isDown = false;
+    track.style.scrollBehavior = "smooth";
+    track.style.scrollSnapType = "x mandatory";
+  });
+
+  // Autoplay with smart pause
+  let autoplayTimer = null;
+  const startAutoplay = () => {
+    stopAutoplay();
+    autoplayTimer = setInterval(() => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 20) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }, 7000);
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  };
+
+  if (wrapper) {
+    wrapper.addEventListener("mouseenter", stopAutoplay);
+    wrapper.addEventListener("mouseleave", startAutoplay);
+    wrapper.addEventListener("touchstart", stopAutoplay, { passive: true });
+    wrapper.addEventListener("touchend", () => {
+      setTimeout(startAutoplay, 3500);
+    }, { passive: true });
+  }
+
+  renderDots();
+  updateActiveState();
+  startAutoplay();
+
+  window.addEventListener("resize", () => {
+    renderDots();
+    updateActiveState();
+  }, { passive: true });
+}
+
