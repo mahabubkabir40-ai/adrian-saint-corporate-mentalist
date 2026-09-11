@@ -362,12 +362,22 @@
 
 /* Auto-Scrolling Client Logo Ticker (Matching corporatementalistlasvegas.com Speed & Style) */
 .logo-ticker-section {
-  background-color: #09090b;
-  padding: 4rem 0;
-  border-top: 1px solid rgba(39, 39, 42, 0.8);
-  border-bottom: 1px solid rgba(39, 39, 42, 0.8);
+  background-color: var(--bg-ticker);
+  padding: 3.25rem 0;
+  border-top: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-glass);
   overflow: hidden;
   position: relative;
+}
+
+.ticker-title {
+  text-align: center;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-silver);
+  margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .ticker-wrap {
@@ -375,7 +385,7 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
 }
 
 /* Edge Fade Masks for Cinematic Fade Off */
@@ -385,7 +395,7 @@
   bottom: 0;
   left: 0;
   width: 120px;
-  background: linear-gradient(to right, #09090b, transparent);
+  background: linear-gradient(to right, var(--bg-ticker), transparent);
   z-index: 20;
   pointer-events: none;
 }
@@ -396,7 +406,7 @@
   bottom: 0;
   right: 0;
   width: 120px;
-  background: linear-gradient(to left, #09090b, transparent);
+  background: linear-gradient(to left, var(--bg-ticker), transparent);
   z-index: 20;
   pointer-events: none;
 }
