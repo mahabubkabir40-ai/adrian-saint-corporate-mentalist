@@ -45,7 +45,7 @@ export const SERVICES_DATA = [
     icon: "🎯",
     duration: "Expo Floor Hours",
     capacity: "Convention Booth Footprint",
-    image: "images/tradeshow_lead_gen.jpg",
+    image: "images/team_building.jpg",
     features: [
       "Draws Massive Foot Traffic to Your Trade Show Booth",
       "Customized Product Pitch & Message Integration",
