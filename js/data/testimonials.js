@@ -270,6 +270,12 @@ export const CLIENT_LOGOS = [
 
 export const VIDEO_TESTIMONIALS_DATA = [
   {
+    id: "Qe8bBgX43GQ",
+    name: "Sahara",
+    title: "Client Testimonial - Sahara",
+    subtitle: "Sahara Las Vegas"
+  },
+  {
     id: "Ax9QWSUYmQo",
     name: "Citizens Private Bank",
     title: "Client Testimonial - Citizens Private Bank",
