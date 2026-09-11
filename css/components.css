@@ -763,13 +763,13 @@
 .video-card-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(11, 12, 16, 0.45) 0%, rgba(11, 12, 16, 0.1) 40%, rgba(11, 12, 16, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(11, 12, 16, 0.45) 0%, rgba(11, 12, 16, 0.05) 50%, rgba(11, 12, 16, 0.45) 100%);
   pointer-events: none;
 }
 
 .video-card-play-btn {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 48px;
