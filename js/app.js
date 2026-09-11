@@ -53,7 +53,10 @@ function setupHeroBackgroundVideo() {
           playsinline: 1,
           enablejsapi: 1,
           disablekb: 1,
-          fs: 0
+          fs: 0,
+          cc_load_policy: 0,
+          cc_lang_pref: 'none',
+          iv_load_policy: 3
         },
         events: {
           onReady: (event) => {
@@ -61,8 +64,24 @@ function setupHeroBackgroundVideo() {
             event.target.seekTo(67, true);
             event.target.playVideo();
 
+            const killCaptions = () => {
+              try {
+                if (player && typeof player.unloadModule === 'function') {
+                  player.unloadModule("captions");
+                  player.unloadModule("cc");
+                }
+                if (player && typeof player.setOption === 'function') {
+                  player.setOption("captions", "track", {});
+                  player.setOption("cc", "track", {});
+                }
+              } catch (e) {}
+            };
+
+            killCaptions();
+
             // Precise loop watcher: checks every 200ms and loops when reaching 1:33 (93s)
             setInterval(() => {
+              killCaptions();
               if (player && typeof player.getCurrentTime === 'function' && typeof player.getPlayerState === 'function') {
                 if (player.getPlayerState() === 1) { // Currently playing
                   const current = player.getCurrentTime();
@@ -74,6 +93,12 @@ function setupHeroBackgroundVideo() {
             }, 200);
           },
           onStateChange: (event) => {
+            try {
+              if (player && typeof player.unloadModule === 'function') {
+                player.unloadModule("captions");
+                player.unloadModule("cc");
+              }
+            } catch (e) {}
             if (event.data === 0) { // Video ended -> loop back to 1:07 (67s)
               event.target.seekTo(67, true);
               event.target.playVideo();
