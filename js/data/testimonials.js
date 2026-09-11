@@ -5,69 +5,6 @@
 
 export const TESTIMONIALS_DATA = [
   {
-    quote: "A smooth and confident speaker, Adrian's greatest talent seems to be his ability to persuade... audience leaves with a sense of wonder!",
-    author: "The Sacramento Bee",
-    role: "Press & Media Review",
-    company: "",
-    rating: 5
-  },
-  {
-    quote: "Keen insight into human nature... can get inside your head.",
-    author: "The Orange County Register",
-    role: "Press & Media Review",
-    company: "",
-    rating: 5
-  },
-  {
-    quote: "As a manager I am always looking at ways to educate or entertain my team... If you get the chance to have Adrian or the Saint Twins perform, I would highly recommend it!",
-    author: "Chris Niemann",
-    role: "Executive Sales Director",
-    company: "Straumann USA",
-    rating: 5
-  },
-  {
-    quote: "A Mind-Blowing Night with the Saint Twins at LA Yacht Club... If you're seeking a magical journey that challenges the boundaries of the human mind, the Saint Twins deliver an unforgettable spectacle.",
-    author: "Kelly Marie",
-    role: "Events Committee",
-    company: "LA Yacht Club",
-    rating: 5
-  },
-  {
-    quote: "Thank YOU to you both for your wonderful performance. The feedback this morning from last night has been very positive. It was great to meet you both, and would look forward to working together again on a future event.",
-    author: "Jennifer Beucler",
-    role: "Senior Program Manager",
-    company: "Mosaic Event Management, Inc.",
-    rating: 5
-  },
-  {
-    quote: "What they can do is entertain you... for once, this skeptic is stumped, a foolish grin my only response.",
-    author: "Peter Larsen",
-    role: "Staff Writer",
-    company: "The Orange County Register",
-    rating: 5
-  },
-  {
-    quote: "Adrian Saint, our Mentalist/Entertainer was AMAZING! It's mind-blowing entertainment. He is so good at his craft... He read my mind and cracked the phone code of my colleague, among other fun. He strolled the crowd during our cocktail hour and then did an on-stage show before dinner. I hired him for a work event and am hiring him again! Adrian Saint is the real deal and totally worth it.",
-    author: "Tara M Rosamilia Rangbar, CFP®",
-    role: "Wealth Management Planning Consultant",
-    company: "Private Wealth Management",
-    rating: 5
-  },
-  {
-    quote: "Thank you so much for coming. You really blew everyone away! What an incredible performance. I want to know so badly what your tricks are. I would like to have you come to Sonoma County if you could.",
-    author: "Jennifer Butler",
-    role: "Facility Solutions Specialist",
-    company: "SitelogiQ",
-    rating: 5
-  },
-  {
-    quote: "Thank you, we have heard great responses following lunch! Many trying to figure out just how you did it.",
-    author: "Cassandra Cleare",
-    role: "Executive Director",
-    company: "National Association of Consumer Credit Administrators (NACCA)",
-    rating: 5
-  },
-  {
     quote: "Everyone loved you! You were amazing! Thank you Adrian for coming to our event! I'll be saving your contact info for our meeting next year!",
     author: "Lindsey Fields",
     role: "Conference and Events Manager",
@@ -75,136 +12,122 @@ export const TESTIMONIALS_DATA = [
     rating: 5
   },
   {
-    quote: "Thank you for entertaining us at our holiday party. Everyone was amazed by your talents and couldn't stop wondering how you pulled it all off! Your performance was a highlight of the afternoon and created such a fun and engaging atmosphere.",
-    author: "Dori Paliobagis",
-    role: "Business Development",
-    company: "Cannon Buildings",
-    rating: 5
-  },
-  {
-    quote: "Many of our employees were blown away by your magic! Thank you and John for the wonderful performances! Thank you!",
-    author: "Shirley Sugiyama",
-    role: "Senior HR Generalist",
-    company: "Red Digital Cinema",
-    rating: 5
-  },
-  {
-    quote: "You were a hit! Everyone is talking about you. I gave your contact information to another group I used to be President of, OCTLA. Their executive director asked for your contact information. Thanks again for a memorable night!",
-    author: "Susan Cameron Kelley",
-    role: "Attorney & Past President",
-    company: "American Inns of Court (Robert A. Banyard Inn of Court)",
-    rating: 5
-  },
-  {
-    quote: "As always, you're awesome! Thank you for all of your efforts in making our graduation event memorable for our guests. We truly appreciate the opportunity to work with you. Muchas gracias and we hope to see you at the next event!",
-    author: "Diana Tercero",
-    role: "Director of Events and Operations",
-    company: "Nicholas Academic Centers",
-    rating: 5
-  },
-  {
-    quote: "Thank YOU! It was great and you were fantastic!",
-    author: "Dr. Audrey Warshawsky",
-    role: "Periodontist",
-    company: "Periodontics of the Desert - Palm Desert",
-    rating: 5
-  },
-  {
-    quote: "Thank you! The party was a huge success, and your entertainment was very well received.",
-    author: "Robin St. John",
-    role: "Executive Assistant",
-    company: "West Pak Avocado",
-    rating: 5
-  },
-  {
-    quote: "Adrian was absolutely amazing - he helped us out at our organization's 50th year celebration and was a hit. Our attendees were talking about his skills into the next day. We'd hire Adrian again in a heartbeat.",
-    author: "Sheila Johnston",
-    role: "Executive Director",
-    company: "California Society of Dermatology & Dermatologic Surgery (CalDerm)",
-    rating: 5
-  },
-  {
-    quote: "All I’ve heard so far about the entire meeting was: 'I wanted to drop you a note to tell you they did a great job and everyone enjoyed them.' Thank YOU both for everything! I knew you guys were going to be a hit!",
-    author: "JoAnn Angeli",
-    role: "Meetings and Events Specialist",
-    company: "Keenan & Associates",
-    rating: 5
-  },
-  {
-    quote: "These guys are amazing... I mean AMAZING! My entire staff and all their guests' minds are BLOWN! Comments from a large group of people that attended: best Corporate Christmas Party EVER... They showed up on time, were very professional, catered to our group in every way, professionally dressed, and their act is very polished!",
-    author: "Rain Lane",
-    role: "Chief Executive Officer",
-    company: "LPSG",
-    rating: 5
-  },
-  {
-    quote: "Thank you so much! You guys did an amazing job!",
-    author: "Antoinette Bryant",
-    role: "Director of HR & Compliance",
-    company: "SBMA Benefits",
-    rating: 5
-  },
-  {
-    quote: "I'm still hearing from my people about how much they enjoyed your performances! Everyone thought you guys were amazing!",
+    quote: "I’m still hearing from my people about how much they enjoyed your performance! Everyone thought you were amazing!!",
     author: "Marina Gardiner",
     role: "Executive Business Partner",
     company: "Google",
     rating: 5
   },
   {
-    quote: "Your performance was fun and well-received by our guest; you made doing business together VERY EASY! Working with partners who over-deliver on their promise is always exhilarating. BRAVO!",
+    quote: "The audience leaves with a sense of wonder!",
+    author: "The Sacramento Bee",
+    role: "Press & Media Review",
+    company: "",
+    rating: 5
+  },
+  {
+    quote: "Keen insight into human nature…can get inside your head.",
+    author: "The Orange County Register",
+    role: "Press & Media Review",
+    company: "",
+    rating: 5
+  },
+  {
+    quote: "As a manager, I am always looking at ways to educate or entertain my team. I brought Adrian in earlier this year to do a performance, and he blew everyone's mind. It was an incredible performance and left my team talking about it for a long time. If you get the chance to have Adrian perform, I would highly recommend it!",
+    author: "Chris Niemann",
+    role: "Executive Sales Director",
+    company: "Straumann USA",
+    rating: 5
+  },
+  {
+    quote: "Adrian Saint, our Mentalist/Entertainer, was AMAZING!!! It's mind-blowing entertainment. He is so good at his craft. I would have a hard time believing it if I didn't witness it with my own eyes. He read my mind and cracked the phone code of my colleague, among other fun things. He strolled the crowd during our cocktail hour and then did an on-stage show before dinner. He is responsive and a good communicator. I hired him for a work event in October 2024 and am hiring him again for another event in two months! I don't make time to write referrals often, but Adrian Saint is the real deal and totally worth it.",
+    author: "Tara M Rosamilia Rangbar, CFP®",
+    role: "Wealth Management Planning Consultant",
+    company: "CA Insurance Lic. # 0F39063 - Private Wealth Management",
+    rating: 5
+  },
+  {
+    quote: "Thank you, we have heard great responses following lunch! Many are trying to figure out just how you did it.",
+    author: "Cassandra Cleare",
+    role: "Executive Director",
+    company: "National Association of Consumer Credit Administrators (NACCA)",
+    rating: 5
+  },
+  {
+    quote: "Thank you for entertaining us at our holiday party. Everyone was amazed by your talents and couldn't stop wondering how you pulled it all off! Your performance was a highlight of the afternoon and created such a fun and engaging atmosphere. Thanks again for making our celebration unforgettable.",
+    author: "Dori Paliobagis",
+    role: "Business Development",
+    company: "Cannon Buildings",
+    rating: 5
+  },
+  {
+    quote: "Many of our employees were blown away by your magic! Thank you for the wonderful performances! Thank you!",
+    author: "Shirley Sugiyama",
+    role: "Senior HR Generalist",
+    company: "Red Digital Cinema",
+    rating: 5
+  },
+  {
+    quote: "I’m hoping you received my exuberant “WOW! THANKS!” voicemail message yesterday afternoon. Your performance was fun and well-received by our guest; you made doing business together VERY EASY! I look forward to viewing the social media snippets from the film crew, and will share upon receipt. Working with partners who over-deliver on their promise is always exhilarating. BRAVO!",
     author: "Tamela Coval",
     role: "Executive Consultant",
     company: "CORT, A Berkshire Hathaway Company",
     rating: 5
   },
   {
-    quote: "Great Job – our attendees were still talking about your performance on Sunday – Thank you!",
-    author: "Susan Steele",
-    role: "Executive Director",
-    company: "Dairy Deli Bakery Council of Southern California (DDBC)",
-    rating: 5
-  },
-  {
-    quote: "Thank you so much for your services yesterday. The few that I have spoken with so far said you both were amazing. It was such a pleasure working with you both. Thank you for being so accommodating and prompt and you came at a reasonable price!",
+    quote: "Thank you so much for your services yesterday. I haven’t had the opportunity to speak with a ton of people yet, but the few that I have spoken with so far said you were amazing. It was such a pleasure working with you. Thank you for being so accommodating and prompt, and you came at a reasonable price!",
     author: "Olivia Carson",
     role: "Market Manager",
     company: "One Workplace",
     rating: 5
   },
   {
-    quote: "Wow, amazing! The entire audience from Saturday night thanks you for an incredible evening. You accomplished everything I wanted the show to do for our group, unique and interactive. They are still baffled, perplexed, and amazed.",
+    quote: "Adrian was absolutely amazing - he helped us out at our organization's 50th year celebration and was a hit. Our attendees were talking about his skills the next day. We'd hire Adrian again in a heartbeat.",
+    author: "Sheila Johnston",
+    role: "Executive Director",
+    company: "California Society of Dermatology & Dermatologic Surgery (CalDerm)",
+    rating: 5
+  },
+  {
+    quote: "Wow, amazing! The entire audience from Saturday night thanks you for an incredible evening. You accomplished everything I wanted the show to do for our group, unique and interactive. They are still baffled, perplexed, and amazed. I very much enjoyed working with you, and again, my many thanks for an extraordinary event.",
     author: "Carol Fletcher",
-    role: "Events Leadership",
+    role: "Event Leadership",
     company: "Pasadena Tournament of Roses",
     rating: 5
   },
   {
-    quote: "Our group thoroughly enjoyed the Saint Twins. It was a tough crowd filled with academics, engineers and technical wizards. The Saint Twins amazed them all. Their predictions are spot on with no 'audience plants' or gimmicks. I really think they have super powers. Definitely get these guys to entertain your group.",
+    quote: "It was a tough crowd filled with academics, engineers, and technical wizards. You amazed them all. Your predictions are spot on with no “audience plants” or gimmicks. I really think you have superpowers. Definitely get Adrian to entertain your group.",
     author: "Theresa Lachman",
-    role: "Department Leadership",
-    company: "Center for Wireless Communication, UC San Diego Jacobs School of Engineering",
+    role: "Center for Wireless Communication",
+    company: "UC San Diego Jacobs School of Engineering",
     rating: 5
   },
   {
-    quote: "Just amazing! Really enjoyed the show; still trying to figure it out! Jaw-dropping mentalism - total awe and wonderment. Just the right balance of showmanship, humor and wizardry! Every guest came up to me afterward in wonderment, and it was the talk of the party.",
-    author: "Jim Hegenwald, LEED AP",
-    role: "Owner & Principal",
-    company: "NBI Sustainable Work Environments",
-    rating: 5
-  },
-  {
-    quote: "When it comes to psychic entertainment, the Saint Twins are as good as it gets. Incredibly talented, polished performers, they bring their A game every time they hit the stage. Their act is sure to astound and amaze anyone who is lucky enough to see them in action and brings down the house whether working a college or a corporate function.",
+    quote: "Incredibly talented, polished performer, he brings his “A” game every time he hits the stage. His act is sure to astound and amaze anyone who is lucky enough to see him in action and brings down the house whether working a college or a corporate function. I cannot recommend Adrian more highly for your next event.",
     author: "Gabe Abelson",
-    role: "Emmy Nominated Writer & Producer",
-    company: "The Tonight Show with Jay Leno, Late Show with David Letterman",
+    role: "Emmy Nominated Comedian, Writer/Producer",
+    company: "The Tonight Show with Jay Leno / Late Show with David Letterman",
     rating: 5
   },
   {
-    quote: "SIMPLY AMAZING! The Saint Twins always impress. They will leave you and your audience astounded with their talents. GREAT WORK YOU GUYS!",
-    author: "Eric Johnson",
-    role: "SVP & Chief Information Officer",
-    company: "River City Bank",
+    quote: "Thank YOU for your wonderful performance. The feedback this morning from last night has been very positive. It was great to meet you, and I would look forward to working together again on a future event.",
+    author: "Jennifer Beucler",
+    role: "Senior Program Manager",
+    company: "Mosaic Event Management, Inc.",
+    rating: 5
+  },
+  {
+    quote: "Thank you Adrian! You are truly talented. Thank you for delivering the sense of wonder and amazement that I was hoping we would get to share with our guests. Much continued success to you.",
+    author: "Chanell O’Farrill",
+    role: "Board Member & Hollywood Funeral Director",
+    company: "CFDA - California Funeral Directors Association",
+    rating: 5
+  },
+  {
+    quote: "All I’ve heard so far about the entire meeting was a one-line email from Jenise…And I quote: “I wanted to drop you a note to tell you he did a great job and everyone enjoyed him.” Thank YOU for everything! I knew you were going to be a hit! I can't wait to host a PERSONAL party and hire you to do some of your stuff for MY friends!",
+    author: "JoAnn Angeli",
+    role: "Meetings and Events Specialist",
+    company: "Keenan & Associates",
     rating: 5
   },
   {
@@ -215,45 +138,17 @@ export const TESTIMONIALS_DATA = [
     rating: 5
   },
   {
-    quote: "The Saint Twins put on an awesome show at the Center Club tonight! Thanks Adrian and John Saint! Everyone was amazed!",
-    author: "Kristin Kuchyt",
-    role: "Membership Director",
-    company: "Center Club Orange County",
+    quote: "A Mind-Blowing and astonishing performance at the Los Angeles Yacht Club. Unlike traditional acts, Adrian intimately delivered mind-bending routines using everyday objects like books and playing cards. His connection with the audience, coupled with thought-provoking demonstrations, creates a mesmerizing experience. His ability to turn the ordinary into the extraordinary showcases his unparalleled creativity and skill. If you're seeking a magical journey that challenges the boundaries of the human mind, Adrian Saint delivers an unforgettable spectacle.",
+    author: "Kelly Marie",
+    role: "Events Committee",
+    company: "Los Angeles Yacht Club",
     rating: 5
   },
   {
-    quote: "Adrian & John were a fun addition to our holiday party this year. They worked the crowd during our cocktail reception and put on an entertaining show. Thanks for your professionalism and wowing our guests!",
-    author: "Halley Sanchez",
-    role: "Executive Assistant",
-    company: "La Costa Glen Carlsbad",
-    rating: 5
-  },
-  {
-    quote: "Adrian thank you and John for coming. Everyone enjoyed your performance. We will be sure to have you both at many future functions. Happy New Year!",
-    author: "Rene Anabi",
-    role: "Vice President",
-    company: "Anabi Oil",
-    rating: 5
-  },
-  {
-    quote: "Adrian & John – It was great meeting you guys! Everyone loved you, and we will be definitely doing these parties quarterly. Thanks for working with us.",
-    author: "Eden Naigle-Barnett",
-    role: "Controller",
-    company: "HK Lane Real Estate",
-    rating: 5
-  },
-  {
-    quote: "...the best kept secret in Davis!",
-    author: "The Davis Enterprise",
-    role: "Press & Media Review",
-    company: "",
-    rating: 5
-  },
-  {
-    quote: "The two mysterious and delightfully entertaining twin brothers... the Saint Twins are truly the next big thing... their names in big lights in Vegas not too far in the future!",
-    author: "OCPC Magazine",
-    role: "Press & Media Review",
-    company: "",
+    quote: "As always, you're awesome! Thank you for all of your efforts in making our graduation event memorable for our guests. We truly appreciate the opportunity to work with you. Muchas gracias and we hope to see you at the next event!",
+    author: "Diana Tercero",
+    role: "Director of Events and Operations",
+    company: "Nicholas Academic Centers",
     rating: 5
   }
 ];
