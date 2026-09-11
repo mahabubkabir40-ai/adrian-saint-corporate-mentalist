@@ -383,12 +383,15 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
 }
 
 .ticker-move {
   display: inline-flex;
   gap: 1.85rem;
-  animation: logoTicker 38s linear infinite;
+  animation: logoTicker 75s linear infinite;
   align-items: center;
 }
 
@@ -1222,6 +1225,7 @@
 
   .ticker-move {
     gap: 1.25rem;
+    animation-duration: 55s;
   }
 
   .ticker-card-item {
