@@ -15,16 +15,6 @@ export const GENERAL_FAQS = [
     answer: "The term “psychic” has been a bit overused & abused in today’s media. It conjures up everything from carnival fortune tellers to the infamous “Psychic Hot Line.” Adrian believes it’s fair to say that everyone has the potential to exercise some level of extrasensory or non-physical power. With that said, there is nothing supernatural nor occult about what Adrian does.<br><br>Much like a sense that can be sharpened to compensate for the loss of another, or the way human memory can be expanded and sharpened, one’s potential is always unknown until it is revealed and explored. But if you define “psychic” as someone who talks to the dead, then Adrian definitely isn’t psychic. He has a hard time as it is trying to talk to the living!"
   },
   {
-    category: "TWIN SENSORY PERCEPTION",
-    question: "WHAT IS TWIN SENSORY PERCEPTION™? IS IT LIKE ESP?",
-    answer: "Twin Sensory Perception™ is something that Adrian and his twin brother John believe all twins are born with. It is a special twin connection; Adrian and John have just developed it further over the years by studying people, twins, and the human mind. TSP isn’t anything supernatural nor mystical. TSP allows them to get inside people’s heads and talk to each other mentally without words because they have known each other since birth. Talk to any other set of twins and they will tell you they have had similar experiences."
-  },
-  {
-    category: "PERFORMANCE OPTIONS",
-    question: "WHAT’S THE DIFFERENCE BETWEEN ADRIAN’S SOLO SHOW AND HIS SAINT TWINS SHOW WITH HIS TWIN BROTHER?",
-    answer: "During his solo show, Adrian’s demonstrations are different than his Saint Twins TSP: Twin Sensory Perception™ show with his twin brother John. During his Saint Twins performance with John, the demonstrations they present are a little bit more complex and more baffling. For example, when Adrian performs solo, a demonstration that he does could involve 3 people; a similar demonstration with John during their Saint Twins show could involve up to 10 people. Price is also a difference."
-  },
-  {
     category: "MIND READING SCIENCE",
     question: "IS IT EVEN POSSIBLE TO “READ MINDS?”",
     answer: "The truth is that everybody can read minds to an extent. We do it every day but we don’t really realize it. It has been said that 93% of communication is non-verbal (7% verbal, 38% vocal, 55% body language). You can learn a lot about what people are thinking by observing their body language, facial expressions, or subtle non-verbal cues. Adrian has studied psychology, linguistics, non-verbal communication, magic, and hypnosis to create the skills he demonstrates on stage."

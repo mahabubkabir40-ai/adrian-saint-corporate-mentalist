@@ -5,7 +5,7 @@
 
 import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
 import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260911_v18';
-import { GENERAL_FAQS } from './data/faqs.js?v=20260908_v65';
+import { GENERAL_FAQS } from './data/faqs.js?v=20260911_v19';
 import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
 import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
 import { generateSchema, updateDOMSchema } from './components/schemaGenerator.js?v=20260821_v3';
