@@ -16,8 +16,8 @@ export const SERVICES_DATA = [
       "100% Clean & HR-Safe Corporate Entertainment",
       "Telepathy, Mind Reading & Audience Participation",
       "Customized Corporate Message & Brand Integration",
-      "Zero Secret Assistants or Fake Stool-Pigeons",
-      "High-Energy Finale Leaving Executives Speechless"
+      "Highly Engaging Interactive Entertainment",
+      "High-Energy Finale Leaving Audience Speechless"
     ],
     fullDetails: "A 30 to 75-minute interactive stage performance featuring telepathy, mind reading, and clean comedy customized for corporate audiences."
   },
