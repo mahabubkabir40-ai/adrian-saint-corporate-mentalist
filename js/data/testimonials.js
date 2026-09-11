@@ -282,6 +282,12 @@ export const VIDEO_TESTIMONIALS_DATA = [
     subtitle: "California Funeral Directors Assn"
   },
   {
+    id: "AjcJ3nS057g",
+    name: "RMA Companies",
+    title: "Client Testimonial - RMA Companies",
+    subtitle: "RMA Companies"
+  },
+  {
     id: "e12ExwQBJh4",
     name: "Rand Tech",
     title: "Rand Technology Testimonial",
@@ -298,6 +304,12 @@ export const VIDEO_TESTIMONIALS_DATA = [
     name: "Jaime Rojas",
     title: "Jaime Rojas, Rojas Communication Group",
     subtitle: "Rojas Communications Group"
+  },
+  {
+    id: "XcEfMl2LOpM",
+    name: "Centerspace",
+    title: "Client Testimonial - Centerspace Homes",
+    subtitle: "Caesars Palace Las Vegas"
   },
   {
     id: "G6J7JRivTcM",
@@ -322,6 +334,12 @@ export const VIDEO_TESTIMONIALS_DATA = [
     name: "SitelogiQ",
     title: "Client Testimonial - SitelogiQ",
     subtitle: "SitelogiQ Energy & Facilities"
+  },
+  {
+    id: "_p7LpqvELd8",
+    name: "Talley LLP",
+    title: "Client Testimonial - Talley LLP",
+    subtitle: "Talley LLP"
   },
   {
     id: "VBpIohKMX8I",
