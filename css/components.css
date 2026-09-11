@@ -714,14 +714,14 @@
   margin-top: 0.25rem;
 }
 
-/* Video Testimonials 5-Column Grid */
+/* Video Testimonials 4-Column Grid */
 .video-testimonials-section {
   margin-bottom: 4rem;
 }
 
 .video-testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.15rem;
 }
 

@@ -270,12 +270,6 @@ export const CLIENT_LOGOS = [
 
 export const VIDEO_TESTIMONIALS_DATA = [
   {
-    id: "Qe8bBgX43GQ",
-    name: "Sahara",
-    title: "Client Testimonial - Sahara",
-    subtitle: "Sahara Las Vegas"
-  },
-  {
     id: "Ax9QWSUYmQo",
     name: "Citizens Private Bank",
     title: "Client Testimonial - Citizens Private Bank",
@@ -286,12 +280,6 @@ export const VIDEO_TESTIMONIALS_DATA = [
     name: "California Funeral",
     title: "California Funeral Directors Association",
     subtitle: "California Funeral Directors Assn"
-  },
-  {
-    id: "JrE1YcghtKQ",
-    name: "Hillcrest",
-    title: "Hillcrest Real Estate Testimonial",
-    subtitle: "Hillcrest Real Estate"
   },
   {
     id: "e12ExwQBJh4",
@@ -334,12 +322,6 @@ export const VIDEO_TESTIMONIALS_DATA = [
     name: "SitelogiQ",
     title: "Client Testimonial - SitelogiQ",
     subtitle: "SitelogiQ Energy & Facilities"
-  },
-  {
-    id: "mThrwuKQpIg",
-    name: "HK Lane",
-    title: "Client Testimonial - HK Lane Real Estate",
-    subtitle: "HK Lane Real Estate"
   },
   {
     id: "VBpIohKMX8I",
