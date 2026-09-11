@@ -70,18 +70,19 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2.6rem;
+  gap: 1.85rem;
   list-style: none;
 }
 
 .nav-links a {
   color: #F4F4F5;
   font-weight: 700;
-  font-size: 1.22rem;
-  letter-spacing: 0.03em;
-  padding: 0.4rem 0.75rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 0.65rem;
   border-radius: 8px;
   text-decoration: none;
+  white-space: nowrap;
   transition: all var(--transition-fast);
 }
 
@@ -1193,6 +1194,8 @@
 
 /* Mobile Viewport Rules (< 768px & < 500px) */
 @media (max-width: 1024px) {
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.95rem; padding: 0.35rem 0.45rem; }
   .masonry-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 }
