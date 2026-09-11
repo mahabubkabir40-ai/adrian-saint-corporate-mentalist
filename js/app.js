@@ -309,6 +309,7 @@ function renderHomepageContent() {
   }
 
   setupVideoModalPlayer();
+  setupVideoCarousel();
 }
 
 function setupVideoModalPlayer() {
@@ -327,6 +328,7 @@ function setupVideoModalPlayer() {
 
   videoCards.forEach(card => {
     const handleOpen = () => {
+      if (window._isCarouselDragging) return;
       const videoId = card.dataset.videoid;
       const title = card.dataset.videotitle || "Client Testimonial";
       if (!videoId) return;
@@ -368,4 +370,186 @@ function setupVideoModalPlayer() {
       closeModal();
     }
   });
+}
+
+function setupVideoCarousel() {
+  const wrapper = document.querySelector(".video-carousel-wrapper");
+  const track = document.getElementById("video-carousel-track");
+  const prevBtn = document.getElementById("video-carousel-prev");
+  const nextBtn = document.getElementById("video-carousel-next");
+  const dotsContainer = document.getElementById("video-carousel-dots");
+
+  if (!wrapper || !track) return;
+
+  const cards = Array.from(track.querySelectorAll(".video-card-item"));
+  if (!cards.length) return;
+
+  const getPageCount = () => {
+    const cardWidth = cards[0].offsetWidth + 20;
+    const visibleCount = Math.max(1, Math.round(track.clientWidth / cardWidth));
+    return Math.max(1, Math.ceil(cards.length / visibleCount));
+  };
+
+  const renderDots = () => {
+    if (!dotsContainer) return;
+    dotsContainer.innerHTML = "";
+    const count = getPageCount();
+    for (let i = 0; i < count; i++) {
+      const dot = document.createElement("button");
+      dot.className = `video-carousel-dot ${i === 0 ? "active" : ""}`;
+      dot.setAttribute("aria-label", `Slide ${i + 1}`);
+      dot.addEventListener("click", () => {
+        goToPage(i);
+      });
+      dotsContainer.appendChild(dot);
+    }
+  };
+
+  const goToPage = (pageIndex) => {
+    const cardWidth = cards[0].offsetWidth + 20;
+    const visibleCount = Math.max(1, Math.round(track.clientWidth / cardWidth));
+    const targetCardIndex = Math.min(cards.length - 1, pageIndex * visibleCount);
+    const targetCard = cards[targetCardIndex];
+    if (targetCard) {
+      track.scrollTo({ left: targetCard.offsetLeft - track.offsetLeft, behavior: "smooth" });
+    }
+  };
+
+  const updateActiveState = () => {
+    const cardWidth = cards[0].offsetWidth + 20;
+    const visibleCount = Math.max(1, Math.round(track.clientWidth / cardWidth));
+    const scrollPos = track.scrollLeft;
+    const maxScroll = track.scrollWidth - track.clientWidth;
+
+    let activeIndex = Math.round(scrollPos / (cardWidth * visibleCount));
+    const dots = dotsContainer ? dotsContainer.querySelectorAll(".video-carousel-dot") : [];
+    if (scrollPos >= maxScroll - 15) {
+      activeIndex = dots.length - 1;
+    }
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("active", idx === activeIndex);
+    });
+
+    if (prevBtn) {
+      prevBtn.setAttribute("aria-disabled", scrollPos <= 10 ? "true" : "false");
+    }
+    if (nextBtn) {
+      nextBtn.setAttribute("aria-disabled", scrollPos >= maxScroll - 10 ? "true" : "false");
+    }
+  };
+
+  track.addEventListener("scroll", () => {
+    requestAnimationFrame(updateActiveState);
+  }, { passive: true });
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 20) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft <= 20) {
+        track.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      }
+    });
+  }
+
+  // Keyboard navigation when focused on track
+  track.setAttribute("tabindex", "0");
+  track.setAttribute("aria-label", "Video Testimonials Carousel");
+  track.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") {
+      e.preventDefault();
+      track.scrollBy({ left: track.clientWidth * 0.5, behavior: "smooth" });
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      track.scrollBy({ left: -track.clientWidth * 0.5, behavior: "smooth" });
+    }
+  });
+
+  // Desktop drag to scroll with suppression of click
+  let isDown = false;
+  let startX = 0;
+  let scrollLeftStart = 0;
+
+  track.addEventListener("mousedown", (e) => {
+    isDown = true;
+    window._isCarouselDragging = false;
+    startX = e.pageX - track.offsetLeft;
+    scrollLeftStart = track.scrollLeft;
+    track.style.scrollBehavior = "auto";
+    track.style.scrollSnapType = "none";
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.4;
+    if (Math.abs(walk) > 6) {
+      window._isCarouselDragging = true;
+    }
+    track.scrollLeft = scrollLeftStart - walk;
+  });
+
+  window.addEventListener("mouseup", () => {
+    if (!isDown) return;
+    isDown = false;
+    track.style.scrollBehavior = "smooth";
+    track.style.scrollSnapType = "x mandatory";
+    setTimeout(() => {
+      window._isCarouselDragging = false;
+    }, 60);
+  });
+
+  // Autoplay with smart pause
+  let autoplayTimer = null;
+  const startAutoplay = () => {
+    stopAutoplay();
+    autoplayTimer = setInterval(() => {
+      const modal = document.getElementById("video-testimonial-modal");
+      if (modal && modal.style.display === "flex") return;
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 20) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        const scrollAmount = track.clientWidth * 0.85;
+        track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }, 6000);
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  };
+
+  wrapper.addEventListener("mouseenter", stopAutoplay);
+  wrapper.addEventListener("mouseleave", startAutoplay);
+  wrapper.addEventListener("touchstart", stopAutoplay, { passive: true });
+  wrapper.addEventListener("touchend", () => {
+    setTimeout(startAutoplay, 3500);
+  }, { passive: true });
+
+  renderDots();
+  updateActiveState();
+  startAutoplay();
+
+  window.addEventListener("resize", () => {
+    renderDots();
+    updateActiveState();
+  }, { passive: true });
 }
