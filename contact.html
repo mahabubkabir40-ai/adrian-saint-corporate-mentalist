@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/main.css?v=20260911_v30">
-  <link rel="stylesheet" href="css/components.css?v=20260911_v30">
+  <link rel="stylesheet" href="css/main.css?v=20260911_v31">
+  <link rel="stylesheet" href="css/components.css?v=20260911_v31">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -126,11 +126,40 @@
       color: var(--accent-gold);
     }
 
-    .trust-badge-grid {
+    .contact-photos-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
-      margin-top: 3rem;
+      margin-top: 3.5rem;
+    }
+
+    .contact-photo-card {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #14151E;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .contact-photo-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(239, 68, 68, 0.5);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(239, 68, 68, 0.25);
+    }
+
+    .contact-photo-card img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16/11;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .contact-photo-card:hover img {
+      transform: scale(1.04);
     }
 
     @media (max-width: 900px) {
@@ -138,8 +167,10 @@
         grid-template-columns: 1fr;
         gap: 2.5rem;
       }
-      .trust-badge-grid {
+      .contact-photos-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-top: 2.5rem;
       }
     }
   </style>
@@ -286,24 +317,6 @@
               </p>
             </div>
 
-            <!-- Live Event Photos Gallery (3 Images) -->
-            <div style="margin-top: 1.75rem;">
-              <!-- 1. Featured Ballroom Gala Performance -->
-              <div style="position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--border-gold-glow); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75); margin-bottom: 0.75rem;">
-                <img src="images/contact-gallery-1.jpg" alt="Adrian Saint performing live at national corporate summit and leadership gala" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: cover; display: block;" loading="lazy">
-              </div>
-
-              <!-- 2 & 3. Side-by-Side Highlights -->
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-                <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.65);">
-                  <img src="images/contact-gallery-2.jpg" alt="Adrian Saint on stage with corporate executive volunteers" style="width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block;" loading="lazy">
-                </div>
-                <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-glass); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.65);">
-                  <img src="images/contact-gallery-3.webp" alt="Adrian Saint at Athletes First Celebrity VIP Gala" style="width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 15%; display: block;" loading="lazy">
-                </div>
-              </div>
-            </div>
-
           </div>
 
           <!-- Right Column: Interactive Corporate Booking Form -->
@@ -419,24 +432,16 @@
 
         </div>
 
-        <!-- 3. TRUST PROOF BANNER -->
-        <div class="trust-badge-grid">
-          <div class="glass-card" style="text-align: center; padding: 2rem 1.5rem; border-radius: 16px;">
-            <div style="font-size: 2.2rem; color: var(--accent-gold); margin-bottom: 0.5rem;">🎤</div>
-            <h4 style="font-size: 1.1rem; color: #FFF; margin-bottom: 0.4rem;">Minimalist Turnkey AV</h4>
-            <p style="font-size: 0.85rem; color: var(--text-silver); margin: 0;">Stress-free rider requiring only a wireless handheld mic & sound system.</p>
+        <!-- 3. LIVE EVENT PHOTOS SHOWCASE (3-COLUMN GALLERY) -->
+        <div class="contact-photos-grid">
+          <div class="contact-photo-card">
+            <img src="images/contact-gallery-1.jpg" alt="Adrian Saint performing live at national corporate summit and leadership gala" loading="lazy">
           </div>
-
-          <div class="glass-card" style="text-align: center; padding: 2rem 1.5rem; border-radius: 16px;">
-            <div style="font-size: 2.2rem; color: var(--accent-gold); margin-bottom: 0.5rem;">🛡️</div>
-            <h4 style="font-size: 1.1rem; color: #FFF; margin-bottom: 0.4rem;">100% HR-Safe Score</h4>
-            <p style="font-size: 0.85rem; color: var(--text-silver); margin: 0;">Clean comedy and high-respect participation where guests are heroes.</p>
+          <div class="contact-photo-card">
+            <img src="images/contact-gallery-2.jpg" alt="Adrian Saint on stage with corporate executive volunteers" loading="lazy">
           </div>
-
-          <div class="glass-card" style="text-align: center; padding: 2rem 1.5rem; border-radius: 16px;">
-            <div style="font-size: 2.2rem; color: var(--accent-gold); margin-bottom: 0.5rem;">📈</div>
-            <h4 style="font-size: 1.1rem; color: #FFF; margin-bottom: 0.4rem;">99.4% Client Retention</h4>
-            <p style="font-size: 0.85rem; color: var(--text-silver); margin: 0;">Annual re-booking rate among Fortune 500 corporate buyers.</p>
+          <div class="contact-photo-card">
+            <img src="images/contact-gallery-3.webp" alt="Adrian Saint at Athletes First Celebrity VIP Gala" style="object-position: center 20%;" loading="lazy">
           </div>
         </div>
 
