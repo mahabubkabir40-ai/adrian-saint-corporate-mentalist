@@ -19,7 +19,7 @@ export const TESTIMONIALS_DATA = [
     rating: 5
   },
   {
-    quote: "The audience leaves with a sense of wonder!",
+    quote: "A smooth and confident speaker, Adrian’s greatest talent seems to be his ability to persuade...audience leaves with a sense of wonder!",
     author: "The Sacramento Bee",
     role: "Press & Media Review",
     company: "",
