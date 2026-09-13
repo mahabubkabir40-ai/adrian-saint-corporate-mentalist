@@ -70,6 +70,17 @@ function openBookingModalDynamic(cityName = "") {
             </div>
 
             <div class="form-group">
+              <label class="form-label">Estimated Budget</label>
+              <select name="budget" class="form-select">
+                <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                <option value="$5,000 - $10,000" selected>$5,000 - $10,000</option>
+                <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                <option value="$20,000+">$20,000+</option>
+                <option value="Flexible / Negotiable">Flexible / Negotiable</option>
+              </select>
+            </div>
+
+            <div class="form-group">
               <label class="form-label">Event Type & Details *</label>
               <textarea class="form-textarea" rows="3" required placeholder="Please describe your event format (Stage Show, Strolling, Trade Show, Custom Hybrid), guest count, or schedule..."></textarea>
             </div>

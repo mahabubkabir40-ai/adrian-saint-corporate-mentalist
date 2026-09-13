@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Cache-Busted) -->
-  <link rel="stylesheet" href="css/main.css?v=20260913_v34">
-  <link rel="stylesheet" href="css/components.css?v=20260913_v34">
+  <link rel="stylesheet" href="css/main.css?v=20260913_v35">
+  <link rel="stylesheet" href="css/components.css?v=20260913_v35">
 
   <!-- Schema.org JSON-LD -->
   <script id="geo-jsonld-script" type="application/ld+json">
@@ -160,6 +160,17 @@
                   <label class="hero-field-label">Direct Phone *</label>
                   <input type="tel" name="phone" placeholder="(555) 000-0000" required class="hero-field-input">
                 </div>
+              </div>
+
+              <div class="hero-form-field">
+                <label class="hero-field-label">Estimated Budget</label>
+                <select name="budget" class="hero-field-input hero-field-select">
+                  <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                  <option value="$5,000 - $10,000" selected>$5,000 - $10,000</option>
+                  <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                  <option value="$20,000+">$20,000+</option>
+                  <option value="Flexible / Negotiable">Flexible / Negotiable</option>
+                </select>
               </div>
 
               <button type="submit" class="btn btn-gold hero-submit-btn">
@@ -1682,6 +1693,6 @@
   </div>
 
   <!-- JavaScript Modules (Cache-Busted) -->
-  <script type="module" src="js/app.js?v=20260913_v34"></script>
+  <script type="module" src="js/app.js?v=20260913_v35"></script>
 </body>
 </html>

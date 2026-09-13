@@ -1484,6 +1484,11 @@
   box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
 }
 
+.form-select option {
+  background: #161826;
+  color: #FFFFFF;
+}
+
 /* Minimalist Footer & Social Graph Links */
 .footer {
   background: var(--bg-footer);
