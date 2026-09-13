@@ -27,8 +27,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheets (Cache-Busted) -->
-  <link rel="stylesheet" href="css/main.css?v=20260913_v36">
-  <link rel="stylesheet" href="css/components.css?v=20260913_v36">
+  <link rel="stylesheet" href="css/main.css?v=20260913_v37">
+  <link rel="stylesheet" href="css/components.css?v=20260913_v37">
 
   <!-- Schema.org JSON-LD LocalBusiness & Entertainment SEO -->
   <script type="application/ld+json">
@@ -491,7 +491,393 @@
           <p>100% 5-Star feedback from Fortune 500 meeting planners and executives.</p>
         </div>
 
-        <div class="grid-3">
+        <!-- Video Testimonials 5-Column Grid (3 rows of 5 videos = 15 videos) -->
+        <div class="video-testimonials-section">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem; margin-bottom: 0.35rem;">
+              <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); color: #EF4444; font-size: 0.85rem; padding-left: 2px;">▶</span>
+              <h3 style="font-size: 1.4rem; color: #FFFFFF; margin: 0; font-weight: 700; letter-spacing: -0.01em;">Live Video Testimonials</h3>
+            </div>
+            <p style="color: var(--text-silver); font-size: 0.9rem; margin: 0;">Authentic post-show reactions from Fortune 500 summits & corporate leaders</p>
+          </div>
+
+          <div class="video-carousel-wrapper">
+            <button class="video-carousel-arrow prev" id="video-carousel-prev" aria-label="Previous testimonials" title="Previous">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="video-carousel-track" id="video-carousel-track">
+              <!-- 1. Sahara -->
+              <div class="video-card-item" data-videoid="Qe8bBgX43GQ" data-videotitle="Client Testimonial - Sahara" role="button" tabindex="0" aria-label="Play testimonial video from Sahara">
+                <img src="https://i.ytimg.com/vi/Qe8bBgX43GQ/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/Qe8bBgX43GQ/mqdefault.jpg';" alt="Client Testimonial - Sahara" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 2. Citizens Private Bank -->
+              <div class="video-card-item" data-videoid="Ax9QWSUYmQo" data-videotitle="Client Testimonial - Citizens Private Bank" role="button" tabindex="0" aria-label="Play testimonial video from Citizens Private Bank">
+                <img src="https://i.ytimg.com/vi/Ax9QWSUYmQo/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/Ax9QWSUYmQo/mqdefault.jpg';" alt="Client Testimonial - Citizens Private Bank" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 3. California Funeral -->
+              <div class="video-card-item" data-videoid="g7dctVwG7ww" data-videotitle="California Funeral Directors Association" role="button" tabindex="0" aria-label="Play testimonial video from California Funeral Directors Association">
+                <img src="https://i.ytimg.com/vi/g7dctVwG7ww/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/g7dctVwG7ww/mqdefault.jpg';" alt="California Funeral Directors Association" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 4. RMA Companies -->
+              <div class="video-card-item" data-videoid="AjcJ3nS057g" data-videotitle="Client Testimonial - RMA Companies" role="button" tabindex="0" aria-label="Play testimonial video from RMA Companies">
+                <img src="https://i.ytimg.com/vi/AjcJ3nS057g/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/AjcJ3nS057g/mqdefault.jpg';" alt="Client Testimonial - RMA Companies" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 5. Rand Tech -->
+              <div class="video-card-item" data-videoid="e12ExwQBJh4" data-videotitle="Rand Technology Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Rand Tech">
+                <img src="https://i.ytimg.com/vi/e12ExwQBJh4/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/e12ExwQBJh4/mqdefault.jpg';" alt="Rand Technology Testimonial" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 6. PreludeDx -->
+              <div class="video-card-item" data-videoid="Klx6Cq4opaY" data-videotitle="Client Testimonial - PreludeDx" role="button" tabindex="0" aria-label="Play testimonial video from PreludeDx">
+                <img src="https://i.ytimg.com/vi/Klx6Cq4opaY/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/Klx6Cq4opaY/mqdefault.jpg';" alt="Client Testimonial - PreludeDx" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 7. Jaime Rojas -->
+              <div class="video-card-item" data-videoid="03OfNijGzKw" data-videotitle="Client Testimonial - Jaime Rojas" role="button" tabindex="0" aria-label="Play testimonial video from Jaime Rojas">
+                <img src="https://i.ytimg.com/vi/03OfNijGzKw/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/03OfNijGzKw/mqdefault.jpg';" alt="Client Testimonial - Jaime Rojas" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 8. Caesars Palace -->
+              <div class="video-card-item" data-videoid="XcEfMl2LOpM" data-videotitle="Testimonial - Caesars Palace" role="button" tabindex="0" aria-label="Play testimonial video from Caesars Palace">
+                <img src="https://i.ytimg.com/vi/XcEfMl2LOpM/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/XcEfMl2LOpM/mqdefault.jpg';" alt="Client Testimonial - Caesars Palace" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 9. Crowell LLP -->
+              <div class="video-card-item" data-videoid="G6J7JRivTcM" data-videotitle="Testimonial - Crowell LLP" role="button" tabindex="0" aria-label="Play testimonial video from Crowell LLP">
+                <img src="https://i.ytimg.com/vi/G6J7JRivTcM/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/G6J7JRivTcM/mqdefault.jpg';" alt="Testimonial - Crowell LLP" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 10. Athletes First -->
+              <div class="video-card-item" data-videoid="b6z3GzzoJ2w" data-videotitle="Athletes First Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Athletes First">
+                <img src="https://i.ytimg.com/vi/b6z3GzzoJ2w/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/b6z3GzzoJ2w/mqdefault.jpg';" alt="Athletes First Testimonial" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 11. The Lakes Club -->
+              <div class="video-card-item" data-videoid="Ap1XDdP3I4s" data-videotitle="Testimonial - The Lakes Country Club" role="button" tabindex="0" aria-label="Play testimonial video from The Lakes Country Club">
+                <img src="https://i.ytimg.com/vi/Ap1XDdP3I4s/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/Ap1XDdP3I4s/mqdefault.jpg';" alt="Testimonial - The Lakes Country Club" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 12. SitelogiQ -->
+              <div class="video-card-item" data-videoid="X0lL0icdztY" data-videotitle="Client Testimonial - SitelogiQ" role="button" tabindex="0" aria-label="Play testimonial video from SitelogiQ">
+                <img src="https://i.ytimg.com/vi/X0lL0icdztY/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/X0lL0icdztY/mqdefault.jpg';" alt="Client Testimonial - SitelogiQ" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 13. Talley LLP -->
+              <div class="video-card-item" data-videoid="_p7LpqvELd8" data-videotitle="Client Testimonial - Talley LLP" role="button" tabindex="0" aria-label="Play testimonial video from Talley LLP">
+                <img src="https://i.ytimg.com/vi/_p7LpqvELd8/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/_p7LpqvELd8/mqdefault.jpg';" alt="Client Testimonial - Talley LLP" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 14. NeoGenomics (Executive 1) -->
+              <div class="video-card-item" data-videoid="VBpIohKMX8I" data-videotitle="Client Testimonial - NeoGenomics" role="button" tabindex="0" aria-label="Play testimonial video from NeoGenomics">
+                <img src="https://i.ytimg.com/vi/VBpIohKMX8I/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/VBpIohKMX8I/mqdefault.jpg';" alt="Client Testimonial - NeoGenomics" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 15. NeoGenomics (Executive 2) -->
+              <div class="video-card-item" data-videoid="StD_MwtFgL0" data-videotitle="Client Testimonial - NeoGenomics" role="button" tabindex="0" aria-label="Play testimonial video from NeoGenomics">
+                <img src="https://i.ytimg.com/vi/StD_MwtFgL0/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/StD_MwtFgL0/mqdefault.jpg';" alt="Client Testimonial - NeoGenomics" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- 16. Yacht Club -->
+              <div class="video-card-item" data-videoid="RlP9FjVgyu0" data-videotitle="Los Angeles Yacht Club Testimonial" role="button" tabindex="0" aria-label="Play testimonial video from Yacht Club">
+                <img src="https://i.ytimg.com/vi/RlP9FjVgyu0/maxresdefault.jpg" onerror="this.onerror=null; this.src='https://i.ytimg.com/vi/RlP9FjVgyu0/mqdefault.jpg';" alt="Los Angeles Yacht Club Testimonial" class="video-card-thumb" loading="lazy">
+                <div class="video-card-gradient"></div>
+                <div class="video-card-top-bar">
+                  <div class="video-card-author">
+                    <div class="video-card-avatar">AS</div>
+                    <div class="video-card-meta">
+                      <span class="video-card-label">Client Testimonial</span>
+                      <span class="video-card-sub">Adrian Saint • Corporate Mentalist</span>
+                    </div>
+                  </div>
+                  <span class="video-card-verified-badge">VERIFIED</span>
+                </div>
+                <div class="video-shorts-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" width="58" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.5 19.3c-1.3-2.6-3.8-4.4-6.7-4.9l-2.4-.4 1.5-.9c3.1-1.9 4.1-5.9 2.2-9-1.9-3.1-5.9-4.1-9-2.2L10.9 9.3C8.4 10.9 7 13.7 7.2 16.6c.2 3 1.9 5.6 4.7 6.8l2.4 1-1.5.9c-3.1 1.9-4.1 5.9-2.2 9 1.4 2.3 3.8 3.6 6.3 3.6 1 0 1.9-.2 2.7-.7l12.2-7.4c2.5-1.5 3.9-4.4 3.7-7.3-.2-1.2-.8-2.3-1.6-3.2z" fill="#EF4444"/>
+                    <path d="M19.5 16.5l11 7-11 7v-14z" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <button class="video-carousel-arrow next" id="video-carousel-next" aria-label="Next testimonials" title="Next">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="video-carousel-pagination" id="video-carousel-dots" aria-label="Testimonials pagination"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 4rem;">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <h3 style="font-size: 1.4rem; color: #FFFFFF; margin: 0; font-weight: 700; letter-spacing: -0.01em;">Executive Written Endorsements</h3>
+            <p style="color: var(--text-silver); font-size: 0.9rem; margin: 0.35rem 0 0 0;">Verified feedback from Fortune 500 leaders and Southern California event coordinators</p>
+          </div>
+          <div class="grid-3">
           <div class="glass-card" style="padding: 2.25rem; border-radius: 1rem;">
             <div style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 0.75rem;">★★★★★</div>
             <p style="color: var(--text-silver); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.25rem; font-style: italic;">
@@ -518,6 +904,7 @@
             <div style="font-weight: 700; color: #FFF;">National Meeting Producer</div>
             <div style="font-size: 0.85rem; color: var(--text-muted);">Financial Services Annual Gala</div>
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -674,6 +1061,6 @@
   </div>
 
   <!-- JavaScript Modules (Cache-Busted) -->
-  <script type="module" src="js/app.js?v=20260913_v36"></script>
+  <script type="module" src="js/app.js?v=20260913_v37"></script>
 </body>
 </html>

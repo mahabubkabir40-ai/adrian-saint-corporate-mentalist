@@ -19,6 +19,7 @@ function initApp() {
   setupBookingModal();
   setupVideoModal();
   setupVideoModalPlayer();
+  setupVideoCarousel();
   setupHeroForm();
   setupInquiryForm();
   setupLocationTabs();
@@ -172,25 +173,51 @@ function setupFaqAccordion() {
 }
 
 function setupVideoModal() {
-  const videoModal = document.getElementById("video-modal");
-  const videoClose = document.getElementById("video-modal-close");
+  const modal = document.getElementById("video-testimonial-modal") || document.getElementById("video-modal");
+  const closeBtn = document.getElementById("close-video-modal") || document.getElementById("video-modal-close");
+  const iframeContainer = document.getElementById("video-modal-iframe-container");
 
   document.querySelectorAll(".open-video-modal").forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      if (videoModal) videoModal.classList.add("active");
+      const videoId = btn.dataset.videoId || "jnwJ1-k-dU8";
+      if (modal && iframeContainer) {
+        iframeContainer.innerHTML = `
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+            title="Adrian Saint Corporate Mentalist Reel" 
+            style="width: 100%; height: 100%; border: none;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        `;
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      } else if (modal) {
+        modal.classList.add("active");
+      }
     });
   });
 
-  if (videoClose) {
-    videoClose.addEventListener("click", () => {
-      if (videoModal) videoModal.classList.remove("active");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      if (modal) {
+        modal.style.display = "none";
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+        if (iframeContainer) iframeContainer.innerHTML = "";
+      }
     });
   }
 
-  if (videoModal) {
-    videoModal.addEventListener("click", (e) => {
-      if (e.target === videoModal) videoModal.classList.remove("active");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+        if (iframeContainer) iframeContainer.innerHTML = "";
+      }
     });
   }
 }
