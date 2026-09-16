@@ -10,11 +10,11 @@ export function generateSchema({ cityData, faqs }) {
   schemas.push({
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://adriansaint.com/#person",
+    "@id": "https://adriansaintmentalist.com/#person",
     "name": "Adrian Saint",
     "jobTitle": "Corporate Mentalist & Mind Reader",
     "description": "Adrian Saint is an elite corporate mentalist and mind reader providing clean, HR-safe psychological entertainment for corporate galas, executive retreats, and national conventions.",
-    "url": "https://adriansaint.com",
+    "url": "https://adriansaintmentalist.com",
     "email": "adrian@saintmentalist.com",
     "telephone": "+1-833-570-5966",
     "sameAs": [
@@ -45,7 +45,7 @@ export function generateSchema({ cityData, faqs }) {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "EntertainmentBusiness",
-      "@id": `https://adriansaint.com/#business-${cityData.id}`,
+      "@id": `https://adriansaintmentalist.com/#business-${cityData.id}`,
       "name": `Adrian Saint - Corporate Mentalist ${cityData.name}`,
       "description": `Premier corporate mentalist and mind reader serving ${cityData.name}, ${cityData.state} corporate galas, trade shows, and executive retreats.`,
       "areaServed": {
@@ -59,7 +59,7 @@ export function generateSchema({ cityData, faqs }) {
       "priceRange": "$$$$",
       "telephone": "+1-833-570-5966",
       "email": "adrian@saintmentalist.com",
-      "url": `https://adriansaint.com/#city/${cityData.id}`,
+      "url": `https://adriansaintmentalist.com/#city/${cityData.id}`,
       "sameAs": [
         "https://www.linkedin.com/in/adriansaintmentalist/",
         "https://www.instagram.com/ocmentalist/",
