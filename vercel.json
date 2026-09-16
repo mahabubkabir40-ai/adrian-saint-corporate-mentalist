@@ -3,38 +3,88 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/phoenix",
-      "destination": "/corporate-mentalist-phoenix",
+      "source": "/corporate-mentalist-los-angeles",
+      "destination": "/corporate-magician-los-angeles",
       "permanent": true
     },
     {
-      "source": "/san-diego",
-      "destination": "/corporate-mentalist-san-diego",
-      "permanent": true
-    },
-    {
-      "source": "/san-francisco",
-      "destination": "/corporate-mentalist-san-francisco",
-      "permanent": true
-    },
-    {
-      "source": "/sf",
-      "destination": "/corporate-mentalist-san-francisco",
-      "permanent": true
-    },
-    {
-      "source": "/scottsdale",
-      "destination": "/corporate-mentalist-scottsdale",
-      "permanent": true
-    },
-    {
-      "source": "/la",
-      "destination": "/corporate-mentalist-los-angeles",
+      "source": "/corporate-macigian-los-angeles",
+      "destination": "/corporate-magician-los-angeles",
       "permanent": true
     },
     {
       "source": "/los-angeles",
-      "destination": "/corporate-mentalist-los-angeles",
+      "destination": "/corporate-magician-los-angeles",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-phoenix",
+      "destination": "/corporate-magician-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-phoenix",
+      "destination": "/corporate-magician-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/phoenix",
+      "destination": "/corporate-magician-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-san-diego",
+      "destination": "/corporate-magician-san-diego",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-san-diego",
+      "destination": "/corporate-magician-san-diego",
+      "permanent": true
+    },
+    {
+      "source": "/san-diego",
+      "destination": "/corporate-magician-san-diego",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-san-francisco",
+      "destination": "/corporate-magician-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-san-francisco",
+      "destination": "/corporate-magician-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/san-francisco",
+      "destination": "/corporate-magician-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-scottsdale",
+      "destination": "/corporate-magician-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-scottsdale",
+      "destination": "/corporate-magician-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/scottsdale",
+      "destination": "/corporate-magician-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/la",
+      "destination": "/corporate-magician-los-angeles",
+      "permanent": true
+    },
+    {
+      "source": "/sf",
+      "destination": "/corporate-magician-san-francisco",
       "permanent": true
     }
   ]
