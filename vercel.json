@@ -1,13 +1,41 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/los-angeles", "destination": "/corporate-mentalist-los-angeles.html" },
-    { "source": "/la", "destination": "/corporate-mentalist-los-angeles.html" },
-    { "source": "/phoenix", "destination": "/corporate-mentalist-phoenix.html" },
-    { "source": "/san-diego", "destination": "/corporate-mentalist-san-diego.html" },
-    { "source": "/san-francisco", "destination": "/corporate-mentalist-san-francisco.html" },
-    { "source": "/sf", "destination": "/corporate-mentalist-san-francisco.html" },
-    { "source": "/scottsdale", "destination": "/corporate-mentalist-scottsdale.html" }
+  "redirects": [
+    {
+      "source": "/phoenix",
+      "destination": "/corporate-mentalist-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/san-diego",
+      "destination": "/corporate-mentalist-san-diego",
+      "permanent": true
+    },
+    {
+      "source": "/san-francisco",
+      "destination": "/corporate-mentalist-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/sf",
+      "destination": "/corporate-mentalist-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/scottsdale",
+      "destination": "/corporate-mentalist-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/la",
+      "destination": "/corporate-mentalist-los-angeles",
+      "permanent": true
+    },
+    {
+      "source": "/los-angeles",
+      "destination": "/corporate-mentalist-los-angeles",
+      "permanent": true
+    }
   ]
 }
