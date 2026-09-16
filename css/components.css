@@ -1206,75 +1206,158 @@
   position: relative;
   background: linear-gradient(165deg, rgba(20, 24, 34, 0.95) 0%, rgba(12, 14, 20, 0.98) 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(239, 68, 68, 0.35);
   border-radius: 20px;
-  padding: 1.85rem 1.75rem 1.5rem 1.75rem;
+  padding: 1.6rem 1.6rem 1.4rem 1.6rem;
   box-sizing: border-box;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 280px;
+  height: 250px;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .review-carousel-card {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+    height: 260px;
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 640px) {
+  .review-carousel-card {
+    flex: 0 0 100%;
+    height: auto;
+    min-height: 220px;
+  }
 }
 
 .review-carousel-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: rgba(239, 68, 68, 0.5);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.75), 0 0 28px rgba(239, 68, 68, 0.2);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 0 0 25px rgba(239, 68, 68, 0.2);
 }
 
-.review-stars {
-  color: #EF4444;
-  font-size: 1.15rem;
-  letter-spacing: 4px;
-  font-weight: 700;
-  margin-bottom: 1.15rem;
-}
-
-.review-card-body {
+/* Modern Header: Avatar + Info + Stars */
+.review-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.95rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
 }
 
-.review-quote-text {
-  font-size: 0.93rem;
-  line-height: 1.6;
-  color: #E2E8F0;
-  font-weight: 400;
-  margin-bottom: 1.25rem;
+.review-author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(185, 28, 28, 0.15) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.25);
 }
 
-.review-card-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 1rem;
-  margin-top: auto;
-  position: relative;
-  z-index: 2;
+.review-header-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .review-author-name {
   font-weight: 800;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #FFFFFF;
-  line-height: 1.25;
-  margin-bottom: 0.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   letter-spacing: -0.01em;
 }
 
-.review-author-role {
-  color: #EF4444;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 0.2rem;
+.review-author-meta {
+  color: #94A3B8;
+  font-size: 0.76rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
 }
 
-.review-author-company {
-  color: #94A3B8;
+.review-author-meta .role-highlight {
+  color: #F87171;
+  font-weight: 700;
+}
+
+.review-card-header .review-stars {
+  color: #EF4444;
   font-size: 0.82rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+/* Card Body */
+.review-card-body {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Decorative Watermark Quote */
+.review-card-body::before {
+  content: "“";
+  position: absolute;
+  top: -12px;
+  right: -6px;
+  font-family: Georgia, serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.review-quote-text {
+  font-size: 0.91rem;
+  line-height: 1.58;
+  color: #E2E8F0;
+  font-weight: 400;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Short Pull-Quotes: High-Impact Typography */
+.review-quote-text.quote-short {
+  font-size: 1.05rem;
+  line-height: 1.5;
   font-weight: 500;
-  line-height: 1.35;
+  color: #F8FAFC;
+  font-style: italic;
 }
 
 .reviews-carousel-pagination {
