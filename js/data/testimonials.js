@@ -150,6 +150,34 @@ export const TESTIMONIALS_DATA = [
     role: "Director of Events and Operations",
     company: "Nicholas Academic Centers",
     rating: 5
+  },
+  {
+    quote: "Thank you for entertaining our guests last night. They had a great time, thoroughly enjoyed your act! We certainly will refer you to anyone who is looking to provide some entertainment at his party.",
+    author: "Vibhuti Bhuta",
+    role: "President",
+    company: "South Asian Helpline and Referral Agency (SAHARA)",
+    rating: 5
+  },
+  {
+    quote: "Thank you for joining us and sharing your talents to captivate the audience. We will certainly be sure to share your name and will be in touch if we host anything similar in the area! I still show people my Elvis cutout.",
+    author: "Hannah Forsythe",
+    role: "Global Events & Corporate Communications Manager",
+    company: "Nova Biomedical",
+    rating: 5
+  },
+  {
+    quote: "Absolutely you were incredible and the whole staff LOVED your performance!! Thank you so much!",
+    author: "Krista Talley",
+    role: "Client Review",
+    company: "Talley LLP",
+    rating: 5
+  },
+  {
+    quote: "We really enjoyed having you entertain our crowd. People were still talking about the calculator the next day! We'll be back in Vegas next year and will reach out in advance to hopefully book you again.",
+    author: "John Hutchinson",
+    role: "Founder & CEO",
+    company: "Traders Reserve",
+    rating: 5
   }
 ];
 
