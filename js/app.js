@@ -360,6 +360,7 @@ function renderHomepageContent() {
   setupVideoModalPlayer();
   setupVideoCarousel();
   setupWrittenReviewsCarousel();
+  setupEventGallery();
 }
 
 function setupVideoModalPlayer() {
@@ -767,3 +768,105 @@ function setupWrittenReviewsCarousel() {
   }, { passive: true });
 }
 
+
+
+function setupEventGallery() {
+  const thumbs = document.querySelectorAll('.viewer-thumb');
+  const mainImg = document.getElementById('viewer-main-img');
+  const titleEl = document.getElementById('viewer-title');
+  const venueEl = document.querySelector('#viewer-venue span');
+  const currentEl = document.getElementById('viewer-current');
+  const totalEl = document.getElementById('viewer-total');
+  const nextBtn = document.getElementById('viewer-next');
+  const prevBtn = document.getElementById('viewer-prev');
+  const thumbStrip = document.getElementById('viewer-thumbnails');
+
+  if (!thumbs.length || !mainImg) return;
+
+  let currentIndex = 0;
+  const totalItems = thumbs.length;
+  if (totalEl) totalEl.innerText = totalItems;
+
+  const imagesData = Array.from(thumbs).map(thumb => ({
+    src: thumb.getAttribute('data-src'),
+    title: thumb.getAttribute('data-title'),
+    venue: thumb.getAttribute('data-venue')
+  }));
+
+  function showImage(index, scrollToThumb = false) {
+    if (index < 0) {
+      currentIndex = totalItems - 1;
+    } else if (index >= totalItems) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+
+    const data = imagesData[currentIndex];
+
+    // Smooth fade transition
+    mainImg.style.opacity = '0.3';
+    mainImg.style.transform = 'scale(0.98)';
+    setTimeout(() => {
+      mainImg.src = data.src;
+      if (titleEl) titleEl.innerText = data.title;
+      if (venueEl) venueEl.innerText = data.venue;
+      if (currentEl) currentEl.innerText = currentIndex + 1;
+      mainImg.style.opacity = '1';
+      mainImg.style.transform = 'scale(1)';
+    }, 150);
+
+    // Update active styling on thumbnails
+    thumbs.forEach((t, i) => {
+      if (i === currentIndex) {
+        t.classList.add('active');
+        if (scrollToThumb && thumbStrip) {
+          t.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      } else {
+        t.classList.remove('active');
+      }
+    });
+  }
+
+  // Button controls
+  if (nextBtn) nextBtn.addEventListener('click', () => showImage(currentIndex + 1, true));
+  if (prevBtn) prevBtn.addEventListener('click', () => showImage(currentIndex - 1, true));
+
+  // Thumbnail clicks
+  thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+      showImage(index, true);
+    });
+  });
+
+  // Keyboard navigation when gallery is in viewport
+  document.addEventListener('keydown', (e) => {
+    const rect = mainImg.getBoundingClientRect();
+    if (rect.top >= -300 && rect.bottom <= window.innerHeight + 300) {
+      if (e.key === 'ArrowRight') showImage(currentIndex + 1, true);
+      if (e.key === 'ArrowLeft') showImage(currentIndex - 1, true);
+    }
+  });
+
+  // Mobile touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const viewport = mainImg.parentElement;
+  if (viewport) {
+    viewport.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    viewport.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      if (touchEndX < touchStartX - 40) {
+        showImage(currentIndex + 1, true);
+      } else if (touchEndX > touchStartX + 40) {
+        showImage(currentIndex - 1, true);
+      }
+    }, { passive: true });
+  }
+
+  // Initialize with the first image
+  showImage(0, false);
+}

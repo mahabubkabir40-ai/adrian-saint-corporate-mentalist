@@ -14,7 +14,7 @@
   
   <!-- Stylesheets (Cache-Busted) -->
   <link rel="stylesheet" href="css/main.css?v=20260913_v38">
-  <link rel="stylesheet" href="css/components.css?v=20260913_v38">
+  <link rel="stylesheet" href="css/components.css?v=20260916_v40">
 
   <!-- Schema.org JSON-LD -->
   <script id="geo-jsonld-script" type="application/ld+json">
@@ -52,6 +52,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Entertainment Options</a></li>
         <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
@@ -1263,6 +1264,166 @@
     </section>
 
 
+
+    <!-- 7.5 EVENT GALLERY SECTION -->
+    <section id="gallery" class="section-padding section-divider gallery-section">
+      <div class="container gallery-container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center" style="margin-bottom: 2.5rem;">
+          <div class="section-badge" style="background: rgba(239, 68, 68, 0.12); border-color: rgba(239, 68, 68, 0.35); color: #F87171;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -1px; margin-right: 4px;"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            LIVE PERFORMANCE PORTFOLIO
+          </div>
+          <h2 class="text-gradient-gold" style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem;">Event Gallery</h2>
+          <p style="color: var(--text-silver); font-size: 0.95rem; max-width: 600px; margin: 0 auto;">Browse Adrian's highlights from live corporate events, summits, and VIP galas.</p>
+        </div>
+
+        <!-- Main Active Display Screen -->
+        <div class="gallery-viewer-card">
+          
+          <!-- Counter Badge -->
+          <div class="gallery-counter-badge">
+            <span id="viewer-current">1</span> / <span id="viewer-total">35</span>
+          </div>
+
+          <!-- Main Image Viewport -->
+          <div class="gallery-viewport">
+            <img decoding="async" id="viewer-main-img" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/Intecc.jpg" alt="C-Suite Executive Stage Participation" class="viewer-main-image">
+          </div>
+
+          <!-- Navigation Arrows over Main Image -->
+          <button id="viewer-prev" class="gallery-nav-btn gallery-nav-prev" aria-label="Previous Photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button id="viewer-next" class="gallery-nav-btn gallery-nav-next" aria-label="Next Photo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <!-- Caption Overlay at Bottom of Screen -->
+          <div class="gallery-caption-overlay">
+            <h4 id="viewer-title">C-Suite Executive Stage Participation</h4>
+            <p id="viewer-venue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>The Venetian Resort</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Thumbnail Strip Carousel -->
+        <div class="gallery-thumbnails-wrapper">
+          <div id="viewer-thumbnails" class="gallery-thumbnails-strip">
+            <div class="viewer-thumb active" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/Intecc.jpg" data-title="C-Suite Executive Stage Participation" data-venue="The Venetian Resort">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/Intecc.jpg" alt="C-Suite Executive Stage Participation" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527582.jpg" data-title="Standing Ovation Keynote" data-venue="Mandalay Bay Convention Center">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527582.jpg" alt="Standing Ovation Keynote" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527539.jpg" data-title="Strolling Cocktail Mentalism" data-venue="Cosmopolitan Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527539.jpg" alt="Strolling Cocktail Mentalism" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527522.jpg" data-title="General Session Stage Opener" data-venue="Caesars Palace">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527522.jpg" alt="General Session Stage Opener" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527514.jpg" data-title="Spontaneous Audience Mind Reading" data-venue="Mandalay Bay Convention Center">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/BR527514.jpg" alt="Spontaneous Audience Mind Reading" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt5.jpg" data-title="Interactive Psychological Magic" data-venue="Fontainebleau Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt5.jpg" alt="Interactive Psychological Magic" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt4.jpg" data-title="VIP Executive Dinner Mentalism" data-venue="Caesars Forum">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt4.jpg" alt="VIP Executive Dinner Mentalism" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt3.jpg" data-title="Conference Closing Keynote Finale" data-venue="Encore at Wynn">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt3.jpg" alt="Conference Closing Keynote Finale" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt2.jpg" data-title="Resort Ballroom Headline Show" data-venue="Bellagio Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt2.jpg" alt="Resort Ballroom Headline Show" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt.jpg" data-title="Auditory &amp;amp; Thought Illusions" data-venue="Wynn Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt.jpg" alt="Auditory &amp;amp; Thought Illusions" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt6.jpg" data-title="Corporate Awards Banquet Entertainment" data-venue="Caesars Palace">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/FidEvt6.jpg" alt="Corporate Awards Banquet Entertainment" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/Intecc2.jpg" data-title="Convention Floor Strolling Mentalism" data-venue="Mandalay Bay Convention Center">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/08/Intecc2.jpg" alt="Convention Floor Strolling Mentalism" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA1-1-scaled.jpg" data-title="Corporate Keynote Mentalism Showcase" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA1-1-scaled.jpg" alt="Corporate Keynote Mentalism Showcase" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA3-1-scaled.jpg" data-title="Interactive Stage Reading Experience" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA3-1-scaled.jpg" alt="Interactive Stage Reading Experience" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA-1-scaled.jpg" data-title="SAHARA Theater Live Performance" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA-1-scaled.jpg" alt="SAHARA Theater Live Performance" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA2-1-scaled.jpg" data-title="Executive Audience Participation" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA2-1-scaled.jpg" alt="Executive Audience Participation" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA6-1-scaled.jpg" data-title="Mind Reading Demonstration" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA6-1-scaled.jpg" alt="Mind Reading Demonstration" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA4-1-scaled.jpg" data-title="Gala Evening Stage Illusions" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA4-1-scaled.jpg" alt="Gala Evening Stage Illusions" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA5-1-scaled.jpg" data-title="High-Impact Psychological Demonstration" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA5-1-scaled.jpg" alt="High-Impact Psychological Demonstration" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA8-1-scaled.jpg" data-title="Main Stage Performance Highlights" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA8-1-scaled.jpg" alt="Main Stage Performance Highlights" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA9-1-scaled.jpg" data-title="Live Audience Intuition Test" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA9-1-scaled.jpg" alt="Live Audience Intuition Test" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA16-scaled.jpg" data-title="Corporate Event Headline Act" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA16-scaled.jpg" alt="Corporate Event Headline Act" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA18-scaled.jpg" data-title="Close-Up Executive Engagement" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA18-scaled.jpg" alt="Close-Up Executive Engagement" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA14-scaled.jpg" data-title="Unbelievable Thought Prediction" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA14-scaled.jpg" alt="Unbelievable Thought Prediction" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA15-scaled.jpg" data-title="Stage Mentalism Finale" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA15-scaled.jpg" alt="Stage Mentalism Finale" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA17-scaled.jpg" data-title="VIP Gala Showcase" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA17-scaled.jpg" alt="VIP Gala Showcase" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA13-scaled.jpg" data-title="Interactive Keynote Audience Moment" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA13-scaled.jpg" alt="Interactive Keynote Audience Moment" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA19-scaled.jpg" data-title="Live Show Reaction &amp;amp; Energy" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA19-scaled.jpg" alt="Live Show Reaction &amp;amp; Energy" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA12-scaled.jpg" data-title="Corporate Gala Spotlight" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA12-scaled.jpg" alt="Corporate Gala Spotlight" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA10-scaled.jpg" data-title="Mind Reading &amp;amp; Influence Routine" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA10-scaled.jpg" alt="Mind Reading &amp;amp; Influence Routine" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA11-scaled.jpg" data-title="SAHARA Ballroom General Session" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA11-scaled.jpg" alt="SAHARA Ballroom General Session" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA7-scaled.jpg" data-title="Executive Conference Keynote Act" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA7-scaled.jpg" alt="Executive Conference Keynote Act" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA20-scaled.jpg" data-title="Stage Demonstration with Volunteers" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA20-scaled.jpg" alt="Stage Demonstration with Volunteers" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA21-scaled.jpg" data-title="Standing Ovation Moment" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA21-scaled.jpg" alt="Standing Ovation Moment" loading="lazy">
+            </div>
+            <div class="viewer-thumb" data-src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA22-scaled.jpg" data-title="Exclusive Corporate Evening Show" data-venue="SAHARA Las Vegas">
+              <img decoding="async" src="https://corporatementalistlasvegas.com/wp-content/uploads/2026/09/SAHARA22-scaled.jpg" alt="Exclusive Corporate Evening Show" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- 8. FREQUENTLY ASKED QUESTIONS SECTION -->
     <section id="faq" class="section-padding section-divider" style="background-color: var(--bg-reviews);">
       <div class="container">
@@ -1753,6 +1914,6 @@
   </div>
 
   <!-- JavaScript Modules (Cache-Busted) -->
-  <script type="module" src="js/app.js?v=20260913_v38"></script>
+  <script type="module" src="js/app.js?v=20260916_v40"></script>
 </body>
 </html>
