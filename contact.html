@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/main.css?v=20260913_v36">
-  <link rel="stylesheet" href="css/components.css?v=20260913_v36">
+  <link rel="stylesheet" href="css/main.css?v=20260916_v41">
+  <link rel="stylesheet" href="css/components.css?v=20260916_v41">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -160,6 +160,50 @@
 
     .contact-photo-card:hover img {
       transform: scale(1.04);
+    }
+
+    /* Mailchimp Newsletter Card */
+    .newsletter-card {
+      background: #161826;
+      border: 1px solid var(--border-gold-glow);
+      border-radius: 18px;
+      padding: 1.85rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .newsletter-card:hover {
+      border-color: rgba(239, 68, 68, 0.5);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9), 0 0 25px rgba(239, 68, 68, 0.2);
+    }
+
+    .newsletter-submit-btn {
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .newsletter-submit-btn:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #F87171 0%, #DC2626 100%);
+      box-shadow: 0 8px 25px rgba(239, 68, 68, 0.55);
+    }
+
+    .newsletter-submit-btn:active {
+      transform: translateY(0);
     }
 
     @media (max-width: 900px) {
@@ -315,6 +359,57 @@
               <p style="color: var(--text-silver); font-size: 0.9rem; line-height: 1.5; margin: 0;">
                 Zero embarrassed executives, zero vulgarity, zero crude humor. Adrian delivers sophisticated, high-intellect psychological entertainment designed specifically for executive audiences and company leadership.
               </p>
+            </div>
+
+            <!-- Join Adrian's Newsletter Card (Mailchimp Integration from ocmentalist.com) -->
+            <div class="newsletter-card gold-glow-card" style="margin-top: 1.75rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.65rem;">
+                <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); display: flex; align-items: center; justify-content: center; color: #EF4444; flex-shrink: 0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 style="font-size: 1.15rem; color: #FFFFFF; margin: 0; font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.01em;">Join Adrian's Newsletter</h3>
+                  <span style="font-size: 0.76rem; color: #EF4444; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">VIP Updates &amp; Mentalism Insights</span>
+                </div>
+              </div>
+
+              <p style="color: var(--text-silver); font-size: 0.88rem; line-height: 1.5; margin: 0 0 1.25rem 0;">
+                Get exclusive psychological entertainment tips, behind-the-scenes mind reading demos, and priority notice on public show dates.
+              </p>
+
+              <!-- Mailchimp Form Integration -->
+              <form action="https://AdrianSaint.us2.list-manage.com/subscribe/post?u=c5907602b0f0cbfa2e943a1b0&amp;id=9cc78795d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <div class="form-group" style="margin-bottom: 0.85rem;">
+                    <label for="mce-EMAIL" class="form-label" style="font-size: 0.82rem; margin-bottom: 0.35rem; color: #CBD5E1;">Email Address *</label>
+                    <input type="email" value="" name="EMAIL" class="form-input" id="mce-EMAIL" placeholder="Enter your email address" required style="width: 100%; box-sizing: border-box; background: rgba(0, 0, 0, 0.6); border: 1px solid var(--border-glass); padding: 0.85rem 1rem; border-radius: 8px; color: #FFFFFF; font-size: 0.95rem; font-family: var(--font-body); outline: none;">
+                  </div>
+
+                  <!-- Honeypot anti-spam protection: real people should not fill this in -->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_c5907602b0f0cbfa2e943a1b0_9cc78795d4" tabindex="-1" value="">
+                  </div>
+
+                  <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="newsletter-submit-btn">
+                    <span>Subscribe to Newsletter</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px solid rgba(255, 255, 255, 0.07); font-size: 0.74rem; color: var(--text-muted);">
+                    <span style="display: flex; align-items: center; gap: 0.3rem;">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #22C55E;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      Zero spam. Unsubscribe anytime.
+                    </span>
+                    <span style="opacity: 0.7; font-size: 0.72rem;">Mailchimp Verified</span>
+                  </div>
+                </div>
+              </form>
             </div>
 
           </div>
