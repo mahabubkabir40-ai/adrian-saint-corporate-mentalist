@@ -1,4 +1,13 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/los-angeles", "destination": "/corporate-mentalist-los-angeles.html" },
+    { "source": "/la", "destination": "/corporate-mentalist-los-angeles.html" },
+    { "source": "/phoenix", "destination": "/corporate-mentalist-phoenix.html" },
+    { "source": "/san-diego", "destination": "/corporate-mentalist-san-diego.html" },
+    { "source": "/san-francisco", "destination": "/corporate-mentalist-san-francisco.html" },
+    { "source": "/sf", "destination": "/corporate-mentalist-san-francisco.html" },
+    { "source": "/scottsdale", "destination": "/corporate-mentalist-scottsdale.html" }
+  ]
 }
