@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://adriansaintmentalist.com/sitemap.xml
