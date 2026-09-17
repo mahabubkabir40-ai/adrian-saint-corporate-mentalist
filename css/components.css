@@ -1576,16 +1576,16 @@
 
 /* Minimalist Footer & Social Graph Links */
 .footer {
-  background: var(--bg-footer);
-  border-top: 1px solid var(--border-glass);
-  padding: 4.5rem 0 2.5rem;
+  background: #0B0C10;
+  border-top: 1px solid var(--border-gold-glow);
+  padding: 4rem 0 2.5rem;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .footer-col h4 {
@@ -1715,6 +1715,10 @@
   .masonry-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .review-carousel-card { flex: 0 0 calc((100% - 1.5rem) / 2); min-height: 340px; }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1971,15 +1975,60 @@
     font-size: 0.85rem;
   }
 
+  .footer {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+  }
+
   .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+    margin-bottom: 2.25rem !important;
+  }
+
+  .footer-col {
+    width: 100% !important;
+  }
+
+  .footer-col h4 {
+    font-size: 1.05rem !important;
+    margin-bottom: 0.85rem !important;
+    letter-spacing: 0.05em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    white-space: normal !important;
+  }
+
+  .footer-links {
+    line-height: 2.2 !important;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem !important;
+    display: inline-block;
+  }
+
+  .footer-social-row {
+    justify-content: flex-start !important;
+    gap: 0.65rem !important;
+    margin-top: 0.85rem !important;
   }
 
   .footer-bottom {
-    flex-direction: column;
-    gap: 0.75rem;
-    text-align: center;
+    flex-direction: column !important;
+    gap: 1.15rem !important;
+    text-align: center !important;
+    align-items: center !important;
+    padding-top: 1.75rem !important;
+  }
+
+  .footer-bottom > div {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 }
 
