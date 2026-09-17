@@ -35,37 +35,43 @@ function openBookingModalDynamic(cityName = "") {
           <h2 class="text-gradient-gold" style="margin-bottom: 0.5rem;">Check Availability & Fees</h2>
           <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Fill out the form below to receive pricing and availability for your event.</p>
 
-          <form id="quote-form">
+          <form id="quote-form" action="https://formsubmit.co/adrian@saintmentalist.com" method="POST">
+            <!-- FormSubmit Configuration to adrian@saintmentalist.com -->
+            <input type="hidden" name="_subject" value="New Modal Quote Request - Adrian Saint">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_autoresponse" value="Thank you! Adrian's corporate booking office has received your request and will follow up within 2 business hours.">
+
             <div class="grid-2">
               <div class="form-group">
                 <label class="form-label">Your Name *</label>
-                <input type="text" class="form-input" required placeholder="e.g. Sarah Jenkins">
+                <input type="text" name="name" class="form-input" required placeholder="e.g. Sarah Jenkins">
               </div>
               <div class="form-group">
                 <label class="form-label">Company / Organization *</label>
-                <input type="text" class="form-input" required placeholder="e.g. Deloitte / Google">
+                <input type="text" name="company" class="form-input" required placeholder="e.g. Deloitte / Google">
               </div>
             </div>
 
             <div class="grid-2">
               <div class="form-group">
                 <label class="form-label">Email Address *</label>
-                <input type="email" class="form-input" required placeholder="sarah@company.com">
+                <input type="email" name="email" class="form-input" required placeholder="sarah@company.com">
               </div>
               <div class="form-group">
                 <label class="form-label">Phone Number *</label>
-                <input type="tel" class="form-input" required placeholder="(555) 000-0000">
+                <input type="tel" name="phone" class="form-input" required placeholder="(555) 000-0000">
               </div>
             </div>
 
             <div class="grid-2">
               <div class="form-group">
                 <label class="form-label">Event Date *</label>
-                <input type="date" class="form-input" required>
+                <input type="date" name="event_date" class="form-input" required>
               </div>
               <div class="form-group">
                 <label class="form-label">Event Location / City *</label>
-                <input type="text" id="event-city-input" class="form-input" required value="${cityName}" placeholder="e.g. San Francisco, CA">
+                <input type="text" name="event_city" id="event-city-input" class="form-input" required value="${cityName}" placeholder="e.g. San Francisco, CA">
               </div>
             </div>
 
@@ -82,7 +88,7 @@ function openBookingModalDynamic(cityName = "") {
 
             <div class="form-group">
               <label class="form-label">Event Type & Details *</label>
-              <textarea class="form-textarea" rows="3" required placeholder="Please describe your event format (Stage Show, Strolling, Trade Show, Custom Hybrid), guest count, or schedule..."></textarea>
+              <textarea name="event_details" class="form-textarea" rows="3" required placeholder="Please describe your event format (Stage Show, Strolling, Trade Show, Custom Hybrid), guest count, or schedule..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">
@@ -109,13 +115,28 @@ function openBookingModalDynamic(cityName = "") {
       e.preventDefault();
       const submitBtn = formEl.querySelector("button[type='submit']");
       submitBtn.disabled = true;
-      submitBtn.innerHTML = "<span>Processing Quote Request...</span>";
-      setTimeout(() => {
+      submitBtn.innerHTML = "<span>Submitting to adrian@saintmentalist.com...</span>";
+
+      const formData = new FormData(formEl);
+
+      fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
         formEl.style.display = "none";
         successEl.style.display = "block";
         submitBtn.disabled = false;
         submitBtn.innerHTML = "<span>Submit Availability Request</span>";
-      }, 1000);
+      })
+      .catch(err => {
+        console.error("Modal submission error, falling back to direct submit:", err);
+        formEl.submit();
+      });
     });
   }
 

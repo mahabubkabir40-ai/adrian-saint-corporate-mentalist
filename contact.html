@@ -423,7 +423,12 @@
                 <p style="color: var(--text-muted); font-size: 0.92rem;">Fill in your event details below to receive availability and fee options.</p>
               </div>
 
-              <form id="contact-page-form">
+              <form id="contact-page-form" action="https://formsubmit.co/adrian@saintmentalist.com" method="POST">
+                <!-- FormSubmit Configuration to adrian@saintmentalist.com -->
+                <input type="hidden" name="_subject" value="New Corporate Booking Request - Adrian Saint">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Adrian Saint. We have received your event details and will review date availability within 2 business hours.">
                 
                 <div class="grid-2">
                   <div class="form-group">
@@ -699,13 +704,27 @@
           e.preventDefault();
           var btn = form.querySelector("button[type='submit']");
           btn.disabled = true;
-          btn.innerHTML = "<span>Submitting Inquiry...</span>";
+          btn.innerHTML = "<span>Submitting Inquiry to adrian@saintmentalist.com...</span>";
 
-          setTimeout(function() {
+          var formData = new FormData(form);
+
+          fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", {
+            method: "POST",
+            headers: {
+              'Accept': 'application/json'
+            },
+            body: formData
+          })
+          .then(function(res) { return res.json(); })
+          .then(function(data) {
             form.style.display = "none";
             successEl.style.display = "block";
             window.scrollTo({ top: form.parentElement.offsetTop - 100, behavior: 'smooth' });
-          }, 800);
+          })
+          .catch(function(err) {
+            console.error("Submission error, falling back to direct submit:", err);
+            form.submit();
+          });
         });
       }
     });
