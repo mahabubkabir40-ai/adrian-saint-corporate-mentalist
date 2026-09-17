@@ -14,7 +14,7 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/main.css?v=20260916_v41">
-  <link rel="stylesheet" href="css/components.css?v=20260917_v43">
+  <link rel="stylesheet" href="css/components.css?v=20260917_v44">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -244,9 +244,45 @@
           </svg>
           <span>Call (833) 570-5966</span>
         </a>
+        <!-- Mobile Hamburger Navigation Toggle Button -->
+        <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </div>
     </div>
   </nav>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="/" class="nav-logo" aria-label="Adrian Saint Corporate Mentalist">
+          <img src="images/adrian_saint_logo_exact.png" alt="Adrian Saint - Corporate Mentalist" class="mobile-drawer-logo">
+        </a>
+        <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="/#about">About Adrian</a></li>
+        <li><a href="/#services">Entertainment Options</a></li>
+        <li><a href="/#reviews">Reviews & Videos</a></li>
+        <li><a href="/#gallery">Photo Gallery</a></li>
+        <li><a href="/#faq">Frequently Asked Questions</a></li>
+        <li><a href="/contact">Contact Office</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="tel:18335705966" class="btn btn-gold">
+          <span>📞 Call (833) 570-5966</span>
+        </a>
+        <a href="/contact" class="btn btn-secondary">
+          <span>🗓️ Check Date Availability</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <!-- MAIN CONTACT CONTENT -->
   <main>
@@ -416,7 +452,7 @@
 
           <!-- Right Column: Interactive Corporate Booking Form -->
           <div>
-            <div class="inquiry-form-card" style="max-width: 100%; padding: 2.5rem;">
+            <div class="inquiry-form-card">
               <div style="margin-bottom: 1.5rem;">
                 <div class="section-badge" style="font-size: 0.75rem; margin-bottom: 0.5rem;">STEP 1 OF 1</div>
                 <h2 class="text-gradient-gold" style="font-size: 1.65rem; margin-bottom: 0.4rem;">Request Booking Information</h2>
@@ -696,6 +732,49 @@
   <!-- Contact Page JavaScript -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+    // Mobile Navigation Drawer Toggle for Contact Page
+    var toggleBtn = document.querySelector(".mobile-menu-toggle");
+    var drawer = document.getElementById("mobileNavDrawer");
+    if (toggleBtn && drawer) {
+      var closeBtn = drawer.querySelector(".mobile-nav-close");
+      var backdrop = drawer.querySelector(".mobile-nav-backdrop");
+      var navLinks = drawer.querySelectorAll(".mobile-nav-links a, .mobile-nav-actions a");
+
+      function openMenu() {
+        drawer.classList.add("active");
+        drawer.setAttribute("aria-hidden", "false");
+        toggleBtn.classList.add("active");
+        toggleBtn.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        drawer.classList.remove("active");
+        drawer.setAttribute("aria-hidden", "true");
+        toggleBtn.classList.remove("active");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      }
+
+      toggleBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        if (drawer.classList.contains("active")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+      if (backdrop) backdrop.addEventListener("click", closeMenu);
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", closeMenu);
+      });
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && drawer.classList.contains("active")) closeMenu();
+      });
+    }
+
       var form = document.getElementById("contact-page-form");
       var successEl = document.getElementById("contact-page-success");
 

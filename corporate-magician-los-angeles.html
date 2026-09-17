@@ -26,7 +26,7 @@
   
   <!-- Stylesheets (Cache-Busted) -->
   <link rel="stylesheet" href="css/main.css?v=20260913_v38">
-  <link rel="stylesheet" href="css/components.css?v=20260917_v43">
+  <link rel="stylesheet" href="css/components.css?v=20260917_v44">
 
   <!-- Schema.org JSON-LD -->
   <script id="geo-jsonld-script" type="application/ld+json">
@@ -118,9 +118,46 @@
           </svg>
           <span>Call (213) 279-0854</span>
         </a>
+        <!-- Mobile Hamburger Navigation Toggle Button -->
+        <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </div>
     </div>
   </nav>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <a href="/" class="nav-logo" aria-label="Adrian Saint Corporate Mentalist">
+          <img src="images/adrian_saint_logo_exact.png" alt="Adrian Saint - Corporate Mentalist" class="mobile-drawer-logo">
+        </a>
+        <button class="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about">About Adrian</a></li>
+        <li><a href="#services">Entertainment Options</a></li>
+        <li><a href="#la-venues">Los Angeles Venues</a></li>
+        <li><a href="#reviews">Reviews & Videos</a></li>
+        <li><a href="#gallery">Photo Gallery</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+        <li><a href="/contact">Check Availability</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="tel:12132790854" class="btn btn-gold">
+          <span>📞 Call 1 (213) 279-0854</span>
+        </a>
+        <a href="/contact" class="btn btn-secondary">
+          <span>🗓️ Check Date Availability</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <!-- MAIN CONTENT CONTAINER -->
   <main id="app-root">
@@ -1933,7 +1970,7 @@
           </div>
 
           <!-- Dual Column: 3-Step Process (Left) vs Fast Action Concierge (Right) -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: stretch; margin-bottom: 2.5rem;">
+          <div class="booking-cta-grid">
             
             <!-- Left Card: 3-Step Stress-Free Booking Experience -->
             <div style="background: rgba(11,12,16,0.7); border: 1px solid var(--border-glass); border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
@@ -2013,7 +2050,7 @@
           </div>
 
           <!-- Bottom 3 Value Highlights -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; border-top: 1px solid var(--border-glass); padding-top: 2rem;">
+          <div class="booking-highlights-grid">
             <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-silver); font-size: 0.95rem; font-weight: 600;">
               <span style="font-size: 1.25rem; color: var(--accent-gold);">✔</span>
               <span>Unique Entertainment</span>

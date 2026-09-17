@@ -26,6 +26,7 @@ function initApp() {
   setupRouter();
   setupSearchFilter();
   setupFaqAccordion();
+  setupMobileMenu();
 
   // Initial global schema setup
   const globalSchemas = generateSchema({ faqs: GENERAL_FAQS });
@@ -887,4 +888,58 @@ function setupEventGallery() {
 
   // Initialize with the first image
   showImage(0, false);
+}
+
+
+function setupMobileMenu() {
+  const toggleBtn = document.querySelector(".mobile-menu-toggle");
+  const drawer = document.getElementById("mobileNavDrawer");
+  if (!toggleBtn || !drawer) return;
+
+  const closeBtn = drawer.querySelector(".mobile-nav-close");
+  const backdrop = drawer.querySelector(".mobile-nav-backdrop");
+  const navLinks = drawer.querySelectorAll(".mobile-nav-links a, .mobile-nav-actions a");
+
+  function openMenu() {
+    drawer.classList.add("active");
+    toggleBtn.classList.add("active");
+    toggleBtn.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenu() {
+    drawer.classList.remove("active");
+    toggleBtn.classList.remove("active");
+    toggleBtn.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  }
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (drawer.classList.contains("active")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMenu);
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener("click", closeMenu);
+  }
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && drawer.classList.contains("active")) {
+      closeMenu();
+    }
+  });
 }
