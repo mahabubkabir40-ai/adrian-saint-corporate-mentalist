@@ -1389,11 +1389,14 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   user-select: none;
 }
 
-.review-quote-text {
+.review-quote-text,
+.review-quote-text.quote-short {
+  font-family: var(--font-body);
   font-size: 0.91rem;
   line-height: 1.58;
   color: #E2E8F0;
   font-weight: 400;
+  font-style: normal;
   margin: 0;
   position: relative;
   z-index: 1;
@@ -1401,15 +1404,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-/* Short Pull-Quotes: High-Impact Typography */
-.review-quote-text.quote-short {
-  font-size: 1.05rem;
-  line-height: 1.5;
-  font-weight: 500;
-  color: #F8FAFC;
-  font-style: italic;
 }
 
 .reviews-carousel-pagination {
