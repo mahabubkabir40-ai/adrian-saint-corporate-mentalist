@@ -7,7 +7,7 @@ import { CITIES_DATA } from './data/cities.js?v=20260821_v3';
 import { TESTIMONIALS_DATA, VIDEO_TESTIMONIALS_DATA } from './data/testimonials.js?v=20260911_v27';
 import { GENERAL_FAQS } from './data/faqs.js?v=20260911_v19';
 import { renderCityPage } from './components/cityRenderer.js?v=20260821_v3';
-import { setupBookingModal } from './components/bookingModal.js?v=20260821_v3';
+import { setupBookingModal } from './components/bookingModal.js?v=20260921_v45';
 import { generateSchema, updateDOMSchema } from './components/schemaGenerator.js?v=20260821_v3';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -163,7 +163,7 @@ function setupHeroForm() {
             <div style="font-size: 2.75rem; margin-bottom: 0.75rem;">🎉</div>
             <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 0.5rem;">Event Date Hold Initiated!</h3>
             <p style="color: var(--text-silver); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.25rem;">
-              Thank you! Our management team has received your event details at <strong>adrian@saintmentalist.com</strong>. We will respond within <strong>2 business hours</strong> with custom package and fee options.
+              Thank you. Adrian saint and team have received your request. They will respond to your request in 24-48 hrs
             </p>
             <div style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--border-gold-glow); padding: 0.6rem 1.1rem; border-radius: 9999px; font-size: 0.82rem; color: var(--accent-gold); font-weight: 700; max-width: 100%;">
               <span>📞 Immediate Question? Call <a href="tel:18335705966" style="color: #FFF; text-decoration: underline;">(833) 570-5966</a></span>
