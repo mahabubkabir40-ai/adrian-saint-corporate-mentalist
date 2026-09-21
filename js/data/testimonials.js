@@ -193,6 +193,12 @@ export const CLIENT_LOGOS = [
 
 export const VIDEO_TESTIMONIALS_DATA = [
   {
+    id: "D7wDyD7hNZA",
+    name: "Client Testimonial",
+    title: "Client Testimonial",
+    subtitle: "Adrian Saint • Corporate Mentalist"
+  },
+  {
     id: "Qe8bBgX43GQ",
     name: "Sahara",
     title: "Client Testimonial - Sahara",
