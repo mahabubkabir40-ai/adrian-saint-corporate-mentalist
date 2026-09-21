@@ -182,6 +182,8 @@ export const TESTIMONIALS_DATA = [
 ];
 
 export const CLIENT_LOGOS = [
+  { name: "Jazz Pharmaceuticals", symbol: "💊" },
+  { name: "Nova Biomedical", symbol: "🔬" },
   { name: "Google", symbol: "🔍" },
   { name: "Apple", symbol: "🍎" },
   { name: "Deloitte", symbol: "🟢" },
