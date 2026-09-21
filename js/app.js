@@ -360,16 +360,17 @@ function renderHomepageContent() {
     testimonialsGrid.innerHTML = TESTIMONIALS_DATA.map(t => {
       return `
         <div class="review-carousel-card">
-          <div class="review-card-body">
+          <div class="review-card-header">
             <div class="review-stars">★★★★★</div>
+          </div>
+          <div class="review-card-body">
             <p class="review-quote-text">
               "${t.quote}"
             </p>
           </div>
           <div class="review-card-footer">
             <div class="review-author-name">${t.author}</div>
-            ${t.role ? `<div class="review-author-role">${t.role}</div>` : ''}
-            ${t.company && t.company !== t.author ? `<div class="review-author-company">${t.company}</div>` : ''}
+            <div class="review-author-meta">${t.role ? `<span class="role-highlight">${t.role}</span>` : ''}${t.company && t.company !== t.author ? ` • ${t.company}` : ''}</div>
           </div>
         </div>
       `;
