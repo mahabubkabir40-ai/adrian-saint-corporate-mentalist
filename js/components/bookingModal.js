@@ -40,7 +40,7 @@ function openBookingModalDynamic(cityName = "") {
             <input type="hidden" name="_subject" value="New Modal Quote Request - Adrian Saint">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Thank you! Adrian saint and team have received your request. They will respond to your request in 24-48 hrs">
+            <input type="hidden" name="_autoresponse" value="Thank you! Adrian saint and team have received your request. They will respond to your request in 24-48 hours.">
 
             <div class="grid-2">
               <div class="form-group">
@@ -99,7 +99,7 @@ function openBookingModalDynamic(cityName = "") {
           <div id="quote-success-message" style="display: none; text-align: center; padding: 2rem 0;">
             <div style="font-size: 3.5rem; margin-bottom: 1rem;">🎉</div>
             <h3 class="text-gradient-gold" style="margin-bottom: 0.5rem;">Availability Request Submitted!</h3>
-            <p style="color: var(--text-muted);">Thank you! Adrian saint and team have received your request. They will respond to your request in 24-48 hrs</p>
+            <p style="color: var(--text-muted);">Thank you! Adrian saint and team have received your request. They will respond to your request in 24-48 hours.</p>
           </div>
         </div>
       </div>
