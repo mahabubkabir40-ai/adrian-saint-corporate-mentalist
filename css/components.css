@@ -294,6 +294,24 @@
   color: #FFFFFF;
 }
 
+/* White Calendar Picker Icon for Date Inputs (Cross-Browser) */
+input[type="date"] {
+  color-scheme: dark;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+  transition: opacity var(--transition-fast, 0.2s), transform var(--transition-fast, 0.2s);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+
 .hero-submit-btn {
   width: 100%;
   justify-content: center;
