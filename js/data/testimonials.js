@@ -207,12 +207,6 @@ export const VIDEO_TESTIMONIALS_DATA = [
     subtitle: "Sahara Las Vegas"
   },
   {
-    id: "Ax9QWSUYmQo",
-    name: "Citizens Private Bank",
-    title: "Client Testimonial - Citizens Private Bank",
-    subtitle: "Citizens Private Bank"
-  },
-  {
     id: "g7dctVwG7ww",
     name: "California Funeral",
     title: "California Funeral Directors Association",
