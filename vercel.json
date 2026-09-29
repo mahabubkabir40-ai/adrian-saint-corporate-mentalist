@@ -86,6 +86,86 @@
       "source": "/sf",
       "destination": "/corporate-magician-san-francisco",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-anaheim",
+      "destination": "/corporate-magician-anaheim",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-anaheim",
+      "destination": "/corporate-magician-anaheim",
+      "permanent": true
+    },
+    {
+      "source": "/anaheim",
+      "destination": "/corporate-magician-anaheim",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-irvine",
+      "destination": "/corporate-magician-irvine",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-irvine",
+      "destination": "/corporate-magician-irvine",
+      "permanent": true
+    },
+    {
+      "source": "/irvine",
+      "destination": "/corporate-magician-irvine",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-santa-ana",
+      "destination": "/corporate-magician-santa-ana",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-santa-ana",
+      "destination": "/corporate-magician-santa-ana",
+      "permanent": true
+    },
+    {
+      "source": "/santa-ana",
+      "destination": "/corporate-magician-santa-ana",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-huntington-beach",
+      "destination": "/corporate-magician-huntington-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-huntington-beach",
+      "destination": "/corporate-magician-huntington-beach",
+      "permanent": true
+    },
+    {
+      "source": "/huntington-beach",
+      "destination": "/corporate-magician-huntington-beach",
+      "permanent": true
+    },
+    {
+      "source": "/hb",
+      "destination": "/corporate-magician-huntington-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-garden-grove",
+      "destination": "/corporate-magician-garden-grove",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-garden-grove",
+      "destination": "/corporate-magician-garden-grove",
+      "permanent": true
+    },
+    {
+      "source": "/garden-grove",
+      "destination": "/corporate-magician-garden-grove",
+      "permanent": true
     }
   ]
 }

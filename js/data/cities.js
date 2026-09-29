@@ -5,6 +5,14 @@
 
 export const CITIES_DATA = [
   {
+    id: "anaheim",
+    name: "Anaheim",
+    state: "CA",
+    metro: "Orange County & Anaheim Resort District",
+    venues: ["Anaheim Convention Center", "Disney's Grand Californian Hotel & Spa", "JW Marriott, Anaheim Resort", "Hilton Anaheim"],
+    hqs: ["The Walt Disney Company (Disneyland Resort)", "Kaiser Permanente Orange County", "Extron Electronics", "Pacific Sunwear"]
+  },
+  {
     id: "arlington",
     name: "Arlington",
     state: "TX",
@@ -115,6 +123,14 @@ export const CITIES_DATA = [
     hqs: ["Ball Corporation", "Western Union", "DaVita", "VF Corporation", "Arrow Electronics"]
   },
   {
+    id: "garden-grove",
+    name: "Garden Grove",
+    state: "CA",
+    metro: "Orange County Harbor Boulevard Resort Corridor",
+    venues: ["Hyatt Regency Orange County", "Sheraton Garden Grove - Anaheim South", "Great Wolf Lodge Southern California"],
+    hqs: ["OfficeMax Southern California", "Air Combat USA", "South Coast Winery Distribution", "Garden Grove Medical Center"]
+  },
+  {
     id: "houston",
     name: "Houston",
     state: "TX",
@@ -123,12 +139,28 @@ export const CITIES_DATA = [
     hqs: ["Phillips 66", "Sysco", "ConocoPhillips", "Halliburton", "Waste Management"]
   },
   {
+    id: "huntington-beach",
+    name: "Huntington Beach",
+    state: "CA",
+    metro: "Orange County Coastal Resort Corridor",
+    venues: ["The Waterfront Beach Resort, a Hilton Hotel", "Hyatt Regency Huntington Beach Resort & Spa", "Paséa Hotel & Spa"],
+    hqs: ["Quiksilver / Boardriders", "Srixon / Cleveland Golf", "Cambro Manufacturing", "BJ's Restaurants"]
+  },
+  {
     id: "indianapolis",
     name: "Indianapolis",
     state: "IN",
     metro: "Indianapolis Convention Hub & Midwest Crossroads",
     venues: ["Indiana Convention Center", "JW Marriott Indianapolis", "The Westin Indianapolis"],
     hqs: ["Eli Lilly and Company", "Elevance Health", "Cummins", "Corteva Agriscience"]
+  },
+  {
+    id: "irvine",
+    name: "Irvine",
+    state: "CA",
+    metro: "Orange County & Irvine Spectrum Tech Hub",
+    venues: ["Hyatt Regency Irvine", "Irvine Marriott", "Hotel Irvine", "Marconi Automotive Museum"],
+    hqs: ["Blizzard Entertainment", "Broadcom", "Edwards Lifesciences", "Rivian", "Western Digital", "Taco Bell HQ"]
   },
   {
     id: "las-vegas",
@@ -281,6 +313,14 @@ export const CITIES_DATA = [
     metro: "San Francisco Bay Area / Silicon Valley",
     venues: ["Moscone Center", "Palace Hotel", "Fairmont San Francisco", "The Westin St. Francis"],
     hqs: ["Salesforce", "Uber", "Wells Fargo", "Airbnb", "DoorDash", "Pinterest"]
+  },
+  {
+    id: "santa-ana",
+    name: "Santa Ana",
+    state: "CA",
+    metro: "Orange County Government & Cultural Seat",
+    venues: ["Bowers Museum", "The Estate on Second", "DoubleTree by Hilton Hotel Santa Ana - Orange County Airport"],
+    hqs: ["First American Financial", "Behr Paint", "Ingram Micro", "Yokohama Tire", "Orange County Government"]
   },
   {
     id: "santa-barbara",
