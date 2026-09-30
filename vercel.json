@@ -166,6 +166,21 @@
       "source": "/garden-grove",
       "destination": "/corporate-magician-garden-grove",
       "permanent": true
+    },
+    {
+      "source": "/stage-show",
+      "destination": "/corporate-stage-show",
+      "permanent": true
+    },
+    {
+      "source": "/stage",
+      "destination": "/corporate-stage-show",
+      "permanent": true
+    },
+    {
+      "source": "/strolling",
+      "destination": "/strolling-mind-reading",
+      "permanent": true
     }
   ]
 }
