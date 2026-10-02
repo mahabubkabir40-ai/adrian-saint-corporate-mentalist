@@ -271,6 +271,26 @@
       "source": "/wine-country",
       "destination": "/corporate-magician-napa",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-orange-county",
+      "destination": "/corporate-magician-orange-county",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-orange-county",
+      "destination": "/corporate-magician-orange-county",
+      "permanent": true
+    },
+    {
+      "source": "/orange-county",
+      "destination": "/corporate-magician-orange-county",
+      "permanent": true
+    },
+    {
+      "source": "/oc",
+      "destination": "/corporate-magician-orange-county",
+      "permanent": true
     }
   ]
 }
