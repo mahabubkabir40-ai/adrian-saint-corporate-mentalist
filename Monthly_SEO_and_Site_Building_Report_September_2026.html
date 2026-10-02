@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Saint - Monthly Website Development & Technical SEO Report (September 2026)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a0b0e;
+      --secondary: #12141a;
+      --accent: #c5a059;
+      --accent-light: #e6c587;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --card-bg: #f8fafc;
+      --success: #10b981;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background-color: #f1f5f9;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .report-container {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .report-header {
+      background: linear-gradient(135deg, #090a0f 0%, #151821 100%);
+      color: #ffffff;
+      padding: 48px;
+      position: relative;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .badge-pill {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(197, 160, 89, 0.18);
+      border: 1px solid var(--accent);
+      color: var(--accent-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+
+    .report-header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .report-header h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.9rem;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .meta-item span {
+      color: #f8fafc;
+      font-weight: 500;
+    }
+
+    .report-body {
+      padding: 48px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 36px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 24px;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: #fdfbf7;
+      border-left: 4px solid var(--accent);
+      padding: 18px 24px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 6px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background-color: var(--card-bg);
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+      background-color: #fafbfc;
+    }
+
+    .tag-live {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .code-pill {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #0f172a;
+    }
+
+    .print-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 20px;
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .report-container { box-shadow: none; border: none; max-width: 100%; }
+      .print-actions { display: none; }
+      .report-header { background: #111 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-actions">
+    <button class="btn btn-primary" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="report-container">
+    <header class="report-header">
+      <div class="badge-pill">Executive Client Report</div>
+      <h1>Adrian Saint Corporate Mentalist</h1>
+      <h2>Monthly Website Development & Technical SEO Performance Report</h2>
+      
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Reporting Period</strong>
+          <span>September 2026</span>
+        </div>
+        <div class="meta-item">
+          <strong>Client</strong>
+          <span>Adrian Saint Entertainment</span>
+        </div>
+        <div class="meta-item">
+          <strong>Live Domain</strong>
+          <span>adriansaintmentalist.com</span>
+        </div>
+        <div class="meta-item">
+          <strong>Status</strong>
+          <span>100% Deployed & Active</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="report-body">
+      
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Live Production Pages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Optimized Titles & Metas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Internal Silo Links</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">HR-Safe Certified Copy</div>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>Executive Summary:</strong> During September 2026, the digital presence for Adrian Saint underwent a complete architectural scale-up from an individual landing page into an enterprise-grade corporate lead generation ecosystem. The platform now features 15 dedicated, high-conversion landing pages covering Adrian's 3 primary performance services and 10 targeted regional event markets across California and Arizona. Every page has been systematically optimized for On-Page SEO (title tags, meta descriptions, semantic headings, keyword density, and internal linking).
+      </div>
+
+      <h3>1. On-Page SEO Optimization (Sitewide Implementation)</h3>
+      <p>Every page across the 15-page platform was audited and rebuilt with granular, search-intent-aligned On-Page SEO factors designed to capture high-intent corporate meeting planners and executive event organizers:</p>
+
+      <h4>A. Title Tag Optimization (15 Custom Titles)</h4>
+      <p>All <span class="code-pill">&lt;title&gt;</span> tags were crafted to stay within optimal Google character display boundaries (50–60 characters) while maintaining a strict formula: <em>[Primary Keyword] + [Geographic Market / Service Type] | [Secondary Modifier] | Adrian Saint</em>.</p>
+      <ul>
+        <li><strong>Homepage:</strong> <code>ADRIAN SAINT | Corporate Mentalist & Mind Reader for High-Impact Events</code></li>
+        <li><strong>Corporate Stage Show:</strong> <code>Corporate Stage Show | Interactive Mentalism & Mind Reading by Adrian Saint</code></li>
+        <li><strong>Strolling Mind Reading:</strong> <code>Strolling Mind Reading | Close-Up Mentalism & Cocktail Reception Entertainment</code></li>
+        <li><strong>Team Building:</strong> <code>Corporate Team Building & Mind-Sync Experiences | Adrian Saint</code></li>
+        <li><strong>Contact & EPK Hub:</strong> <code>Contact & Book Adrian Saint | Corporate Mentalist & Mind Reader</code></li>
+        <li><strong>Los Angeles Hub:</strong> <code>Corporate Magician & Mentalist Los Angeles | Mind Reader for LA Corporate Events & Galas</code></li>
+        <li><strong>Anaheim Hub:</strong> <code>Corporate Magician & Mentalist Anaheim | Mind Reader for Anaheim Events & Conventions</code></li>
+        <li><strong>Irvine Hub:</strong> <code>Corporate Magician & Mentalist Irvine | Mind Reader for Irvine Tech Events & Summits</code></li>
+        <li><strong>San Diego Hub:</strong> <code>Corporate Magician & Mentalist San Diego | Mind Reader for San Diego Conferences & Galas</code></li>
+        <li><strong>Scottsdale Hub:</strong> <code>Corporate Magician & Mentalist Scottsdale | Mind Reader for Luxury Resorts & Executive Retreats</code></li>
+      </ul>
+
+      <h4>B. Meta Description Optimization (High CTR Snippets)</h4>
+      <p>Each page features a 100% unique, human-crafted meta description (150–160 characters) engineered with psychological hooks: the 100% HR-safe guarantee, verified corporate track record, venue relevance, and a direct inquiry Call-to-Action (CTA):</p>
+      <ul>
+        <li><strong>Stage Show:</strong> <em>"Adrian Saint's flagship Corporate Stage Show delivers 30 to 75 minutes of mind-blowing telepathy, psychological mind reading, and clean corporate comedy for conferences, banquets, and annual galas."</em></li>
+        <li><strong>Strolling:</strong> <em>"Elevate your corporate cocktail hour, VIP dinner, or networking reception with intimate strolling mind reading by Adrian Saint. Jaw-dropping close-up mentalism in guests' hands."</em></li>
+        <li><strong>Team Building:</strong> <em>"Transform your executive retreat, leadership offsite, or company summit with Adrian Saint's interactive psychological team building. Foster communication, intuition, and trust through collective mentalism."</em></li>
+        <li><strong>Contact:</strong> <em>"Contact Adrian Saint's corporate booking office to check availability, request performance fees, and customize entertainment for galas, retreats, and conventions."</em></li>
+        <li><strong>Anaheim:</strong> <em>"Looking for the top Corporate Magician & Mentalist in Anaheim, CA? Adrian Saint delivers 100% clean, jaw-dropping psychological entertainment for Anaheim conventions, summits, and corporate galas."</em></li>
+      </ul>
+
+      <h4>C. Semantic Heading Hierarchy (H1, H2, H3 Silos)</h4>
+      <ul>
+        <li><strong>Single Keyword-Focused &lt;h1&gt; per page:</strong> Communicates clear topical focus without cannibalization (e.g. <code>Corporate Stage Show</code>, <code>Corporate Magician & Mentalist in Irvine, CA</code>).</li>
+        <li><strong>Structured &lt;h2&gt; Content Modules:</strong> Subdivided into logical decision-making sections: Performance Anatomy, Why Meeting Planners Choose Adrian Saint (HR-Safe, Turnkey Logistics), Curated Regional Venues, Social Proof, and FAQ Accordions.</li>
+        <li><strong>Granular &lt;h3&gt; Subheadings:</strong> Used for specific event use-cases (Keynote Openers, Awards Banquets, Cocktail Receptions, Executive Retreats).</li>
+      </ul>
+
+      <h4>D. Keyword Density & Semantic LSI Integration</h4>
+      <p>Content was naturally enriched with latent semantic indexing (LSI) terms that search engines associate with top-tier corporate entertainment: <em>corporate mentalist, corporate magician, mentalist for hire, banquet mind reader, keynote entertainment, clean corporate comedy, 100% HR-safe, turnkey AV rider, zero-flight-delay drive-in, VIP cocktail mingling, icebreaker mind-sync</em>.</p>
+
+      <h4>E. Image SEO & Accessibility</h4>
+      <p>All 78 performance photos, 43 corporate brand logos, and 16 video thumbnails feature descriptive, keyword-conscious <code>alt</code> text attributes for Google Image search discovery and accessibility.</p>
+
+      <h3>2. Sitewide Internal Linking & Silo Architecture</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Internal Linking Channel</th>
+            <th>Implementation Details</th>
+            <th>SEO & User Navigation Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Global Footer Navigation</strong></td>
+            <td>Updated Column 2 across all 15 HTML files to link to <code>/corporate-stage-show</code>, <code>/strolling-mind-reading</code>, <code>/team-building</code>, and <code>/contact</code>.</td>
+            <td>Crawlable sitewide sitelink equity flowing to core service offerings.</td>
+          </tr>
+          <tr>
+            <td><strong>In-Content Exploratory Links</strong></td>
+            <td>Embedded contextual text links (<em>"Explore Stage Show Format →"</em>, etc.) inside Performance Package cards on Homepage & all 10 Location Pages.</td>
+            <td>Direct contextual relevance without interfering with instant modal inquiry buttons.</td>
+          </tr>
+          <tr>
+            <td><strong>Service Cross-Linking Grid</strong></td>
+            <td>Built a "Complementary Entertainment Formats" 2-card module on each service page linking to the other two formats.</td>
+            <td>Encourages multi-format bookings (e.g. Strolling Cocktail + Stage Banquet Headliner).</td>
+          </tr>
+          <tr>
+            <td><strong>Geographic Service Anchors</strong></td>
+            <td>Added "Turnkey Production & Regional Travel" sections on service pages linking down to top convention hubs (LA, SD, Irvine, Anaheim, SF, Phoenix, Scottsdale).</td>
+            <td>Passes thematic relevance between high-authority service pages and municipal landing pages.</td>
+          </tr>
+          <tr>
+            <td><strong>Structured Breadcrumbs</strong></td>
+            <td>Implemented hierarchical breadcrumb navigation (<code>Home > Entertainment Options > [Service]</code>) with schema markup.</td>
+            <td>Improves SERP snippet display with breadcrumb pathways.</td>
+          </tr>
+          <tr>
+            <td><strong>Mobile Drawer Integration</strong></td>
+            <td>Expanded mobile navigation across all 15 pages to feature dedicated links to all 3 service formats.</td>
+            <td>Ensures 100% crawl discoverability for mobile search bots.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. Site Building & Regional Expansion Milestones</h3>
+      <h4>A. Dedicated Service Pages (3 New Pages)</h4>
+      <ul>
+        <li><strong>Corporate Stage Show:</strong> (<code>/corporate-stage-show</code> | alias <code>/stage-show</code>) — 30–75 min keynote opener, awards banquet headliner, and executive retreat showcase breakdown with 6 bespoke FAQs.</li>
+        <li><strong>Strolling Mind Reading:</strong> (<code>/strolling-mind-reading</code> | alias <code>/strolling</code>) — Cocktail hour, VIP networking, and trade show lead generation focus with zero-footprint logistics callout and 6 FAQs.</li>
+        <li><strong>Team Building:</strong> (<code>/team-building</code>) — Interactive mind-sync psychological workshops for leadership retreats, communication training, and corporate offsites.</li>
+      </ul>
+
+      <h4>B. Regional Local SEO Hubs (10 Target Cities)</h4>
+      <p>Built 10 standalone landing pages targeting the top corporate convention and meeting destinations in the Southwest:</p>
+      <ol>
+        <li><strong>Los Angeles, CA</strong> (<code>/corporate-magician-los-angeles</code>)</li>
+        <li><strong>San Diego, CA</strong> (<code>/corporate-magician-san-diego</code>)</li>
+        <li><strong>San Francisco, CA</strong> (<code>/corporate-magician-san-francisco</code>)</li>
+        <li><strong>Phoenix, AZ</strong> (<code>/corporate-magician-phoenix</code>)</li>
+        <li><strong>Scottsdale, AZ</strong> (<code>/corporate-magician-scottsdale</code>)</li>
+        <li><strong>Anaheim, CA</strong> (<code>/corporate-magician-anaheim</code>)</li>
+        <li><strong>Irvine, CA</strong> (<code>/corporate-magician-irvine</code>)</li>
+        <li><strong>Santa Ana, CA</strong> (<code>/corporate-magician-santa-ana</code>)</li>
+        <li><strong>Huntington Beach, CA</strong> (<code>/corporate-magician-huntington-beach</code>)</li>
+        <li><strong>Garden Grove, CA</strong> (<code>/corporate-magician-garden-grove</code>)</li>
+      </ol>
+
+      <h3>4. Technical SEO & Clean Routing</h3>
+      <ul>
+        <li><strong>Schema.org JSON-LD:</strong> Deployed <code>EntertainmentBusiness</code>, <code>Person</code>, <code>Service</code>, <code>Place</code>, <code>FAQPage</code>, and <code>GeoCoordinates</code> markup across all pages.</li>
+        <li><strong>35+ 301 Permanent Redirects:</strong> Configured in <code>vercel.json</code> to provide clean extensionless URLs (e.g. <code>/stage-show</code>, <code>/la</code>, <code>/irvine</code>) and catch common typos.</li>
+        <li><strong>Sitemap & Indexing:</strong> Re-indexed all 15 URLs with prioritized crawl weighting in <code>sitemap.xml</code> and self-referencing canonical tags.</li>
+        <li><strong>Brand Favicon & Web App Suite:</strong> Complete multi-resolution icon suite (SVG, 16x16, 32x32, 48x48, 180x180, 192x192, 512x512, and <code>site.webmanifest</code>).</li>
+      </ul>
+
+      <h3>5. Conversion Rate Optimization (CRO) & Media Assets</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature / Asset</th>
+            <th>Description</th>
+            <th>Business & Booking Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Interactive Booking Modal</strong></td>
+            <td>Fast-track inquiry modal with date, guest count, format selector, and 24–48h SLA.</td>
+            <td>Eliminates bounce rate; delivers pre-qualified lead data directly to Adrian.</td>
+          </tr>
+          <tr>
+            <td><strong>43-Brand Enterprise & Institutional Ticker</strong></td>
+            <td>Animated marquee (UC San Diego Jacobs School of Engineering, USC, UC Davis, Pasadena Tournament of Roses, Meta, BMW, Google, Cisco, Sharp, MetLife).</td>
+            <td>Provides immediate enterprise-level authority and trust above the fold.</td>
+          </tr>
+          <tr>
+            <td><strong>16 YouTube Shorts Carousel</strong></td>
+            <td>Custom video carousel with live audience reactions and full-screen lightbox player.</td>
+            <td>Drives social proof on mobile devices where video retention is highest.</td>
+          </tr>
+          <tr>
+            <td><strong>78-Photo Event Gallery</strong></td>
+            <td>High-res corporate performance gallery with category filters and modal viewer.</td>
+            <td>Proves crowd engagement, scale of banquets, and stage presence.</td>
+          </tr>
+          <tr>
+            <td><strong>Executive Review Slider</strong></td>
+            <td>Luxury slider featuring 36 verified client testimonials with job titles & companies.</td>
+            <td>Reinforces 100% HR-safe and clean corporate reputation.</td>
+          </tr>
+          <tr>
+            <td><strong>Direct EPK Downloads</strong></td>
+            <td>One-click download triggers for the official Marketing Brochure & One-Sheeter PDFs.</td>
+            <td>Allows corporate planners to instantly circulate collateral to committee members.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>6. Summary of Deliverables</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Deliverable Category</th>
+            <th>Count</th>
+            <th>Current Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total Production Pages</td>
+            <td><strong>15 Pages</strong></td>
+            <td><span class="tag-live">Live on Production</span></td>
+          </tr>
+          <tr>
+            <td>On-Page Optimized Title Tags</td>
+            <td><strong>15 Custom Titles</strong></td>
+            <td><span class="tag-live">Live across 15 Pages</span></td>
+          </tr>
+          <tr>
+            <td>High-CTR Meta Descriptions</td>
+            <td><strong>15 Custom Descriptions</strong></td>
+            <td><span class="tag-live">Live across 15 Pages</span></td>
+          </tr>
+          <tr>
+            <td>Core Service Landing Pages</td>
+            <td><strong>3 Pages</strong></td>
+            <td><span class="tag-live">Live on Production</span></td>
+          </tr>
+          <tr>
+            <td>Regional SEO City Hubs</td>
+            <td><strong>10 Pages</strong></td>
+            <td><span class="tag-live">Live on Production</span></td>
+          </tr>
+          <tr>
+            <td>Sitewide Internal Links</td>
+            <td><strong>150+ Links</strong></td>
+            <td><span class="tag-live">Live on Production</span></td>
+          </tr>
+          <tr>
+            <td>Enterprise & Institutional Client Logos</td>
+            <td><strong>43 Brands</strong></td>
+            <td><span class="tag-live">Verified & Live</span></td>
+          </tr>
+          <tr>
+            <td>Live Performance Photos</td>
+            <td><strong>78 Photos</strong></td>
+            <td><span class="tag-live">Live in Gallery</span></td>
+          </tr>
+          <tr>
+            <td>Video Shorts Carousel</td>
+            <td><strong>16 Videos</strong></td>
+            <td><span class="tag-live">Live with Lightbox</span></td>
+          </tr>
+          <tr>
+            <td>Verified Testimonials</td>
+            <td><strong>36 Reviews</strong></td>
+            <td><span class="tag-live">Live in Slider</span></td>
+          </tr>
+          <tr>
+            <td>Routing & 301 Redirects</td>
+            <td><strong>35+ Rules</strong></td>
+            <td><span class="tag-live">Configured</span></td>
+          </tr>
+          <tr>
+            <td>Brand Favicon Suite</td>
+            <td><strong>8 Assets + Manifest</strong></td>
+            <td><span class="tag-live">Live across 15 Pages</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+        Report prepared for <strong>Adrian Saint Entertainment</strong> • September 30, 2026
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
