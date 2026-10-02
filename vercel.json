@@ -181,6 +181,96 @@
       "source": "/strolling",
       "destination": "/strolling-mind-reading",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-newport-beach",
+      "destination": "/corporate-magician-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-newport-beach",
+      "destination": "/corporate-magician-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/newport-beach",
+      "destination": "/corporate-magician-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/newport",
+      "destination": "/corporate-magician-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/nb",
+      "destination": "/corporate-magician-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-palm-springs",
+      "destination": "/corporate-magician-palm-springs",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-palm-springs",
+      "destination": "/corporate-magician-palm-springs",
+      "permanent": true
+    },
+    {
+      "source": "/palm-springs",
+      "destination": "/corporate-magician-palm-springs",
+      "permanent": true
+    },
+    {
+      "source": "/ps",
+      "destination": "/corporate-magician-palm-springs",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-palm-desert",
+      "destination": "/corporate-magician-palm-desert",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-palm-desert",
+      "destination": "/corporate-magician-palm-desert",
+      "permanent": true
+    },
+    {
+      "source": "/palm-desert",
+      "destination": "/corporate-magician-palm-desert",
+      "permanent": true
+    },
+    {
+      "source": "/pd",
+      "destination": "/corporate-magician-palm-desert",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-napa",
+      "destination": "/corporate-magician-napa",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-napa",
+      "destination": "/corporate-magician-napa",
+      "permanent": true
+    },
+    {
+      "source": "/napa",
+      "destination": "/corporate-magician-napa",
+      "permanent": true
+    },
+    {
+      "source": "/napa-valley",
+      "destination": "/corporate-magician-napa",
+      "permanent": true
+    },
+    {
+      "source": "/wine-country",
+      "destination": "/corporate-magician-napa",
+      "permanent": true
     }
   ]
 }
