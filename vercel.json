@@ -291,6 +291,111 @@
       "source": "/oc",
       "destination": "/corporate-magician-orange-county",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-beverly-hills",
+      "destination": "/corporate-magician-beverly-hills",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-beverly-hills",
+      "destination": "/corporate-magician-beverly-hills",
+      "permanent": true
+    },
+    {
+      "source": "/beverly-hills",
+      "destination": "/corporate-magician-beverly-hills",
+      "permanent": true
+    },
+    {
+      "source": "/bh",
+      "destination": "/corporate-magician-beverly-hills",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-santa-monica",
+      "destination": "/corporate-magician-santa-monica",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-santa-monica",
+      "destination": "/corporate-magician-santa-monica",
+      "permanent": true
+    },
+    {
+      "source": "/santa-monica",
+      "destination": "/corporate-magician-santa-monica",
+      "permanent": true
+    },
+    {
+      "source": "/sm",
+      "destination": "/corporate-magician-santa-monica",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-santa-barbara",
+      "destination": "/corporate-magician-santa-barbara",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-santa-barbara",
+      "destination": "/corporate-magician-santa-barbara",
+      "permanent": true
+    },
+    {
+      "source": "/santa-barbara",
+      "destination": "/corporate-magician-santa-barbara",
+      "permanent": true
+    },
+    {
+      "source": "/sb",
+      "destination": "/corporate-magician-santa-barbara",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-temecula",
+      "destination": "/corporate-magician-temecula",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-temecula",
+      "destination": "/corporate-magician-temecula",
+      "permanent": true
+    },
+    {
+      "source": "/temecula",
+      "destination": "/corporate-magician-temecula",
+      "permanent": true
+    },
+    {
+      "source": "/temecula-wine-country",
+      "destination": "/corporate-magician-temecula",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-las-vegas",
+      "destination": "/corporate-magician-las-vegas",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-las-vegas",
+      "destination": "/corporate-magician-las-vegas",
+      "permanent": true
+    },
+    {
+      "source": "/las-vegas",
+      "destination": "/corporate-magician-las-vegas",
+      "permanent": true
+    },
+    {
+      "source": "/vegas",
+      "destination": "/corporate-magician-las-vegas",
+      "permanent": true
+    },
+    {
+      "source": "/lv",
+      "destination": "/corporate-magician-las-vegas",
+      "permanent": true
     }
   ]
 }
