@@ -396,6 +396,26 @@
       "source": "/lv",
       "destination": "/corporate-magician-las-vegas",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-orlando",
+      "destination": "/corporate-magician-orlando",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-orlando",
+      "destination": "/corporate-magician-orlando",
+      "permanent": true
+    },
+    {
+      "source": "/orlando",
+      "destination": "/corporate-magician-orlando",
+      "permanent": true
+    },
+    {
+      "source": "/orlando-fl",
+      "destination": "/corporate-magician-orlando",
+      "permanent": true
     }
   ]
 }

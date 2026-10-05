@@ -8,10 +8,10 @@
 
 ### Executive Summary
 
-During September 2026, the digital presence for **Adrian Saint – Corporate Mentalist & Mind Reader** underwent a complete structural and search optimization overhaul. The web platform was scaled from an individual showcase into a full-funnel, enterprise-grade corporate lead generation ecosystem consisting of **25 fully optimized production pages**:
+During September 2026, the digital presence for **Adrian Saint – Corporate Mentalist & Mind Reader** underwent a complete structural and search optimization overhaul. The web platform was scaled from an individual showcase into a full-funnel, enterprise-grade corporate lead generation ecosystem consisting of **26 fully optimized production pages**:
 - **1 Flagship Homepage** with high-conversion booking architecture.
 - **1 Dedicated Fast-Track Contact & EPK Booking Hub**.
-- **20 Local SEO Regional Landing Pages** dominating key corporate event markets across Southern California, the Desert Resorts, California Wine Country, and the Southwest.
+- **21 Local SEO Regional Landing Pages** dominating key corporate event markets across Southern California, the Desert Resorts, California Wine Country, and the Southwest.
 - **3 Dedicated Service Landing Pages** spotlighting Adrian’s core performance formats.
 
 Every single page received meticulous **On-Page SEO Optimization** (title tags, meta descriptions, semantic headings, keyword integration, and contextual internal linking), enterprise-grade **Technical SEO & Schema.org JSON-LD**, and high-impact **Conversion Rate Optimization (CRO)**.
@@ -20,7 +20,7 @@ Every single page received meticulous **On-Page SEO Optimization** (title tags, 
 
 ### 1. On-Page SEO Optimization (Sitewide Implementation)
 
-Every page across the 25-page platform was audited and rebuilt with granular, search-intent-aligned On-Page SEO factors designed to capture high-intent corporate meeting planners and executive event organizers.
+Every page across the 26-page platform was audited and rebuilt with granular, search-intent-aligned On-Page SEO factors designed to capture high-intent corporate meeting planners and executive event organizers.
 
 ```mermaid
 flowchart LR
@@ -33,7 +33,7 @@ flowchart LR
     G["Internal Linking Mesh"] --> F
 ```
 
-#### A. Title Tag Optimization (25 Custom Titles)
+#### A. Title Tag Optimization (26 Custom Titles)
 All `<title>` tags were crafted to stay within optimal Google desktop and mobile character display boundaries (50–60 characters) while maintaining a strict formula: `[Primary Keyword] + [Geographic Market / Service Type] | [Secondary Modifier] | Adrian Saint`.
 
 *Sample Live Title Tags:*
@@ -81,16 +81,16 @@ Content was enriched with latent semantic indexing (LSI) terms that Google assoc
 
 ### 2. Sitewide Internal Linking & Silo Architecture
 
-Internal linking was completely restructured across all 25 pages to distribute link authority (PageRank), eliminate orphan pages, and guide planners seamlessly toward booking:
+Internal linking was completely restructured across all 26 pages to distribute link authority (PageRank), eliminate orphan pages, and guide planners seamlessly toward booking:
 
 | Linking Strategy | Implementation Details | SEO & User Benefit |
 | :--- | :--- | :--- |
-| **Global Footer Navigation (Col 2)** | Updated sitewide across all 25 HTML files to link directly to `/corporate-stage-show`, `/strolling-mind-reading`, `/team-building`, and `/contact`. | Permanent, crawlable sitewide sitelink equity flowing to core service offerings. |
+| **Global Footer Navigation (Col 2)** | Updated sitewide across all 26 HTML files to link directly to `/corporate-stage-show`, `/strolling-mind-reading`, `/team-building`, and `/contact`. | Permanent, crawlable sitewide sitelink equity flowing to core service offerings. |
 | **In-Content Exploratory Links** | Embedded contextual text links (*"Explore Stage Show Format →"*, *"Explore Strolling Mentalism →"*, *"Explore Team Building Format →"*) inside Performance Packages cards on Homepage & all 14 Location Pages. | Direct contextual relevance without interfering with instant modal inquiry buttons. |
 | **Service Cross-Linking Grid** | Built a "Complementary Entertainment Formats" 2-card module on each service page linking to the other two formats. | Encourages multi-format bookings (e.g. Strolling Cocktail + Stage Banquet Headliner). |
 | **Geographic Service Anchors** | Added "Turnkey Production & Regional Travel" sections on service pages linking down to top convention hubs (Los Angeles, San Diego, Irvine, Anaheim, SF, Phoenix, Scottsdale). | Passes thematic relevance between high-authority service pages and municipal landing pages. |
 | **Structured Breadcrumbs** | Implemented hierarchical breadcrumb navigation on service pages (`Home > Entertainment Options > [Service Name]`). | Improves SERP snippet display with breadcrumb pathways. |
-| **Mobile Drawer Integration** | Expanded mobile navigation across all 25 pages to feature dedicated links to all 3 service formats. | Ensures 100% crawl discoverability for mobile search bots. |
+| **Mobile Drawer Integration** | Expanded mobile navigation across all 26 pages to feature dedicated links to all 3 service formats. | Ensures 100% crawl discoverability for mobile search bots. |
 
 ---
 
@@ -107,7 +107,7 @@ Internal linking was completely restructured across all 25 pages to distribute l
    - Interactive psychological mind-sync workshops for leadership retreats and cross-departmental summits.
    - 100% dignified participation, intuition exercises, and 6 corporate FAQs.
 
-#### B. Regional Local SEO Hubs (20 Target Municipalities)
+#### B. Regional Local SEO Hubs (21 Target Municipalities)
 Deployed 14 standalone landing pages targeting the top corporate convention destinations:
 1. **Orange County, CA** (`/corporate-magician-orange-county` | `/orange-county`, `/oc`)
 15. **Los Angeles, CA** (`/corporate-magician-los-angeles` | `/los-angeles`, `/la`)
@@ -129,6 +129,7 @@ Deployed 14 standalone landing pages targeting the top corporate convention dest
 18. **Santa Barbara, CA** (`/corporate-magician-santa-barbara` | `/santa-barbara`, `/sb`)
 19. **Temecula, CA (Wine Country)** (`/corporate-magician-temecula` | `/temecula`, `/temecula-wine-country`)
 20. **Las Vegas, NV** (`/corporate-magician-las-vegas` | `/las-vegas`, `/vegas`, `/lv`)
+21. **Orlando, FL** (`/corporate-magician-orlando` | `/orlando`, `/orlando-fl` | Dedicated Phone: `1 (689) 388-7534`)
 
 Each city page includes municipal coordinates, `areaServed` JSON-LD schema, 3 curated premier venue partnerships, local drive-in logistics callout, and 5 localized venue/event FAQs.
 
@@ -136,9 +137,9 @@ Each city page includes municipal coordinates, `areaServed` JSON-LD schema, 3 cu
 
 ### 4. Technical SEO & Search Engine Infrastructure
 
-- **Schema.org Structured Data (JSON-LD):** Deployed `Person`, `EntertainmentBusiness`, `Service`, `Place`, `FAQPage`, and `GeoCoordinates` markup across all 25 pages.
+- **Schema.org Structured Data (JSON-LD):** Deployed `Person`, `EntertainmentBusiness`, `Service`, `Place`, `FAQPage`, and `GeoCoordinates` markup across all 26 pages.
 - **Clean URLs & 50+ 301 Permanent Redirects:** Engineered in `vercel.json` to handle short links (`/stage-show`, `/la`, `/irvine`, `/newport`, `/ps`, `/pd`, `/napa`) and protect against common spelling typos.
-- **Sitemap & Crawl Prioritization:** `sitemap.xml` fully re-indexed with all 25 active URLs, crawl priority hierarchy (`1.0` homepage, `0.9` services/contact, `0.8` regional hubs) and clean canonical tags across all pages.
+- **Sitemap & Crawl Prioritization:** `sitemap.xml` fully re-indexed with all 26 active URLs, crawl priority hierarchy (`1.0` homepage, `0.9` services/contact, `0.8` regional hubs) and clean canonical tags across all pages.
 - **Brand Favicon & Web App Suite:** Deployed complete multi-resolution icon suite (SVG, 16x16, 32x32, 48x48, 180x180 Apple Touch, 192x192 & 512x512 Android Chrome, and `site.webmanifest`).
 
 ---
@@ -160,18 +161,18 @@ Each city page includes municipal coordinates, `areaServed` JSON-LD schema, 3 cu
 
 | Deliverable Category | Count | Production Status |
 | :--- | :---: | :---: |
-| **Total Production Pages** | 25 Pages | Live on Production |
-| **On-Page Optimized Title Tags** | 25 Custom Titles | Live across 19 Pages |
-| **High-CTR Meta Descriptions** | 25 Custom Descriptions | Live across 19 Pages |
+| **Total Production Pages** | 26 Pages | Live on Production |
+| **On-Page Optimized Title Tags** | 26 Custom Titles | Live across 19 Pages |
+| **High-CTR Meta Descriptions** | 26 Custom Descriptions | Live across 19 Pages |
 | **Core Service Landing Pages** | 3 Pages | Live on Production |
-| **Regional Local SEO Hubs** | 20 Pages | Live on Production |
-| **Sitewide Internal Links Mesh** | 220+ Links | Deployed Across 25 Pages |
+| **Regional Local SEO Hubs** | 21 Pages | Live on Production |
+| **Sitewide Internal Links Mesh** | 220+ Links | Deployed Across 26 Pages |
 | **Verified Enterprise Client Logos** | 43 Brands | Integrated & Live |
 | **Live Event Performance Photos** | 78 Photos | Live in Event Gallery |
 | **Video Testimonial Shorts** | 16 Videos | Live with Lightbox Player |
 | **Verified Written Testimonials** | 36 Reviews | Live in Luxury Slider |
 | **Clean URL Routing Rules (301s)** | 50+ Rules | Configured in `vercel.json` |
-| **Brand Favicon & Icon Assets** | 8 Assets | Live across all 25 Pages |
+| **Brand Favicon & Icon Assets** | 8 Assets | Live across all 26 Pages |
 
 ---
 
