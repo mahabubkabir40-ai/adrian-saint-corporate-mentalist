@@ -1091,6 +1091,46 @@
       "source": "/vb",
       "destination": "/corporate-magician-virginia-beach",
       "permanent": true
+    },
+    {
+      "source": "/holidayevents",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holidayevents.php",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-events",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-party-entertainment",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-party",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-party-magician",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-party-mentalist",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
+    },
+    {
+      "source": "/holiday",
+      "destination": "/corporate-holiday-party-entertainment",
+      "permanent": true
     }
   ]
 }
