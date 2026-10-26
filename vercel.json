@@ -886,6 +886,211 @@
       "source": "/silicon-slopes",
       "destination": "/corporate-magician-salt-lake-city",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-indianapolis",
+      "destination": "/corporate-magician-indianapolis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-indianapolis",
+      "destination": "/corporate-magician-indianapolis",
+      "permanent": true
+    },
+    {
+      "source": "/indianapolis",
+      "destination": "/corporate-magician-indianapolis",
+      "permanent": true
+    },
+    {
+      "source": "/indy",
+      "destination": "/corporate-magician-indianapolis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-columbus",
+      "destination": "/corporate-magician-columbus",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-columbus",
+      "destination": "/corporate-magician-columbus",
+      "permanent": true
+    },
+    {
+      "source": "/columbus",
+      "destination": "/corporate-magician-columbus",
+      "permanent": true
+    },
+    {
+      "source": "/cbus",
+      "destination": "/corporate-magician-columbus",
+      "permanent": true
+    },
+    {
+      "source": "/columbus-oh",
+      "destination": "/corporate-magician-columbus",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-cleveland",
+      "destination": "/corporate-magician-cleveland",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-cleveland",
+      "destination": "/corporate-magician-cleveland",
+      "permanent": true
+    },
+    {
+      "source": "/cleveland",
+      "destination": "/corporate-magician-cleveland",
+      "permanent": true
+    },
+    {
+      "source": "/cle",
+      "destination": "/corporate-magician-cleveland",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-baltimore",
+      "destination": "/corporate-magician-baltimore",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-baltimore",
+      "destination": "/corporate-magician-baltimore",
+      "permanent": true
+    },
+    {
+      "source": "/baltimore",
+      "destination": "/corporate-magician-baltimore",
+      "permanent": true
+    },
+    {
+      "source": "/bmore",
+      "destination": "/corporate-magician-baltimore",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-portland",
+      "destination": "/corporate-magician-portland",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-portland",
+      "destination": "/corporate-magician-portland",
+      "permanent": true
+    },
+    {
+      "source": "/portland",
+      "destination": "/corporate-magician-portland",
+      "permanent": true
+    },
+    {
+      "source": "/pdx",
+      "destination": "/corporate-magician-portland",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-louisville",
+      "destination": "/corporate-magician-louisville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-louisville",
+      "destination": "/corporate-magician-louisville",
+      "permanent": true
+    },
+    {
+      "source": "/louisville",
+      "destination": "/corporate-magician-louisville",
+      "permanent": true
+    },
+    {
+      "source": "/derby-city",
+      "destination": "/corporate-magician-louisville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-atlantic-city",
+      "destination": "/corporate-magician-atlantic-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-atlantic-city",
+      "destination": "/corporate-magician-atlantic-city",
+      "permanent": true
+    },
+    {
+      "source": "/atlantic-city",
+      "destination": "/corporate-magician-atlantic-city",
+      "permanent": true
+    },
+    {
+      "source": "/ac",
+      "destination": "/corporate-magician-atlantic-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-reno",
+      "destination": "/corporate-magician-reno",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-reno",
+      "destination": "/corporate-magician-reno",
+      "permanent": true
+    },
+    {
+      "source": "/reno",
+      "destination": "/corporate-magician-reno",
+      "permanent": true
+    },
+    {
+      "source": "/reno-tahoe",
+      "destination": "/corporate-magician-reno",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-boise",
+      "destination": "/corporate-magician-boise",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-boise",
+      "destination": "/corporate-magician-boise",
+      "permanent": true
+    },
+    {
+      "source": "/boise",
+      "destination": "/corporate-magician-boise",
+      "permanent": true
+    },
+    {
+      "source": "/treasure-valley",
+      "destination": "/corporate-magician-boise",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-virginia-beach",
+      "destination": "/corporate-magician-virginia-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-virginia-beach",
+      "destination": "/corporate-magician-virginia-beach",
+      "permanent": true
+    },
+    {
+      "source": "/virginia-beach",
+      "destination": "/corporate-magician-virginia-beach",
+      "permanent": true
+    },
+    {
+      "source": "/vb",
+      "destination": "/corporate-magician-virginia-beach",
+      "permanent": true
     }
   ]
 }
