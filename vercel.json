@@ -636,6 +636,256 @@
       "source": "/south-beach",
       "destination": "/corporate-magician-miami",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-boston",
+      "destination": "/corporate-magician-boston",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-boston",
+      "destination": "/corporate-magician-boston",
+      "permanent": true
+    },
+    {
+      "source": "/boston",
+      "destination": "/corporate-magician-boston",
+      "permanent": true
+    },
+    {
+      "source": "/bos",
+      "destination": "/corporate-magician-boston",
+      "permanent": true
+    },
+    {
+      "source": "/boston-ma",
+      "destination": "/corporate-magician-boston",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-denver",
+      "destination": "/corporate-magician-denver",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-denver",
+      "destination": "/corporate-magician-denver",
+      "permanent": true
+    },
+    {
+      "source": "/denver",
+      "destination": "/corporate-magician-denver",
+      "permanent": true
+    },
+    {
+      "source": "/den",
+      "destination": "/corporate-magician-denver",
+      "permanent": true
+    },
+    {
+      "source": "/mile-high",
+      "destination": "/corporate-magician-denver",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-seattle",
+      "destination": "/corporate-magician-seattle",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-seattle",
+      "destination": "/corporate-magician-seattle",
+      "permanent": true
+    },
+    {
+      "source": "/seattle",
+      "destination": "/corporate-magician-seattle",
+      "permanent": true
+    },
+    {
+      "source": "/sea",
+      "destination": "/corporate-magician-seattle",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-nashville",
+      "destination": "/corporate-magician-nashville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-nashville",
+      "destination": "/corporate-magician-nashville",
+      "permanent": true
+    },
+    {
+      "source": "/nashville",
+      "destination": "/corporate-magician-nashville",
+      "permanent": true
+    },
+    {
+      "source": "/bna",
+      "destination": "/corporate-magician-nashville",
+      "permanent": true
+    },
+    {
+      "source": "/music-city",
+      "destination": "/corporate-magician-nashville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-washington-dc",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-washington-dc",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/washington-dc",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/dc",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/washington",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/dmv",
+      "destination": "/corporate-magician-washington-dc",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-philadelphia",
+      "destination": "/corporate-magician-philadelphia",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-philadelphia",
+      "destination": "/corporate-magician-philadelphia",
+      "permanent": true
+    },
+    {
+      "source": "/philadelphia",
+      "destination": "/corporate-magician-philadelphia",
+      "permanent": true
+    },
+    {
+      "source": "/philly",
+      "destination": "/corporate-magician-philadelphia",
+      "permanent": true
+    },
+    {
+      "source": "/phl",
+      "destination": "/corporate-magician-philadelphia",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-new-orleans",
+      "destination": "/corporate-magician-new-orleans",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-new-orleans",
+      "destination": "/corporate-magician-new-orleans",
+      "permanent": true
+    },
+    {
+      "source": "/new-orleans",
+      "destination": "/corporate-magician-new-orleans",
+      "permanent": true
+    },
+    {
+      "source": "/nola",
+      "destination": "/corporate-magician-new-orleans",
+      "permanent": true
+    },
+    {
+      "source": "/msy",
+      "destination": "/corporate-magician-new-orleans",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-tampa",
+      "destination": "/corporate-magician-tampa",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-tampa",
+      "destination": "/corporate-magician-tampa",
+      "permanent": true
+    },
+    {
+      "source": "/tampa",
+      "destination": "/corporate-magician-tampa",
+      "permanent": true
+    },
+    {
+      "source": "/tampa-bay",
+      "destination": "/corporate-magician-tampa",
+      "permanent": true
+    },
+    {
+      "source": "/tpa",
+      "destination": "/corporate-magician-tampa",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-charlotte",
+      "destination": "/corporate-magician-charlotte",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-charlotte",
+      "destination": "/corporate-magician-charlotte",
+      "permanent": true
+    },
+    {
+      "source": "/charlotte",
+      "destination": "/corporate-magician-charlotte",
+      "permanent": true
+    },
+    {
+      "source": "/clt",
+      "destination": "/corporate-magician-charlotte",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-salt-lake-city",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-salt-lake-city",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
+    },
+    {
+      "source": "/salt-lake-city",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
+    },
+    {
+      "source": "/slc",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
+    },
+    {
+      "source": "/salt-lake",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
+    },
+    {
+      "source": "/silicon-slopes",
+      "destination": "/corporate-magician-salt-lake-city",
+      "permanent": true
     }
   ]
 }
