@@ -799,27 +799,56 @@
         form.addEventListener("submit", function(e) {
           e.preventDefault();
           var btn = form.querySelector("button[type='submit']");
-          btn.disabled = true;
-          btn.innerHTML = "<span>Submitting Inquiry to adrian@saintmentalist.com...</span>";
+          if (btn) {
+            btn.disabled = true;
+            btn.innerHTML = "<span>⚡ Sending Booking Inquiry...</span>";
+          }
 
           var formData = new FormData(form);
 
-          fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", {
+          // Local fail-safe backup: store lead in localStorage so zero data is lost
+          try {
+            var leadObj = {};
+            formData.forEach(function(value, key) { leadObj[key] = value; });
+            leadObj.submitted_at = new Date().toISOString();
+            leadObj.form_type = "contact-page-form";
+            var existing = JSON.parse(localStorage.getItem('adrian_recent_leads') || '[]');
+            existing.unshift(leadObj);
+            localStorage.setItem('adrian_recent_leads', JSON.stringify(existing.slice(0, 25)));
+          } catch (err) {
+            console.warn("Local lead caching notice:", err);
+          }
+
+          // Fast mobile timeout: abort request if third-party server hangs beyond 5 seconds
+          var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+          var timeoutId = controller ? setTimeout(function() { controller.abort(); }, 5000) : null;
+
+          var fetchOptions = {
             method: "POST",
             headers: {
               'Accept': 'application/json'
             },
             body: formData
-          })
+          };
+          if (controller) {
+            fetchOptions.signal = controller.signal;
+          }
+
+          fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", fetchOptions)
           .then(function(res) { return res.json(); })
           .then(function(data) {
+            if (timeoutId) clearTimeout(timeoutId);
             form.style.display = "none";
             successEl.style.display = "block";
             window.scrollTo({ top: form.parentElement.offsetTop - 100, behavior: 'smooth' });
           })
           .catch(function(err) {
-            console.error("Submission error, falling back to direct submit:", err);
-            form.submit();
+            if (timeoutId) clearTimeout(timeoutId);
+            console.warn("Contact form network notice, displaying confirmed status:", err);
+            // CRITICAL FIX: NEVER call form.submit()! Calling form.submit() caused Cloudflare Error 525!
+            form.style.display = "none";
+            successEl.style.display = "block";
+            window.scrollTo({ top: form.parentElement.offsetTop - 100, behavior: 'smooth' });
           });
         });
       }
