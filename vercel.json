@@ -1131,6 +1131,141 @@
       "source": "/holiday",
       "destination": "/corporate-holiday-party-entertainment",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-fort-lauderdale",
+      "destination": "/corporate-magician-fort-lauderdale",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-fort-lauderdale",
+      "destination": "/corporate-magician-fort-lauderdale",
+      "permanent": true
+    },
+    {
+      "source": "/fort-lauderdale",
+      "destination": "/corporate-magician-fort-lauderdale",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-kissimmee",
+      "destination": "/corporate-magician-kissimmee",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-kissimmee",
+      "destination": "/corporate-magician-kissimmee",
+      "permanent": true
+    },
+    {
+      "source": "/kissimmee",
+      "destination": "/corporate-magician-kissimmee",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-grapevine",
+      "destination": "/corporate-magician-grapevine",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-grapevine",
+      "destination": "/corporate-magician-grapevine",
+      "permanent": true
+    },
+    {
+      "source": "/grapevine",
+      "destination": "/corporate-magician-grapevine",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-aurora",
+      "destination": "/corporate-magician-aurora",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-aurora",
+      "destination": "/corporate-magician-aurora",
+      "permanent": true
+    },
+    {
+      "source": "/aurora",
+      "destination": "/corporate-magician-aurora",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-fort-worth",
+      "destination": "/corporate-magician-fort-worth",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-fort-worth",
+      "destination": "/corporate-magician-fort-worth",
+      "permanent": true
+    },
+    {
+      "source": "/fort-worth",
+      "destination": "/corporate-magician-fort-worth",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-minneapolis",
+      "destination": "/corporate-magician-minneapolis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-minneapolis",
+      "destination": "/corporate-magician-minneapolis",
+      "permanent": true
+    },
+    {
+      "source": "/minneapolis",
+      "destination": "/corporate-magician-minneapolis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-national-harbor",
+      "destination": "/corporate-magician-national-harbor",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-national-harbor",
+      "destination": "/corporate-magician-national-harbor",
+      "permanent": true
+    },
+    {
+      "source": "/national-harbor",
+      "destination": "/corporate-magician-national-harbor",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-kansas-city",
+      "destination": "/corporate-magician-kansas-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-kansas-city",
+      "destination": "/corporate-magician-kansas-city",
+      "permanent": true
+    },
+    {
+      "source": "/kansas-city",
+      "destination": "/corporate-magician-kansas-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-st-louis",
+      "destination": "/corporate-magician-st-louis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-st-louis",
+      "destination": "/corporate-magician-st-louis",
+      "permanent": true
+    },
+    {
+      "source": "/st-louis",
+      "destination": "/corporate-magician-st-louis",
+      "permanent": true
     }
   ]
 }
