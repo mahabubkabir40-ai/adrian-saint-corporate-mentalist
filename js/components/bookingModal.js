@@ -40,6 +40,7 @@ function openBookingModalDynamic(cityName = "") {
             <input type="hidden" name="_subject" value="New Modal Quote Request - Adrian Saint">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_cc" value="gowrish@rightkey.net,sganeshomg@gmail.com,mahabubkabir36@gmail.com">
             <input type="hidden" name="_autoresponse" value="Thank you! Adrian saint and team have received your request. They will respond to your request in 24-48 hours.">
 
             <div class="grid-2">
@@ -120,6 +121,9 @@ function openBookingModalDynamic(cityName = "") {
       }
 
       const formData = new FormData(formEl);
+      if (!formData.has('_cc')) {
+        formData.append('_cc', 'gowrish@rightkey.net,sganeshomg@gmail.com,mahabubkabir36@gmail.com');
+      }
 
       // Local fail-safe backup: store lead in localStorage so zero data is lost even on network drops
       try {
