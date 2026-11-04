@@ -838,7 +838,19 @@
             fetchOptions.signal = controller.signal;
           }
 
-          fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", fetchOptions)
+          var leadPayload = {};
+          formData.forEach(function(value, key) { leadPayload[key] = value; });
+          leadPayload.source_page = window.location.href;
+
+          fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(leadPayload),
+            signal: controller ? controller.signal : undefined
+          })
           .then(function(res) { return res.json(); })
           .then(function(data) {
             if (timeoutId) clearTimeout(timeoutId);
@@ -848,8 +860,7 @@
           })
           .catch(function(err) {
             if (timeoutId) clearTimeout(timeoutId);
-            console.warn("Contact form network notice, displaying confirmed status:", err);
-            // CRITICAL FIX: NEVER call form.submit()! Calling form.submit() caused Cloudflare Error 525!
+            console.warn("Contact form API notice, displaying confirmed status:", err);
             form.style.display = "none";
             successEl.style.display = "block";
             window.scrollTo({ top: form.parentElement.offsetTop - 100, behavior: 'smooth' });

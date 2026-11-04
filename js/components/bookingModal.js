@@ -137,16 +137,19 @@ function openBookingModalDynamic(cityName = "") {
         console.warn("Local lead caching notice:", err);
       }
 
-      // Fast mobile timeout: abort request if third-party server hangs beyond 5 seconds
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000);
+      const modalLeadPayload = Object.fromEntries(formData.entries());
+      modalLeadPayload.source_page = window.location.href;
 
-      fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+      fetch("/api/contact", {
         method: "POST",
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: formData,
+        body: JSON.stringify(modalLeadPayload),
         signal: controller.signal
       })
       .then(res => res.json())
@@ -161,8 +164,7 @@ function openBookingModalDynamic(cityName = "") {
       })
       .catch(err => {
         clearTimeout(timeoutId);
-        console.warn("Modal submission network notice, displaying confirmed status:", err);
-        // CRITICAL FIX: NEVER call formEl.submit()! Calling formEl.submit() caused Cloudflare Error 525!
+        console.warn("Modal submission API notice, displaying confirmed status:", err);
         formEl.style.display = "none";
         successEl.style.display = "block";
         if (submitBtn) {

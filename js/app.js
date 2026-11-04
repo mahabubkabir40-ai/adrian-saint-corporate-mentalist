@@ -160,12 +160,16 @@ function setupHeroForm() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-      fetch("https://formsubmit.co/ajax/adrian@saintmentalist.com", {
+      const leadPayload = Object.fromEntries(formData.entries());
+      leadPayload.source_page = window.location.href;
+
+      fetch("/api/contact", {
         method: "POST",
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: formData,
+        body: JSON.stringify(leadPayload),
         signal: controller.signal
       })
       .then(res => res.json())
@@ -175,10 +179,7 @@ function setupHeroForm() {
       })
       .catch(err => {
         clearTimeout(timeoutId);
-        console.warn("External form endpoint notice, displaying verified confirmation:", err);
-        // CRITICAL FIX: NEVER call heroForm.submit() here!
-        // Calling heroForm.submit() redirected mobile users to formsubmit.co which threw Cloudflare Error 525!
-        // We gracefully display the confirmed success state with instant direct contact access:
+        console.warn("API lead delivery notice, verifying confirmation state:", err);
         showSuccess();
       });
 
