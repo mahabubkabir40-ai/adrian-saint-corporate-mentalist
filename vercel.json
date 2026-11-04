@@ -1281,6 +1281,21 @@
       "source": "/thankyou",
       "destination": "/corporate-mentalist-thank-you",
       "permanent": true
+    },
+    {
+      "source": "/holiday-thank-you",
+      "destination": "/corporate-holiday-party-entertainment-thank-you",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-thanks",
+      "destination": "/corporate-holiday-party-entertainment-thank-you",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-thankyou",
+      "destination": "/corporate-holiday-party-entertainment-thank-you",
+      "permanent": true
     }
   ]
 }
