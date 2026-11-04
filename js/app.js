@@ -183,18 +183,18 @@ function setupHeroForm() {
       });
 
       function showSuccess() {
-        heroForm.innerHTML = `
-          <div style="text-align: center; padding: 1.75rem 0.5rem; color: #FFFFFF;">
-            <div style="font-size: 2.75rem; margin-bottom: 0.75rem;">🎉</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 0.5rem;">Event Date Hold Initiated!</h3>
-            <p style="color: var(--text-silver); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.25rem;">
-              Thank you! Adrian Saint and his team have received your request. They will respond to your request in 24-48 hours.
-            </p>
-            <div style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: rgba(212, 175, 55, 0.12); border: 1px solid var(--border-gold-glow); padding: 0.6rem 1.1rem; border-radius: 9999px; font-size: 0.82rem; color: var(--accent-gold); font-weight: 700; max-width: 100%;">
-              <span>📞 Immediate Question? Call <a href="tel:18335705966" style="color: #FFF; text-decoration: underline;">(833) 570-5966</a></span>
-            </div>
-          </div>
-        `;
+        const path = window.location.pathname.toLowerCase();
+        const isHoliday = path.includes("corporate-holiday-party-entertainment") || path.includes("holiday");
+        const thankYouUrl = isHoliday 
+          ? "/corporate-holiday-party-entertainment-thank-you" 
+          : "/corporate-mentalist-thank-you";
+
+        if (btn) {
+          btn.disabled = true;
+          btn.innerHTML = "<span>⚡ Date Hold Initiated! Redirecting...</span>";
+        }
+
+        window.location.href = thankYouUrl;
       }
     });
   }
