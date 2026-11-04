@@ -1266,6 +1266,21 @@
       "source": "/st-louis",
       "destination": "/corporate-magician-st-louis",
       "permanent": true
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/corporate-mentalist-thank-you",
+      "permanent": true
+    },
+    {
+      "source": "/thanks",
+      "destination": "/corporate-mentalist-thank-you",
+      "permanent": true
+    },
+    {
+      "source": "/thankyou",
+      "destination": "/corporate-mentalist-thank-you",
+      "permanent": true
     }
   ]
 }
