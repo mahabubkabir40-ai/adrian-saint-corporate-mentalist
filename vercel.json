@@ -1296,6 +1296,56 @@
       "source": "/holiday-thankyou",
       "destination": "/corporate-holiday-party-entertainment-thank-you",
       "permanent": true
+    },
+    {
+      "source": "/holiday-los-angeles",
+      "destination": "/corporate-holiday-party-entertainment-los-angeles",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-san-diego",
+      "destination": "/corporate-holiday-party-entertainment-san-diego",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-san-francisco",
+      "destination": "/corporate-holiday-party-entertainment-san-francisco",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-phoenix",
+      "destination": "/corporate-holiday-party-entertainment-phoenix",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-scottsdale",
+      "destination": "/corporate-holiday-party-entertainment-scottsdale",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-anaheim",
+      "destination": "/corporate-holiday-party-entertainment-anaheim",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-irvine",
+      "destination": "/corporate-holiday-party-entertainment-irvine",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-santa-ana",
+      "destination": "/corporate-holiday-party-entertainment-santa-ana",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-garden-grove",
+      "destination": "/corporate-holiday-party-entertainment-garden-grove",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-huntington-beach",
+      "destination": "/corporate-holiday-party-entertainment-huntington-beach",
+      "permanent": true
     }
   ]
 }
