@@ -1346,6 +1346,156 @@
       "source": "/holiday-huntington-beach",
       "destination": "/corporate-holiday-party-entertainment-huntington-beach",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-chula-vista",
+      "destination": "/corporate-magician-chula-vista",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-chula-vista",
+      "destination": "/corporate-magician-chula-vista",
+      "permanent": true
+    },
+    {
+      "source": "/chula-vista",
+      "destination": "/corporate-magician-chula-vista",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-irving",
+      "destination": "/corporate-magician-irving",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-irving",
+      "destination": "/corporate-magician-irving",
+      "permanent": true
+    },
+    {
+      "source": "/irving",
+      "destination": "/corporate-magician-irving",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-frisco",
+      "destination": "/corporate-magician-frisco",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-frisco",
+      "destination": "/corporate-magician-frisco",
+      "permanent": true
+    },
+    {
+      "source": "/frisco",
+      "destination": "/corporate-magician-frisco",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-coronado",
+      "destination": "/corporate-magician-coronado",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-coronado",
+      "destination": "/corporate-magician-coronado",
+      "permanent": true
+    },
+    {
+      "source": "/coronado",
+      "destination": "/corporate-magician-coronado",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-rosemont",
+      "destination": "/corporate-magician-rosemont",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-rosemont",
+      "destination": "/corporate-magician-rosemont",
+      "permanent": true
+    },
+    {
+      "source": "/rosemont",
+      "destination": "/corporate-magician-rosemont",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-arlington-va",
+      "destination": "/corporate-magician-arlington-va",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-arlington-va",
+      "destination": "/corporate-magician-arlington-va",
+      "permanent": true
+    },
+    {
+      "source": "/arlington-va",
+      "destination": "/corporate-magician-arlington-va",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-colorado-springs",
+      "destination": "/corporate-magician-colorado-springs",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-colorado-springs",
+      "destination": "/corporate-magician-colorado-springs",
+      "permanent": true
+    },
+    {
+      "source": "/colorado-springs",
+      "destination": "/corporate-magician-colorado-springs",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-aventura",
+      "destination": "/corporate-magician-aventura",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-aventura",
+      "destination": "/corporate-magician-aventura",
+      "permanent": true
+    },
+    {
+      "source": "/aventura",
+      "destination": "/corporate-magician-aventura",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-savannah",
+      "destination": "/corporate-magician-savannah",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-savannah",
+      "destination": "/corporate-magician-savannah",
+      "permanent": true
+    },
+    {
+      "source": "/savannah",
+      "destination": "/corporate-magician-savannah",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-toronto",
+      "destination": "/corporate-magician-toronto",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-toronto",
+      "destination": "/corporate-magician-toronto",
+      "permanent": true
+    },
+    {
+      "source": "/toronto",
+      "destination": "/corporate-magician-toronto",
+      "permanent": true
     }
   ]
 }
