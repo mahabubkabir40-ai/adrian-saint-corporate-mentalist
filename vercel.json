@@ -1496,6 +1496,241 @@
       "source": "/toronto",
       "destination": "/corporate-magician-toronto",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-pittsburgh",
+      "destination": "/corporate-magician-pittsburgh",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-pittsburgh",
+      "destination": "/corporate-magician-pittsburgh",
+      "permanent": true
+    },
+    {
+      "source": "/pittsburgh",
+      "destination": "/corporate-magician-pittsburgh",
+      "permanent": true
+    },
+    {
+      "source": "/pgh",
+      "destination": "/corporate-magician-pittsburgh",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-cincinnati",
+      "destination": "/corporate-magician-cincinnati",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-cincinnati",
+      "destination": "/corporate-magician-cincinnati",
+      "permanent": true
+    },
+    {
+      "source": "/cincinnati",
+      "destination": "/corporate-magician-cincinnati",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-milwaukee",
+      "destination": "/corporate-magician-milwaukee",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-milwaukee",
+      "destination": "/corporate-magician-milwaukee",
+      "permanent": true
+    },
+    {
+      "source": "/milwaukee",
+      "destination": "/corporate-magician-milwaukee",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-sacramento",
+      "destination": "/corporate-magician-sacramento",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-sacramento",
+      "destination": "/corporate-magician-sacramento",
+      "permanent": true
+    },
+    {
+      "source": "/sacramento",
+      "destination": "/corporate-magician-sacramento",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-raleigh",
+      "destination": "/corporate-magician-raleigh",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-raleigh",
+      "destination": "/corporate-magician-raleigh",
+      "permanent": true
+    },
+    {
+      "source": "/raleigh",
+      "destination": "/corporate-magician-raleigh",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-richmond",
+      "destination": "/corporate-magician-richmond",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-richmond",
+      "destination": "/corporate-magician-richmond",
+      "permanent": true
+    },
+    {
+      "source": "/richmond",
+      "destination": "/corporate-magician-richmond",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-memphis",
+      "destination": "/corporate-magician-memphis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-memphis",
+      "destination": "/corporate-magician-memphis",
+      "permanent": true
+    },
+    {
+      "source": "/memphis",
+      "destination": "/corporate-magician-memphis",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-detroit",
+      "destination": "/corporate-magician-detroit",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-detroit",
+      "destination": "/corporate-magician-detroit",
+      "permanent": true
+    },
+    {
+      "source": "/detroit",
+      "destination": "/corporate-magician-detroit",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-tucson",
+      "destination": "/corporate-magician-tucson",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-tucson",
+      "destination": "/corporate-magician-tucson",
+      "permanent": true
+    },
+    {
+      "source": "/tucson",
+      "destination": "/corporate-magician-tucson",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-oklahoma-city",
+      "destination": "/corporate-magician-oklahoma-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-oklahoma-city",
+      "destination": "/corporate-magician-oklahoma-city",
+      "permanent": true
+    },
+    {
+      "source": "/oklahoma-city",
+      "destination": "/corporate-magician-oklahoma-city",
+      "permanent": true
+    },
+    {
+      "source": "/okc",
+      "destination": "/corporate-magician-oklahoma-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-omaha",
+      "destination": "/corporate-magician-omaha",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-omaha",
+      "destination": "/corporate-magician-omaha",
+      "permanent": true
+    },
+    {
+      "source": "/omaha",
+      "destination": "/corporate-magician-omaha",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-tulsa",
+      "destination": "/corporate-magician-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-tulsa",
+      "destination": "/corporate-magician-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/tulsa",
+      "destination": "/corporate-magician-tulsa",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-birmingham",
+      "destination": "/corporate-magician-birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-birmingham",
+      "destination": "/corporate-magician-birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/birmingham",
+      "destination": "/corporate-magician-birmingham",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-providence",
+      "destination": "/corporate-magician-providence",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-providence",
+      "destination": "/corporate-magician-providence",
+      "permanent": true
+    },
+    {
+      "source": "/providence",
+      "destination": "/corporate-magician-providence",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-des-moines",
+      "destination": "/corporate-magician-des-moines",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-des-moines",
+      "destination": "/corporate-magician-des-moines",
+      "permanent": true
+    },
+    {
+      "source": "/des-moines",
+      "destination": "/corporate-magician-des-moines",
+      "permanent": true
     }
   ]
 }

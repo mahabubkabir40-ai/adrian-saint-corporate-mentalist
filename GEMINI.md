@@ -66,7 +66,7 @@ Every city hub (`corporate-magician-[city].html`) must include:
 
 ---
 
-## 4. CURRENT STATUS OF ALL 70 LIVE LOCATION PAGES
+## 4. CURRENT STATUS OF ALL 85 LIVE LOCATION PAGES
 
 ### A. Original 60 Location Pages
 * **California (19)**: Anaheim, Beverly Hills, Garden Grove, Huntington Beach, Irvine, Los Angeles, Napa, Newport Beach, Orange County, Palm Desert, Palm Springs, San Diego, San Francisco, San Jose, Santa Ana, Santa Barbara, Santa Monica, Temecula.
@@ -89,51 +89,65 @@ Every city hub (`corporate-magician-[city].html`) must include:
 9. **Savannah, GA**: `corporate-magician-savannah.html` (Savannah Convention Center) — Phone: `(833) 570-5966`
 10. **Toronto, ON**: `corporate-magician-toronto.html` (Metro Toronto Convention Centre / Financial District) — Phone: `(833) 570-5966`
 
-*Generator Script Reference*: `build_group_a_pages.py` contains the complete schema, venue, and FAQ generation template used to produce these 10 pages cleanly.
+*Generator Script Reference*: `build_group_a_pages.py`
+
+### C. Group B: 15 Major US Convention & Economic Hubs (Published in November & Live)
+11. **Pittsburgh, PA**: `corporate-magician-pittsburgh.html` (David L. Lawrence Convention Center) — Phone: `(833) 570-5966`
+12. **Cincinnati, OH**: `corporate-magician-cincinnati.html` (Duke Energy Convention Center) — Phone: `(833) 570-5966`
+13. **Milwaukee, WI**: `corporate-magician-milwaukee.html` (Baird Center $456M Expansion) — Phone: `(833) 570-5966`
+14. **Sacramento, CA**: `corporate-magician-sacramento.html` (SAFE Credit Union Convention Center) — Phone: `(833) 570-5966`
+15. **Raleigh, NC**: `corporate-magician-raleigh.html` (Raleigh Convention Center / RTP) — Phone: `(833) 570-5966`
+16. **Richmond, VA**: `corporate-magician-richmond.html` (Greater Richmond Convention Center) — Phone: `(833) 570-5966`
+17. **Memphis, TN**: `corporate-magician-memphis.html` (Renasant Convention Center) — Phone: `(833) 570-5966`
+18. **Detroit, MI**: `corporate-magician-detroit.html` (Huntington Place Convention Center) — Phone: `(833) 570-5966`
+19. **Tucson, AZ**: `corporate-magician-tucson.html` (Tucson Convention Center / JW Starr Pass) — Phone: `(833) 570-5966`
+20. **Oklahoma City, OK**: `corporate-magician-oklahoma-city.html` (Oklahoma City Convention Center / Omni OKC) — Phone: `(833) 570-5966`
+21. **Omaha, NE**: `corporate-magician-omaha.html` (CHI Health Center Omaha / Berkshire Summit) — Phone: `(833) 570-5966`
+22. **Tulsa, OK**: `corporate-magician-tulsa.html` (Cox Business Convention Center) — Phone: `(833) 570-5966`
+23. **Birmingham, AL**: `corporate-magician-birmingham.html` (Birmingham-Jefferson Convention Complex BJCC) — Phone: `(833) 570-5966`
+24. **Providence, RI**: `corporate-magician-providence.html` (Rhode Island Convention Center) — Phone: `(833) 570-5966`
+25. **Des Moines, IA**: `corporate-magician-des-moines.html` (Iowa Events Center) — Phone: `(833) 570-5966`
+
+*Generator Script Reference*: `build_group_b_pages.py`
 
 ---
 
-## 5. NEXT EXPANSION ROADMAP: 40 REMAINING NOVEMBER LOCATIONS
+## 5. NEXT EXPANSION ROADMAP: 25 REMAINING NOVEMBER LOCATIONS
 
-The user's expansion roadmap targets 50 total new locations for November. Group A (10) is finished. The remaining 40 locations are organized into Groups B, C, and D:
+The user's expansion roadmap targets 50 total new locations for November. Group A (10) and Group B (15) are finished (25 published total). The remaining 25 locations are organized into Groups C and D:
 
-### Group B: 15 Major US Convention & Economic Hubs (NEXT TO BUILD)
-When instructed to build the next batch (the "14-15 location pages"), build these Group B general corporate magician hubs (`/corporate-magician-[city]`):
+### Group C: 15 Luxury Resort & Executive Retreat Enclaves (NEXT TO BUILD)
+When instructed to build the next batch (Group C 15 resort destinations), build these corporate magician hubs (`/corporate-magician-[city]`):
 
-| # | City / Destination | State | Key Anchor Convention / Venue | Target Slug |
+| # | Destination | State | Key Anchor Resort / Retreat | Target Slug |
 |---|---|---|---|---|
-| 11 | **Pittsburgh** | PA | David L. Lawrence Convention Center | `corporate-magician-pittsburgh.html` |
-| 12 | **Cincinnati** | OH | Duke Energy Convention Center | `corporate-magician-cincinnati.html` |
-| 13 | **Milwaukee** | WI | Baird Center ($456M expanded convention complex) | `corporate-magician-milwaukee.html` |
-| 14 | **Sacramento** | CA | SAFE Credit Union Convention Center | `corporate-magician-sacramento.html` |
-| 15 | **Raleigh** | NC | Raleigh Convention Center (Research Triangle Park) | `corporate-magician-raleigh.html` |
-| 16 | **Richmond** | VA | Greater Richmond Convention Center | `corporate-magician-richmond.html` |
-| 17 | **Memphis** | TN | Renasant Convention Center | `corporate-magician-memphis.html` |
-| 18 | **Detroit** | MI | Huntington Place Convention Center | `corporate-magician-detroit.html` |
-| 19 | **Tucson** | AZ | Tucson Convention Center / JW Marriott Starr Pass | `corporate-magician-tucson.html` |
-| 20 | **Oklahoma City** | OK | Oklahoma City Convention Center / Omni OKC | `corporate-magician-oklahoma-city.html` |
-| 21 | **Omaha** | NE | CHI Health Center Omaha (Berkshire Hathaway summit hub) | `corporate-magician-omaha.html` |
-| 22 | **Tulsa** | OK | Cox Business Convention Center | `corporate-magician-tulsa.html` |
-| 23 | **Birmingham** | AL | Birmingham-Jefferson Convention Complex (BJCC) | `corporate-magician-birmingham.html` |
-| 24 | **Providence** | RI | Rhode Island Convention Center | `corporate-magician-providence.html` |
-| 25 | **Des Moines** | IA | Iowa Events Center | `corporate-magician-des-moines.html` |
+| 26 | **Palm Beach** | FL | The Breakers Palm Beach | `corporate-magician-palm-beach.html` |
+| 27 | **Naples** | FL | The Ritz-Carlton Naples | `corporate-magician-naples.html` |
+| 28 | **Boca Raton** | FL | The Boca Raton | `corporate-magician-boca-raton.html` |
+| 29 | **Key West** | FL | Casa Marina Key West | `corporate-magician-key-west.html` |
+| 30 | **Sarasota** | FL | The Ritz-Carlton Sarasota | `corporate-magician-sarasota.html` |
+| 31 | **Marco Island** | FL | JW Marriott Marco Island | `corporate-magician-marco-island.html` |
+| 32 | **Charleston** | SC | The Charleston Place | `corporate-magician-charleston.html` |
+| 33 | **Hilton Head Island** | SC | The Westin Hilton Head Island Resort | `corporate-magician-hilton-head.html` |
+| 34 | **Sedona** | AZ | Enchantment Resort | `corporate-magician-sedona.html` |
+| 35 | **Lake Tahoe** | NV/CA | Hyatt Regency Lake Tahoe Resort | `corporate-magician-lake-tahoe.html` |
+| 36 | **Park City** | UT | Montage Deer Valley / Stein Eriksen Lodge | `corporate-magician-park-city.html` |
+| 37 | **Vail** | CO | Four Seasons Resort Vail | `corporate-magician-vail.html` |
+| 38 | **Aspen** | CO | The St. Regis Aspen Resort | `corporate-magician-aspen.html` |
+| 39 | **Asheville** | NC | The Omni Grove Park Inn | `corporate-magician-asheville.html` |
+| 40 | **Williamsburg** | VA | Kingsmill Resort | `corporate-magician-williamsburg.html` |
 
-### Group C: 15 Luxury Resort & Executive Retreat Enclaves
-26. **Palm Beach, FL** (`corporate-magician-palm-beach.html`) — The Breakers Palm Beach
-27. **Naples, FL** (`corporate-magician-naples.html`) — The Ritz-Carlton Naples
-28. **Boca Raton, FL** (`corporate-magician-boca-raton.html`) — The Boca Raton
-29. **Key West, FL** (`corporate-magician-key-west.html`) — Casa Marina Key West
-30. **Sarasota, FL** (`corporate-magician-sarasota.html`) — The Ritz-Carlton Sarasota
-31. **Marco Island, FL** (`corporate-magician-marco-island.html`) — JW Marriott Marco Island
-32. **Charleston, SC** (`corporate-magician-charleston.html`) — Charleston Place
-33. **Hilton Head Island, SC** (`corporate-magician-hilton-head.html`) — The Westin Hilton Head
-34. **Sedona, AZ** (`corporate-magician-sedona.html`) — Enchantment Resort
-35. **Lake Tahoe, NV/CA** (`corporate-magician-lake-tahoe.html`) — Hyatt Regency Lake Tahoe
-36. **Park City, UT** (`corporate-magician-park-city.html`) — Montage Deer Valley
-37. **Vail, CO** (`corporate-magician-vail.html`) — Four Seasons Resort Vail
-38. **Aspen, CO** (`corporate-magician-aspen.html`) — The St. Regis Aspen
-39. **Asheville, NC** (`corporate-magician-asheville.html`) — The Omni Grove Park Inn
-40. **Williamsburg, VA** (`corporate-magician-williamsburg.html`) — Kingsmill Resort
+### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites
+41. **Pasadena, CA** (`corporate-magician-pasadena.html`) — Pasadena Convention Center / Langham Huntington
+42. **Long Beach, CA** (`corporate-magician-long-beach.html`) — Long Beach Convention Center
+43. **Plano, TX** (`corporate-magician-plano.html`) — Legacy West (Toyota & Frito-Lay HQs)
+44. **The Woodlands, TX** (`corporate-magician-the-woodlands.html`) — The Woodlands Waterway Marriott
+45. **Bellevue, WA** (`corporate-magician-bellevue.html`) — Meydenbauer Center (Amazon & Microsoft Eastside)
+46. **Chandler, AZ** (`corporate-magician-chandler.html`) — Gila River Resorts / Intel Silicon Desert
+47. **Overland Park, KS** (`corporate-magician-overland-park.html`) — Overland Park Convention Center
+48. **Grand Rapids, MI** (`corporate-magician-grand-rapids.html`) — DeVos Place Convention Center
+49. **Knoxville, TN** (`corporate-magician-knoxville.html`) — Knoxville Convention Center
+50. **Vancouver, BC** (`corporate-magician-vancouver.html`) — Vancouver Convention Centre
 
 ### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites
 41. **Pasadena, CA** (`corporate-magician-pasadena.html`) — Pasadena Convention Center / Langham Huntington
