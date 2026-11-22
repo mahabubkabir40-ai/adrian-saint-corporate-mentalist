@@ -66,7 +66,7 @@ Every city hub (`corporate-magician-[city].html`) must include:
 
 ---
 
-## 4. CURRENT STATUS OF ALL 85 LIVE LOCATION PAGES
+## 4. CURRENT STATUS OF ALL 100 LIVE LOCATION PAGES
 
 ### A. Original 60 Location Pages
 * **California (19)**: Anaheim, Beverly Hills, Garden Grove, Huntington Beach, Irvine, Los Angeles, Napa, Newport Beach, Orange County, Palm Desert, Palm Springs, San Diego, San Francisco, San Jose, Santa Ana, Santa Barbara, Santa Monica, Temecula.
@@ -110,56 +110,46 @@ Every city hub (`corporate-magician-[city].html`) must include:
 
 *Generator Script Reference*: `build_group_b_pages.py`
 
+### D. Group C: 15 Luxury Resort & Executive Retreat Enclaves (Published in November & Live)
+26. **Palm Beach, FL**: `corporate-magician-palm-beach.html` (The Breakers Palm Beach / Eau Palm Beach) — Phone: `(833) 570-5966`
+27. **Naples, FL**: `corporate-magician-naples.html` (The Ritz-Carlton Naples / Naples Grande Beach Resort) — Phone: `(833) 570-5966`
+28. **Boca Raton, FL**: `corporate-magician-boca-raton.html` (The Boca Raton / Waldorf Astoria) — Phone: `(833) 570-5966`
+29. **Key West, FL**: `corporate-magician-key-west.html` (Casa Marina Key West, Curio Collection by Hilton) — Phone: `(833) 570-5966`
+30. **Sarasota, FL**: `corporate-magician-sarasota.html` (The Ritz-Carlton Sarasota / Longboat Key Club) — Phone: `(833) 570-5966`
+31. **Marco Island, FL**: `corporate-magician-marco-island.html` (JW Marriott Marco Island Beach Resort) — Phone: `(833) 570-5966`
+32. **Charleston, SC**: `corporate-magician-charleston.html` (The Charleston Place / The Dewberry) — Phone: `(833) 570-5966`
+33. **Hilton Head Island, SC**: `corporate-magician-hilton-head.html` (The Westin Hilton Head / Omni Oceanfront Resort) — Phone: `(833) 570-5966`
+34. **Sedona, AZ**: `corporate-magician-sedona.html` (Enchantment Resort / L'Auberge de Sedona) — Phone: `(833) 570-5966`
+35. **Lake Tahoe, NV/CA**: `corporate-magician-lake-tahoe.html` (Hyatt Regency Lake Tahoe / The Ritz-Carlton Lake Tahoe) — Phone: `(833) 570-5966`
+36. **Park City, UT**: `corporate-magician-park-city.html` (Montage Deer Valley / St. Regis Deer Valley / Stein Eriksen Lodge) — Phone: `(833) 570-5966`
+37. **Vail, CO**: `corporate-magician-vail.html` (The Sebastian / Four Seasons Resort Vail) — Phone: `(833) 570-5966`
+38. **Aspen, CO**: `corporate-magician-aspen.html` (The St. Regis Aspen Resort / The Little Nell) — Phone: `(833) 570-5966`
+39. **Asheville, NC**: `corporate-magician-asheville.html` (The Omni Grove Park Inn / Biltmore Estate) — Phone: `(833) 570-5966`
+40. **Williamsburg, VA**: `corporate-magician-williamsburg.html` (Kingsmill Resort / Colonial Williamsburg) — Phone: `(833) 570-5966`
+
+*Generator Script Reference*: `build_group_c_pages.py`
+
 ---
 
-## 5. NEXT EXPANSION ROADMAP: 25 REMAINING NOVEMBER LOCATIONS
+## 5. NEXT EXPANSION ROADMAP: 10 REMAINING NOVEMBER LOCATIONS
 
-The user's expansion roadmap targets 50 total new locations for November. Group A (10) and Group B (15) are finished (25 published total). The remaining 25 locations are organized into Groups C and D:
+The user's expansion roadmap targets 50 total new locations for November. Group A (10), Group B (15), and Group C (15) are finished (40 published total, 100 live general corporate hubs). The final 10 locations are in Group D:
 
-### Group C: 15 Luxury Resort & Executive Retreat Enclaves (NEXT TO BUILD)
-When instructed to build the next batch (Group C 15 resort destinations), build these corporate magician hubs (`/corporate-magician-[city]`):
+### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites (NEXT TO BUILD)
+When instructed to build the final batch (Group D 10 destinations), build these corporate magician hubs (`/corporate-magician-[city]`):
 
-| # | Destination | State | Key Anchor Resort / Retreat | Target Slug |
+| # | Destination | State/Prov | Key Anchor Corporate / Convention Venue | Target Slug |
 |---|---|---|---|---|
-| 26 | **Palm Beach** | FL | The Breakers Palm Beach | `corporate-magician-palm-beach.html` |
-| 27 | **Naples** | FL | The Ritz-Carlton Naples | `corporate-magician-naples.html` |
-| 28 | **Boca Raton** | FL | The Boca Raton | `corporate-magician-boca-raton.html` |
-| 29 | **Key West** | FL | Casa Marina Key West | `corporate-magician-key-west.html` |
-| 30 | **Sarasota** | FL | The Ritz-Carlton Sarasota | `corporate-magician-sarasota.html` |
-| 31 | **Marco Island** | FL | JW Marriott Marco Island | `corporate-magician-marco-island.html` |
-| 32 | **Charleston** | SC | The Charleston Place | `corporate-magician-charleston.html` |
-| 33 | **Hilton Head Island** | SC | The Westin Hilton Head Island Resort | `corporate-magician-hilton-head.html` |
-| 34 | **Sedona** | AZ | Enchantment Resort | `corporate-magician-sedona.html` |
-| 35 | **Lake Tahoe** | NV/CA | Hyatt Regency Lake Tahoe Resort | `corporate-magician-lake-tahoe.html` |
-| 36 | **Park City** | UT | Montage Deer Valley / Stein Eriksen Lodge | `corporate-magician-park-city.html` |
-| 37 | **Vail** | CO | Four Seasons Resort Vail | `corporate-magician-vail.html` |
-| 38 | **Aspen** | CO | The St. Regis Aspen Resort | `corporate-magician-aspen.html` |
-| 39 | **Asheville** | NC | The Omni Grove Park Inn | `corporate-magician-asheville.html` |
-| 40 | **Williamsburg** | VA | Kingsmill Resort | `corporate-magician-williamsburg.html` |
-
-### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites
-41. **Pasadena, CA** (`corporate-magician-pasadena.html`) — Pasadena Convention Center / Langham Huntington
-42. **Long Beach, CA** (`corporate-magician-long-beach.html`) — Long Beach Convention Center
-43. **Plano, TX** (`corporate-magician-plano.html`) — Legacy West (Toyota & Frito-Lay HQs)
-44. **The Woodlands, TX** (`corporate-magician-the-woodlands.html`) — The Woodlands Waterway Marriott
-45. **Bellevue, WA** (`corporate-magician-bellevue.html`) — Meydenbauer Center (Amazon & Microsoft Eastside)
-46. **Chandler, AZ** (`corporate-magician-chandler.html`) — Gila River Resorts / Intel Silicon Desert
-47. **Overland Park, KS** (`corporate-magician-overland-park.html`) — Overland Park Convention Center
-48. **Grand Rapids, MI** (`corporate-magician-grand-rapids.html`) — DeVos Place Convention Center
-49. **Knoxville, TN** (`corporate-magician-knoxville.html`) — Knoxville Convention Center
-50. **Vancouver, BC** (`corporate-magician-vancouver.html`) — Vancouver Convention Centre
-
-### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites
-41. **Pasadena, CA** (`corporate-magician-pasadena.html`) — Pasadena Convention Center / Langham Huntington
-42. **Long Beach, CA** (`corporate-magician-long-beach.html`) — Long Beach Convention Center
-43. **Plano, TX** (`corporate-magician-plano.html`) — Legacy West (Toyota & Frito-Lay HQs)
-44. **The Woodlands, TX** (`corporate-magician-the-woodlands.html`) — The Woodlands Waterway Marriott
-45. **Bellevue, WA** (`corporate-magician-bellevue.html`) — Meydenbauer Center (Amazon & Microsoft Eastside)
-46. **Chandler, AZ** (`corporate-magician-chandler.html`) — Gila River Resorts / Intel Silicon Desert
-47. **Overland Park, KS** (`corporate-magician-overland-park.html`) — Overland Park Convention Center
-48. **Grand Rapids, MI** (`corporate-magician-grand-rapids.html`) — DeVos Place Convention Center
-49. **Knoxville, TN** (`corporate-magician-knoxville.html`) — Knoxville Convention Center
-50. **Vancouver, BC** (`corporate-magician-vancouver.html`) — Vancouver Convention Centre
+| 41 | **Pasadena** | CA | Pasadena Convention Center / The Langham Huntington | `corporate-magician-pasadena.html` |
+| 42 | **Long Beach** | CA | Long Beach Convention & Entertainment Center | `corporate-magician-long-beach.html` |
+| 43 | **Plano** | TX | Legacy West (Toyota & Frito-Lay HQs) | `corporate-magician-plano.html` |
+| 44 | **The Woodlands** | TX | The Woodlands Waterway Marriott & Convention Center | `corporate-magician-the-woodlands.html` |
+| 45 | **Bellevue** | WA | Meydenbauer Center (Amazon & Microsoft Eastside) | `corporate-magician-bellevue.html` |
+| 46 | **Chandler** | AZ | Gila River Resorts / Intel Silicon Desert | `corporate-magician-chandler.html` |
+| 47 | **Overland Park** | KS | Overland Park Convention Center | `corporate-magician-overland-park.html` |
+| 48 | **Grand Rapids** | MI | DeVos Place Convention Center | `corporate-magician-grand-rapids.html` |
+| 49 | **Knoxville** | TN | Knoxville Convention Center | `corporate-magician-knoxville.html` |
+| 50 | **Vancouver** | BC | Vancouver Convention Centre | `corporate-magician-vancouver.html` |
 
 ---
 

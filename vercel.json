@@ -1731,6 +1731,246 @@
       "source": "/des-moines",
       "destination": "/corporate-magician-des-moines",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-palm-beach",
+      "destination": "/corporate-magician-palm-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-palm-beach",
+      "destination": "/corporate-magician-palm-beach",
+      "permanent": true
+    },
+    {
+      "source": "/palm-beach",
+      "destination": "/corporate-magician-palm-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-naples",
+      "destination": "/corporate-magician-naples",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-naples",
+      "destination": "/corporate-magician-naples",
+      "permanent": true
+    },
+    {
+      "source": "/naples",
+      "destination": "/corporate-magician-naples",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-boca-raton",
+      "destination": "/corporate-magician-boca-raton",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-boca-raton",
+      "destination": "/corporate-magician-boca-raton",
+      "permanent": true
+    },
+    {
+      "source": "/boca-raton",
+      "destination": "/corporate-magician-boca-raton",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-key-west",
+      "destination": "/corporate-magician-key-west",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-key-west",
+      "destination": "/corporate-magician-key-west",
+      "permanent": true
+    },
+    {
+      "source": "/key-west",
+      "destination": "/corporate-magician-key-west",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-sarasota",
+      "destination": "/corporate-magician-sarasota",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-sarasota",
+      "destination": "/corporate-magician-sarasota",
+      "permanent": true
+    },
+    {
+      "source": "/sarasota",
+      "destination": "/corporate-magician-sarasota",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-marco-island",
+      "destination": "/corporate-magician-marco-island",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-marco-island",
+      "destination": "/corporate-magician-marco-island",
+      "permanent": true
+    },
+    {
+      "source": "/marco-island",
+      "destination": "/corporate-magician-marco-island",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-charleston",
+      "destination": "/corporate-magician-charleston",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-charleston",
+      "destination": "/corporate-magician-charleston",
+      "permanent": true
+    },
+    {
+      "source": "/charleston",
+      "destination": "/corporate-magician-charleston",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-hilton-head",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-hilton-head",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/hilton-head",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/hilton-head-island",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-hilton-head-island",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-hilton-head-island",
+      "destination": "/corporate-magician-hilton-head",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-sedona",
+      "destination": "/corporate-magician-sedona",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-sedona",
+      "destination": "/corporate-magician-sedona",
+      "permanent": true
+    },
+    {
+      "source": "/sedona",
+      "destination": "/corporate-magician-sedona",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-lake-tahoe",
+      "destination": "/corporate-magician-lake-tahoe",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-lake-tahoe",
+      "destination": "/corporate-magician-lake-tahoe",
+      "permanent": true
+    },
+    {
+      "source": "/lake-tahoe",
+      "destination": "/corporate-magician-lake-tahoe",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-park-city",
+      "destination": "/corporate-magician-park-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-park-city",
+      "destination": "/corporate-magician-park-city",
+      "permanent": true
+    },
+    {
+      "source": "/park-city",
+      "destination": "/corporate-magician-park-city",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-vail",
+      "destination": "/corporate-magician-vail",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-vail",
+      "destination": "/corporate-magician-vail",
+      "permanent": true
+    },
+    {
+      "source": "/vail",
+      "destination": "/corporate-magician-vail",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-aspen",
+      "destination": "/corporate-magician-aspen",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-aspen",
+      "destination": "/corporate-magician-aspen",
+      "permanent": true
+    },
+    {
+      "source": "/aspen",
+      "destination": "/corporate-magician-aspen",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-asheville",
+      "destination": "/corporate-magician-asheville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-asheville",
+      "destination": "/corporate-magician-asheville",
+      "permanent": true
+    },
+    {
+      "source": "/asheville",
+      "destination": "/corporate-magician-asheville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-williamsburg",
+      "destination": "/corporate-magician-williamsburg",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-williamsburg",
+      "destination": "/corporate-magician-williamsburg",
+      "permanent": true
+    },
+    {
+      "source": "/williamsburg",
+      "destination": "/corporate-magician-williamsburg",
+      "permanent": true
     }
   ]
 }
