@@ -1971,6 +1971,171 @@
       "source": "/williamsburg",
       "destination": "/corporate-magician-williamsburg",
       "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-pasadena",
+      "destination": "/corporate-magician-pasadena",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-pasadena",
+      "destination": "/corporate-magician-pasadena",
+      "permanent": true
+    },
+    {
+      "source": "/pasadena",
+      "destination": "/corporate-magician-pasadena",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-long-beach",
+      "destination": "/corporate-magician-long-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-long-beach",
+      "destination": "/corporate-magician-long-beach",
+      "permanent": true
+    },
+    {
+      "source": "/long-beach",
+      "destination": "/corporate-magician-long-beach",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-plano",
+      "destination": "/corporate-magician-plano",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-plano",
+      "destination": "/corporate-magician-plano",
+      "permanent": true
+    },
+    {
+      "source": "/plano",
+      "destination": "/corporate-magician-plano",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-the-woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-the-woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/the-woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-magician-woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-woodlands",
+      "destination": "/corporate-magician-the-woodlands",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-bellevue",
+      "destination": "/corporate-magician-bellevue",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-bellevue",
+      "destination": "/corporate-magician-bellevue",
+      "permanent": true
+    },
+    {
+      "source": "/bellevue",
+      "destination": "/corporate-magician-bellevue",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-chandler",
+      "destination": "/corporate-magician-chandler",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-chandler",
+      "destination": "/corporate-magician-chandler",
+      "permanent": true
+    },
+    {
+      "source": "/chandler",
+      "destination": "/corporate-magician-chandler",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-overland-park",
+      "destination": "/corporate-magician-overland-park",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-overland-park",
+      "destination": "/corporate-magician-overland-park",
+      "permanent": true
+    },
+    {
+      "source": "/overland-park",
+      "destination": "/corporate-magician-overland-park",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-grand-rapids",
+      "destination": "/corporate-magician-grand-rapids",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-grand-rapids",
+      "destination": "/corporate-magician-grand-rapids",
+      "permanent": true
+    },
+    {
+      "source": "/grand-rapids",
+      "destination": "/corporate-magician-grand-rapids",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-knoxville",
+      "destination": "/corporate-magician-knoxville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-knoxville",
+      "destination": "/corporate-magician-knoxville",
+      "permanent": true
+    },
+    {
+      "source": "/knoxville",
+      "destination": "/corporate-magician-knoxville",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-mentalist-vancouver",
+      "destination": "/corporate-magician-vancouver",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-macigian-vancouver",
+      "destination": "/corporate-magician-vancouver",
+      "permanent": true
+    },
+    {
+      "source": "/vancouver",
+      "destination": "/corporate-magician-vancouver",
+      "permanent": true
     }
   ]
 }

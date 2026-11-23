@@ -66,7 +66,7 @@ Every city hub (`corporate-magician-[city].html`) must include:
 
 ---
 
-## 4. CURRENT STATUS OF ALL 100 LIVE LOCATION PAGES
+## 4. CURRENT STATUS OF ALL 110 LIVE LOCATION PAGES
 
 ### A. Original 60 Location Pages
 * **California (19)**: Anaheim, Beverly Hills, Garden Grove, Huntington Beach, Irvine, Los Angeles, Napa, Newport Beach, Orange County, Palm Desert, Palm Springs, San Diego, San Francisco, San Jose, Santa Ana, Santa Barbara, Santa Monica, Temecula.
@@ -129,27 +129,25 @@ Every city hub (`corporate-magician-[city].html`) must include:
 
 *Generator Script Reference*: `build_group_c_pages.py`
 
+### E. Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites (Published in November & Live)
+41. **Pasadena, CA**: `corporate-magician-pasadena.html` (Pasadena Convention Center / The Langham Huntington) — Phone: `(833) 570-5966`
+42. **Long Beach, CA**: `corporate-magician-long-beach.html` (Long Beach Convention & Entertainment Center) — Phone: `(833) 570-5966`
+43. **Plano, TX**: `corporate-magician-plano.html` (Legacy West / Toyota & Frito-Lay HQs) — Phone: `(833) 570-5966`
+44. **The Woodlands, TX**: `corporate-magician-the-woodlands.html` (The Woodlands Waterway Marriott & Convention Center) — Phone: `(833) 570-5966`
+45. **Bellevue, WA**: `corporate-magician-bellevue.html` (Meydenbauer Center / Amazon & Microsoft Eastside) — Phone: `(833) 570-5966`
+46. **Chandler, AZ**: `corporate-magician-chandler.html` (Gila River Resorts / Intel Silicon Desert) — Phone: `(833) 570-5966`
+47. **Overland Park, KS**: `corporate-magician-overland-park.html` (Overland Park Convention Center) — Phone: `(833) 570-5966`
+48. **Grand Rapids, MI**: `corporate-magician-grand-rapids.html` (DeVos Place Convention Center / Amway Grand Plaza) — Phone: `(833) 570-5966`
+49. **Knoxville, TN**: `corporate-magician-knoxville.html` (Knoxville Convention Center) — Phone: `(833) 570-5966`
+50. **Vancouver, BC**: `corporate-magician-vancouver.html` (Vancouver Convention Centre) — Phone: `(833) 570-5966`
+
+*Generator Script Reference*: `build_group_d_pages.py`
+
 ---
 
-## 5. NEXT EXPANSION ROADMAP: 10 REMAINING NOVEMBER LOCATIONS
+## 5. NOVEMBER 50-LOCATION EXPANSION STATUS: 100% COMPLETE
 
-The user's expansion roadmap targets 50 total new locations for November. Group A (10), Group B (15), and Group C (15) are finished (40 published total, 100 live general corporate hubs). The final 10 locations are in Group D:
-
-### Group D: 10 High-Net-Worth Corporate HQs & Tech Satellites (NEXT TO BUILD)
-When instructed to build the final batch (Group D 10 destinations), build these corporate magician hubs (`/corporate-magician-[city]`):
-
-| # | Destination | State/Prov | Key Anchor Corporate / Convention Venue | Target Slug |
-|---|---|---|---|---|
-| 41 | **Pasadena** | CA | Pasadena Convention Center / The Langham Huntington | `corporate-magician-pasadena.html` |
-| 42 | **Long Beach** | CA | Long Beach Convention & Entertainment Center | `corporate-magician-long-beach.html` |
-| 43 | **Plano** | TX | Legacy West (Toyota & Frito-Lay HQs) | `corporate-magician-plano.html` |
-| 44 | **The Woodlands** | TX | The Woodlands Waterway Marriott & Convention Center | `corporate-magician-the-woodlands.html` |
-| 45 | **Bellevue** | WA | Meydenbauer Center (Amazon & Microsoft Eastside) | `corporate-magician-bellevue.html` |
-| 46 | **Chandler** | AZ | Gila River Resorts / Intel Silicon Desert | `corporate-magician-chandler.html` |
-| 47 | **Overland Park** | KS | Overland Park Convention Center | `corporate-magician-overland-park.html` |
-| 48 | **Grand Rapids** | MI | DeVos Place Convention Center | `corporate-magician-grand-rapids.html` |
-| 49 | **Knoxville** | TN | Knoxville Convention Center | `corporate-magician-knoxville.html` |
-| 50 | **Vancouver** | BC | Vancouver Convention Centre | `corporate-magician-vancouver.html` |
+All 50 planned November expansion locations across Group A (10), Group B (15), Group C (15), and Group D (10) have been generated, verified, added to `sitemap.xml` and `vercel.json`, and published live to production—bringing total general corporate magician hubs to **110 live pages** (plus the 10 localized holiday hubs and 1 national holiday landing page).
 
 ---
 
