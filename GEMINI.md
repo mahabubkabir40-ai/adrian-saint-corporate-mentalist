@@ -163,8 +163,9 @@ All 50 planned November expansion locations across Group A (10), Group B (15), G
   * Social Proof Kept 100%: 88-card client logo ticker + 15-video testimonial carousel + 25 written reviews.
   * CTA Button Routing: All call-to-action buttons ("Contact" in About card, "Check Date & Request Fee Options" in bottom card, and mobile drawer button) link directly to `#hero-fast-track-form`.
   * Form Redirect: Lands on `/corporate-holiday-party-entertainment-thank-you`.
-* **Existing 10 Holiday Location Pages**:
-  * Anaheim, Garden Grove, Huntington Beach, Irvine, Los Angeles, Phoenix, San Diego, San Francisco, Santa Ana, Scottsdale.
+* **Existing 25 Holiday Location Pages**:
+  * **Batch 1 (10)**: Anaheim, Garden Grove, Huntington Beach, Irvine, Los Angeles, Phoenix, San Diego, San Francisco, Santa Ana, Scottsdale.
+  * **Batch 2 (15)**: Orange County, Newport Beach, Beverly Hills, Santa Monica, San Jose, Palm Springs, Pasadena, Las Vegas, New York City, Chicago, Dallas, Austin, Houston, Miami, Denver.
 * **CRITICAL RULE**: Do **NOT** create new holiday location pages unless the user explicitly asks. The default task is to build general corporate entertainment hubs (`/corporate-magician-[city]`).
 
 ---

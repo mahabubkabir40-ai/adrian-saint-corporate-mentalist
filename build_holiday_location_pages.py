@@ -5,8 +5,9 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-# City configuration
+# City configuration (25 total: Original 10 + Batch 2 15)
 CITIES = [
+    # --- Original 10 Holiday Location Pages ---
     {
         'slug': 'los-angeles',
         'name': 'Los Angeles',
@@ -106,12 +107,163 @@ CITIES = [
         'phone': '(833) 570-5966',
         'phone_clean': '18335705966',
         'phone_e164': '+18335705966',
-    }
+    },
+    # --- Batch 2: 15 New High-ROI Holiday Location Pages ---
+    {
+        'slug': 'orange-county',
+        'name': 'Orange County',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Orange County, Newport Beach & Laguna Coast',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'newport-beach',
+        'name': 'Newport Beach',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Newport Coast, Fashion Island & Orange County',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'beverly-hills',
+        'name': 'Beverly Hills',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Beverly Hills, Bel Air & West Los Angeles',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'santa-monica',
+        'name': 'Santa Monica',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Santa Monica, Silicon Beach & Westside Los Angeles',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'san-jose',
+        'name': 'San Jose',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'San Jose, Silicon Valley & South Bay',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'palm-springs',
+        'name': 'Palm Springs',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Palm Springs, Palm Desert & Coachella Valley',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'pasadena',
+        'name': 'Pasadena',
+        'state': 'CA',
+        'state_full': 'California',
+        'metro': 'Pasadena, Old Pasadena & San Gabriel Valley',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'las-vegas',
+        'name': 'Las Vegas',
+        'state': 'NV',
+        'state_full': 'Nevada',
+        'metro': 'The Las Vegas Strip, Summerlin & Henderson',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'new-york-city',
+        'name': 'New York City',
+        'state': 'NY',
+        'state_full': 'New York',
+        'metro': 'Manhattan, Midtown, Financial District & Tri-State Area',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'chicago',
+        'name': 'Chicago',
+        'state': 'IL',
+        'state_full': 'Illinois',
+        'metro': 'Downtown Chicago, River North & Chicagoland',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'dallas',
+        'name': 'Dallas',
+        'state': 'TX',
+        'state_full': 'Texas',
+        'metro': 'Downtown Dallas, Uptown & DFW Metroplex',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'austin',
+        'name': 'Austin',
+        'state': 'TX',
+        'state_full': 'Texas',
+        'metro': 'Downtown Austin, Domain & Central Texas',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'houston',
+        'name': 'Houston',
+        'state': 'TX',
+        'state_full': 'Texas',
+        'metro': 'Downtown Houston, Galleria & Energy Corridor',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'miami',
+        'name': 'Miami',
+        'state': 'FL',
+        'state_full': 'Florida',
+        'metro': 'Brickell, Miami Beach & South Florida',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
+    {
+        'slug': 'denver',
+        'name': 'Denver',
+        'state': 'CO',
+        'state_full': 'Colorado',
+        'metro': 'Downtown Denver, Cherry Creek & Front Range',
+        'phone': '(833) 570-5966',
+        'phone_clean': '18335705966',
+        'phone_e164': '+18335705966',
+    },
 ]
 
 
 def sub_once(pattern, replacement, text, flags=0, label=''):
-    new_text, count = re.subn(pattern, replacement, text, count=1, flags=flags)
+    new_text, count = re.subn(pattern, lambda _: replacement, text, count=1, flags=flags)
     if count != 1:
         raise ValueError(f"Expected 1 replacement for {label or pattern}, got {count}")
     return new_text
@@ -184,7 +336,7 @@ for city in CITIES:
                     f"and annual executive galas across {name} and {metro}."
                 ),
                 "areaServed": {
-                    "@type": "City",
+                    "@type": "AdministrativeArea" if "County" in name else "City",
                     "name": f"{name}, {state}"
                 },
                 "aggregateRating": {

@@ -2136,6 +2136,96 @@
       "source": "/vancouver",
       "destination": "/corporate-magician-vancouver",
       "permanent": true
+    },
+    {
+      "source": "/holiday-orange-county",
+      "destination": "/corporate-holiday-party-entertainment-orange-county",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-oc",
+      "destination": "/corporate-holiday-party-entertainment-orange-county",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-newport-beach",
+      "destination": "/corporate-holiday-party-entertainment-newport-beach",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-beverly-hills",
+      "destination": "/corporate-holiday-party-entertainment-beverly-hills",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-santa-monica",
+      "destination": "/corporate-holiday-party-entertainment-santa-monica",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-san-jose",
+      "destination": "/corporate-holiday-party-entertainment-san-jose",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-palm-springs",
+      "destination": "/corporate-holiday-party-entertainment-palm-springs",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-pasadena",
+      "destination": "/corporate-holiday-party-entertainment-pasadena",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-las-vegas",
+      "destination": "/corporate-holiday-party-entertainment-las-vegas",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-new-york-city",
+      "destination": "/corporate-holiday-party-entertainment-new-york-city",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-nyc",
+      "destination": "/corporate-holiday-party-entertainment-new-york-city",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-new-york",
+      "destination": "/corporate-holiday-party-entertainment-new-york-city",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-chicago",
+      "destination": "/corporate-holiday-party-entertainment-chicago",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-dallas",
+      "destination": "/corporate-holiday-party-entertainment-dallas",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-austin",
+      "destination": "/corporate-holiday-party-entertainment-austin",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-houston",
+      "destination": "/corporate-holiday-party-entertainment-houston",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-miami",
+      "destination": "/corporate-holiday-party-entertainment-miami",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-denver",
+      "destination": "/corporate-holiday-party-entertainment-denver",
+      "permanent": true
     }
   ]
 }
